@@ -1,0 +1,77 @@
+#+TITLE: Md Arif Shaikh
+#+Author: Md Arif Shiakh
+#+Email: arif.shaikh@icts.res.in
+#+Date: Mon Jun  8 17:14:05 IST 2020
+#+options: toc:nil, num:nil, \n:t, postamble:nil
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="solarized.css" />
+#+html_head: <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+#+HTML_HEAD: <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+
+
+Postdoctoral Fellow
+[[https://www.icts.res.in][International Centre for Theoretical Sciences]] 
+Phone: +91 8601923985
+Email: [[mailto:arif.shaikh@icts.res.in][arif.shaikh@icts.res.in]]
+Website: [[https://mdarifshaikh.github.io/][https://mdarifshaikh.github.io/]] 
+
+* Current position
+  * *Postdoctoral Fellow*, July 2019- 
+    [[https://www.icts.res.in/research/astrorel][Astrophysical Relativity Group]]
+    [[https://www.icts.res.in][International Centre for Theoretical Sciences]]
+    Survey No. 151, Shivakote, Hesaraghatta Hobli Bengaluru – 560 089, India.
+    /Mentor: Prof. P. Ajith/
+
+* Education
+  * *PhD*, 2014-2019
+    [[http://www.hri.res.in][Harish-Chandra Research Institute]], Chhatnag Road, Jhunsi, Allahabad.
+    /Advisor: Prof. Tapas K. Das/
+    Thesis submitted: June 25, 2019. Thesis defended: November 18, 2019.
+    
+  * *Msc*, 2012-2014 
+    [[http://www.hri.res.in][Harish-Chandra Research Institute]], Chhatnag Road, Jhunsi, Allahabad.
+    /Percentage: 77.05/
+    
+  * *BSc*, 2009-2012
+    [[http://www.jaduniv.edu.in/][Jadavpur University]], Kolkata.
+    /Percentage: 80.03/
+
+* Publications
+
+ * Kapadia, S. J., Singh, M. K., _Shaikh, M. A._, Chatterjee, D. & Ajith, P., /Of Harbingers and Higher Modes: Improved gravitational-wave early-warning of compact binary mergers/, [[https://arxiv.org/abs/2005.08830][arXiv:2005.08830]], (2020).
+ * _Shaikh, M. A._ & Das, T. K., /Linear perturbations of low angular momentum accretion flow in the Kerr metric and the corresponding emergent gravity phenomena/, [[https://link.aps.org/doi/10.1103/PhysRevD.98.123022][Phys. Rev. D]], *98*, 123022, (2018).
+ * _Shaikh, M. A._, Maity, S., Nag, S. & Das, T. K., /Effective sound speed in relativistic accretion discs around Schwarzschild black holes/, [[http://www.sciencedirect.com/science/article/pii/S1384107618302896][New Astronomy]], *69*, 48 - 57, (2019).
+ * Datta, S., _Shaikh, M. A._ & Das, T. K., /Acoustic geometry obtained through the perturbation of the Bernoulli’s constant/, [[http://www.sciencedirect.com/science/article/pii/S1384107617301847][New Astronomy]], *63*, 65 - 74, (2018).
+ * _Shaikh, M. A._, /Relativistic sonic geometry for isothermal accretion in the Kerr metric/, [[https://doi.org/10.1088%2F1361-6382%2Faaa5cd][Classical and Quantum Gravity]], *35*, 055002, (2018).
+ * _Shaikh, M. A._, Firdousi, I. & Das, T. K., /Relativistic sonic geometry for isothermal accretion in the Schwarzschild metric/, [[https://doi.org/10.1088%2F1361-6382%2Faa7b19][Classical and Quantum Gravity]], *34*, 155008, (2017).
+
+* Conference, Workshops and Seminars
+
+  * /Gravitational-Wave Open Data Workshop #3/, LIGO-Virgo Collaboration, 26-28 May, 2020. (Held online due to Covid19 outbreak).
+  * /Summer School on Gravitational-Wave Astronomy/, ICTS-TIFR, Bengaluru, 18-23 May, 2020. (Held online due to Covid19 outbreak).
+  * /Talk on Probing the evolution history of compact binaries from higher modes of gravitation waves/, ICTS In-house symposium, ICTS-TIFR, Bengaluru, 17–18 February 2020.
+  * /Astrophysics of Supermassive Black Holes/, ICTS, Bengaluru, 17–19 December, 2019.
+  * /Newton Bhabha-Open Data workshop/, IUCAA, Pune, 4–6 December, 2019.
+  * /Talk on On the emergent sonic geometry through the linear perturbation of relativistic black hole accretion/, Harish-Chandra Re- search Institute, Prayagraj, 18 November 2019.
+  * /The Future of Gravitational-Wave Astronomy/, ICTS, Bengaluru, 19–22 August 2019.
+  * /Summer School on Gravitational-Wave Astronomy/, ICTS, Bengaluru, 15–26 July 2019.
+  * /Theoretical Aspects of Astroparticle Physics, Cosmology and Gravitation/, the Galileo Galilei Institute for Theoretical Physics, Flo- rence, Italy, 11–22 March 2019
+  * /Talk on Relativistic acoustic geometry in general relativistic accretion disc around Kerr black holes/, Exploring the Universe: Near Earth Space Science to Extra-Galactic Astronomy, S N Bose National Centre for Basic Sciences, Kolkata, 14–17 November 2018.
+  * /Black Holes: From Classical to Quantum Gravity/, IIT Gandhinagar, 15–19 December 2017.
+  * /Talk on Emergence of curved sonic manifold for isothermal accretion in black hole metric/, YoungAstronomersMeet, IUCAA,Pune, 11–15 September 2017.
+  * /Summer School on Gravitational-Wave Astronomy/, ICTS, Bengaluru, 17–28 July 2017.
+  * /Poster on Relativistic sonic geometry for isothermal accretion in Kerr metric/, 29th meeting of Indian Association of General Relativity and Gravitation (IAGRG), IIT Guwahati, 18–20 May 2017.
+  * /Poster on Emergence of relativistic sonic geometry through perturbation of matter in blackhole metric/, 35th meeting of Astronomical Society of India (ASI), Jaipur, 6–10 March 2017.
+  * /Workshop on Black Hole Information Paradox/, HRI, Allahabad, 3–6 February 2014.
+
+
+* Awards, Fellowships and others
+
+* Refereeing
+
+* Teaching Assistantship
+
+* Visits
+
+* References
+
+* Personal Information

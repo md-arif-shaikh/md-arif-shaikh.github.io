@@ -3,7 +3,7 @@ title: "CV"
 permalink: /cv/
 ---
 
-Find an up-to-date PDF of CV [here](../cv/cv_arif.pdf).
+Find an up-to-date PDF of CV [here](./cv/cv_arif.pdf).
 
 - Positions
   - 2019 - Present: Postdoctoral Fellow, [International Centre for Theoretical Sciences](https://www.icts.res.in/), Bengaluru, India.
