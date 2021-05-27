@@ -9,7 +9,7 @@ mathjax: "true"
 ### Select an input method
 Most of us emacsians who live inside emacs love to do everything within emacs. If you are a bangali then you are already familiar with the famous avro phonetic for typing bangla on your computer. You can use it with emacs also (with some conflicts of keybindings) but you don't have to. There is an in-built method `input-method` which enables entering text in non-english languages. In any buffer you can use `M-x toggle-input-method` (bound to `C-\`) and select an `input-method`. You can look at all the available method using `M-x list-input-methods` For bangla I use `bengali-itrans`. If you are happy with an `input-method`, you can make it the default `input-method` you want to toggle to by using the following in your settings.
 
-```
+```emacs-lisp
 (setq default-input-method "bengali-itrans")
 ```
 
