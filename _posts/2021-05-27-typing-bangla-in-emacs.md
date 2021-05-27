@@ -47,15 +47,15 @@ using
 ```
 (setq ispell-local-dictionary "bengali")
 ```
-where the language name is `bengali`. you can also download the dictionary from any other source and put it in that directory. [Here](https://github.com/MinhasKamal/BengaliDictionary) is repo containg Bangla dictionary.
+where the language name is `bengali`. You can also download the dictionary from any other source and put it in that directory. [Here](https://github.com/MinhasKamal/BengaliDictionary) is repo containg Bangla dictionary.
 
-Lastly we need the to set the following for the current buffer
+Lastly we need to set the following for the current buffer
 ```
 (setq-local company-backends '(company-wordfreq))
 (setq-local company-transformers nil)
 ```
 
-We can put all these inside an `interactive` function and call it using `M-x` so that these are locally set.
+We can put all these inside an `interactive` function and call it using `M-x`.
 
 ```
 (defun remove-quil-show-guidance ()
@@ -66,8 +66,12 @@ We can put all these inside an `interactive` function and call it using `M-x` so
   (interactive)
   (advice-add 'quail-show-guidance :override #'remove-quail-show-guidance)
   (advice-add 'quail-completion :override #'remove-quail-completion)
-  (setq ispell-local-dictionary "bengali_439")
+  (setq ispell-local-dictionary "bengali")
   (setq-local company-backends '(company-wordfreq))
   (setq-local company-transformers nil))
 ```
+### Workflow
+- Change the `input-method` using `C-\`
+- Enable `company-wordfreq` and other changes for nice experience using `M-x bn-company-wordfreq`
 
+### Screenshot
