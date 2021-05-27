@@ -14,28 +14,32 @@ Most of us emacsians who live inside emacs love to do everything within emacs. I
 ```
 
 additionaly you may want to use a nice font for bangla text. For example to use `kalpurush` font (download from [here](https://www.omicronlab.com/bangla-fonts.html)) use the following
-```
+
+```emacs-lisp
 (set-fontset-font "fontset-default" 'bengali (font-spec :family "Kalpurush" :size 18))
 ```
+
 ### Getting suggestions for words (autocompletion)
 Now of the best feature of avro phonetic is that as you type it suggests you possible words. In emacs this is possible using the package `company` for autocompletion. `company` needs a backend which would feed it the data to use for autocompletion. There exists such a backend called `company-wordfreq` (see the source page [here](https://github.com/johannes-mueller/company-wordfreq.el)).
 
 We need to setup few things to use `company-wordfreq`. First let's install the package using `use-package` and `straight` (or whatever other method you prefer).
 
-```
+```emacs-lisp
 (use-package company-wordfreq
   :straight t)
 ```
+
 Behind the scene the emacs `input-method` uses `quail` package. It has it's own autocompletion but it's not about suggesting words but rather few strings associated with the current keystroke. Ideally we only want the english-to-bangla transformation for any keystroke and then use the `company` for getting suggestions based on the current bangla string at point. Therefore we first turn of the `quail-completion` and make return only the current one using `quail-select-current`. For this we want to override the `quail-completion` using the following
 
-```
+```emacs-lisp
 (defun remove-quail-completion ()
     (quail-select-current))
 (advice-add 'quail-completion :override #'remove-quail-completion)
 ```
+
 We also don't want the echo in the buffer from `qual`, so we do the following
 
-```
+```emacs-lisp
 (defun remove-quil-show-guidance ()
   nil)
 (advice-add 'quail-show-guidance :override #'remove-quail-show-guidance)
@@ -44,20 +48,22 @@ We also don't want the echo in the buffer from `qual`, so we do the following
 We then set the local dictionary for `ispell-local-dictionary`. You can download the dictionary for available languages using `M-x company-wordfreq-download-list` and choosing the language. The dictionary is downloaded in the `~/.emacs.d/wordfreq-dicts` as `<languag-name>.txt`. Then set the `ispell-local-dictionary`
 using
 
-```
+```emacs-lisp
 (setq ispell-local-dictionary "bengali")
 ```
+
 where the language name is `bengali`. You can also download the dictionary from any other source and put it in that directory. [Here](https://github.com/MinhasKamal/BengaliDictionary) is repo containg Bangla dictionary.
 
 Lastly we need to set the following for the current buffer
-```
+
+```emacs-lisp
 (setq-local company-backends '(company-wordfreq))
 (setq-local company-transformers nil)
 ```
 
 We can put all these inside an `interactive` function and call it using `M-x`.
 
-```
+```emacs-lisp
 (defun remove-quil-show-guidance ()
   nil)
 (defun remove-quail-completion ()
@@ -70,6 +76,7 @@ We can put all these inside an `interactive` function and call it using `M-x`.
   (setq-local company-backends '(company-wordfreq))
   (setq-local company-transformers nil))
 ```
+
 ### Workflow
 - Change the `input-method` using `C-\`
 - Enable `company-wordfreq` and other changes for nice experience using `M-x bn-company-wordfreq`
