@@ -84,4 +84,4 @@ We can put all these inside an `interactive` function and call it using `M-x`.
 - `ARROW` to select one.
 
 ### Screenshot
-![typing-bangla-in-emacs](assets/bangla-typing-in-emacs.gif)
+![typing-bangla-in-emacs](/assets/bangla-typing-in-emacs.gif)
