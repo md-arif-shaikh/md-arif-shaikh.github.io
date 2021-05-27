@@ -1,8 +1,8 @@
 ---
-title: "Writing in bangla in emacs"
+title: "Typing Bangla in emacs"
 date: 2021-05-27
-tags: [emacs, bangla, input-methods]
-excerpt: "Writing in bangla in emacs"
+tags: [emacs, Bangla, input-methods]
+excerpt: "Typing Bangla in emacs"
 mathjax: "true"
 ---
 
