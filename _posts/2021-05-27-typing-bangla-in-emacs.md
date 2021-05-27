@@ -83,5 +83,5 @@ We can put all these inside an `interactive` function and call it using `M-x`.
 - `TAB` to get suggestions.
 - `ARROW` to select one.
 
-### Screenshot
+### Screencast
 ![typing-bangla-in-emacs](/assets/bangla-typing-in-emacs.gif)
