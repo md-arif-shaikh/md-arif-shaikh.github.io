@@ -20,7 +20,7 @@ additionally you may want to use a nice font for Bangla text. For example to use
 ```
 
 ### Getting suggestions for words (autocompletion)
-Now of the best feature of Avro phonetic is that as you type it suggests you possible words. In emacs this is possible using the package `company` for autocompletion. `company` needs a backend that would feed it the data to use for autocompletion. There exists such a backend called `company-wordfreq` (see the source page [here](https://github.com/johannes-mueller/company-wordfreq.el)).
+Now, one of the best features of Avro phonetic is that as you type it suggests you possible words. In emacs this is possible using the package `company` for autocompletion. `company` needs a backend that would feed it the data to use for autocompletion. There exists such a backend called `company-wordfreq` (see the source page [here](https://github.com/johannes-mueller/company-wordfreq.el)).
 
 We need to set up few things to use `company-wordfreq`. First, let's install the package using `use-package` and `straight` (or whatever other method you prefer).
 
