@@ -150,9 +150,9 @@ pre,
 code {
   color: $code-color;
   @include relative-font-size(0.9375);
-  border: 1px solid $grey-color-light;
+  border: 1px solid $code-background;
   border-radius: 3px;
-  background-color: #eee8d5
+  background-color: $code-background;
 }
 
 code {
