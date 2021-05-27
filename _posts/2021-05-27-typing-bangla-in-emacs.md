@@ -40,7 +40,7 @@ Behind the scene the emacs `input-method` uses `quail` package. It has it's own 
 We also don't want the echo in the buffer from `qual`, so we do the following
 
 ```emacs-lisp
-(defun remove-quil-show-guidance ()
+(defun remove-quail-show-guidance ()
   nil)
 (advice-add 'quail-show-guidance :override #'remove-quail-show-guidance)
 ```
@@ -64,7 +64,7 @@ Lastly we need to set the following for the current buffer
 We can put all these inside an `interactive` function and call it using `M-x`.
 
 ```emacs-lisp
-(defun remove-quil-show-guidance ()
+(defun remove-quail-show-guidance ()
   nil)
 (defun remove-quail-completion ()
   (quail-select-current))
