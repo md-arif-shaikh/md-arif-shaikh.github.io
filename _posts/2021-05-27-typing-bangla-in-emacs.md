@@ -80,5 +80,7 @@ We can put all these inside an `interactive` function and call it using `M-x`.
 ### Workflow
 - Change the `input-method` using `C-\`
 - Enable `company-wordfreq` and other changes for nice experience using `M-x bn-company-wordfreq`
+- `TAB` to get suggestions.
+- `ARROW` to select one.
 
 ### Screenshot
