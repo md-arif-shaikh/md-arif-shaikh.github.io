@@ -129,7 +129,7 @@ a {
  * Blockquotes
  */
 blockquote {
-  color: $code-color;
+  color: $grey-color;
   border-left: 4px solid $grey-color-light;
   padding-left: $spacing-unit / 2;
   @include relative-font-size(1.125);
@@ -148,11 +148,11 @@ blockquote {
  */
 pre,
 code {
-  color: $code-color;
+  /*color: $code-color;*/
   @include relative-font-size(0.9375);
-  border: 1px solid $code-background;
+  border: 1px solid; /* $code-background;*/
   border-radius: 3px;
-  background-color: $code-background;
+  /*background-color: $code-background;*/
 }
 
 code {
