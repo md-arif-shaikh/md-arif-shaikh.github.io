@@ -5,11 +5,11 @@ permalink: /publications/
 For complete publications visit [arXiv](https://arxiv.org/search/?query=Md+Arif+Shaikh&searchtype=all&source=header), [INSPIRE](https://inspirehep.net/literature?sort=mostrecent&size=25&page=1&q=md%20arif%20shaikh&arxiv_categories=astro-ph.HE), [Google Scholar](https://scholar.google.com/citations?user=EcFhopXwEb0C&hl=en&oi=sra)
 
 8. <b> Deep Learning with Quantized Neural Networks for Gravitational Wave Forecasting of Eccentric Compact Binary Coalescence</b><br>
-     Wei W., Huerta E. A., Yun M., Loutrel N.,  _Shaikh M. A._, Kumar P., Hass R. & Kindratenko V.<br>
+     Wei, W., Huerta, E. A., Yun, M., Loutrel, N.,  _Shaikh, M. A._, Kumar, P., Hass, R. & Kindratenko, V.<br>
      <b>Accepted</b> in [The Astrophysical Journal](https://iopscience.iop.org/journal/0004-637X), (2021).
 
 7. <b> Improved early warning of compact binary mergers using higher modes of gravitational radiation: A population study</b><br>
-     Singh, M. K., Kapadia, S. J., _Shaikh M. A._, Chatterjee, D. & Ajith, P.  <br>
+     Singh, M. K., Kapadia, S. J., _Shaikh, M. A._, Chatterjee, D. & Ajith, P.  <br>
      [Monthly Notices of the Royal Astronomical Society](https://doi.org/10.1093/mnras/stab125), <b>502</b>, 2, 1612–1622, (2021).
 	 
 6. <b> Of Harbingers and Higher Modes: Improved Gravitational-wave Early Warning of Compact Binary Mergers</b><br>
