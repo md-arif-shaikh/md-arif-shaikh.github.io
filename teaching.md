@@ -2,6 +2,7 @@
 title: "Teaching"
 permalink: /teaching/
 ---
+10. Tutored a course on <i><b>Stochastic gravitational wave background from early universe</b></i> at the [Summer School on Gravitational Wave Astronomy](https://www.icts.res.in/program/gws2021), July 2021 at ICTS-TIFR, Bengaluru. This course was instructed by Prof. Shi Pi of Kavli Institute for Physics and Mathematics of the Universe, Japan.
 9. Tutored a session on <i><b>Introduction to xAct Mathematica package for doing tensor calculations in component basis</b></i> as part of the <i><b>Course on Compact Objects</b></i> taught by Prof. [P. Ajith](https://home.icts.res.in/~ajith/Home.html) at ICTS-TIFR, Bengaluru, January-April 2021. The material for the session could be found [here](https://github.com/md-arif-shaikh/Physics-Of-Compact-Objects/tree/main/Assignment-6/xAct-tutorial). This repo additionaly contains other resoureces for the course as well.
 
 8. Tutored a semester course on <i><b>Introduction to General Relativity</b></i>, [ICTS-TIFR](https://www.icts.res.in/), Bengaluru, August-December 2020. [Prof Bala Iyer](https://www.icts.res.in/people/bala-iyer) is the instructor for the course. Course materials could be found [here](https://github.com/mdarifshaikh/Introduction-to-GR-Fall2020ICTS).
