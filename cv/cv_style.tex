@@ -1,0 +1,104 @@
+\usepackage[margin=1in]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks=true, urlcolor=Maroon]{hyperref}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage[T1]{fontenc}
+% \usepackage{palatino}
+\usepackage{libertine}
+% \usepackage[sfdefault,light]{FiraSans}
+\usepackage{tcolorbox}
+\usepackage{longtable}
+% \usepackage{fontspec}
+% \setmainfont{Fira Sans}
+% [Ligatures=TeX,
+% UprightFont = * Regular,
+% ItalicFont = * Italic,
+% BoldFont = * SemiBold,
+% BoldItalicFont = * SemiBold Italic]
+% \setsansfont{Fira Sans}
+
+% \setmainfont[
+% SmallCapsFont = Fontin-SmallCaps.otf,
+% BoldFont = Fontin-Bold.otf,
+% ItalicFont = Fontin-Italic.otf
+% ]
+% {Fontin-Regular.otf}
+
+% \setmainfont[
+% SmallCapsFont = Fontin-SmallCaps.ttf,
+% BoldFont = Fontin-Bold.ttf,
+% ItalicFont = Fontin-Italic.ttf
+% ]
+% {Fontin-Regular.ttf}
+
+
+% \setmainfont{Fontin}
+% [Ligatures=TeX,
+% UprightFont = * Regular,
+% ItalicFont = * Italic,
+% BoldFont = * Bold]
+% \setsansfont{Fontin Sans CR}
+
+
+%\usepackage{polyglossia}
+%\setmainlanguage{english}
+%\setotherlanguage{bengali}
+% Replace this with whatever font you're using
+%\newfontfamily\bengalifont[Script=Bengali]{Kalpurush}
+
+\setmainfont{Adobe Caslon Pro}
+\setsansfont{Avenir}
+
+\newtcbox{\mybox}[1][blue]{on line,
+arc=0pt,outer arc=0pt,colback=#1!10!white,colframe=#1!50!black,
+boxsep=0pt,left=1pt,right=1pt,top=2pt,bottom=2pt,
+boxrule=0pt,bottomrule=1pt,toprule=1pt}
+
+\usepackage{etaremune}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{pythontex}
+\usepackage{xhfill}
+
+\newcommand\ruleafter[1]{#1~\xrfill[.7ex]{0.5pt}}
+
+\titleformat{\section}
+{\bfseries\large\sffamily}
+{}
+{0em}
+{%\ruleafter
+}[]
+
+\titleformat{\subsection}
+{\bfseries\sffamily}
+{}
+{0em}
+{%\ruleafter
+}[]
+
+\renewcommand{\maketitle}{%
+  \begin{flushleft}
+    {\scshape \Large \bfseries \thetitle}
+
+    \vspace{0.25cm}
+
+    {Postdoctoral Fellow\\
+      \href{https://www.icts.res.in/}{International Centre for Theoretical Sciences, Tata Institute of Fundamental Research}\\
+      Survey No. 151, Shivakote, Hesaraghatta Hobli, Bengaluru -- 560 089, India.\\
+      Email: \href{mailto:arif.shaikh@icts.res.in}{arif.shaikh@icts.res.in}, Phone: +91 80 4653 6172 , Webpage: \href{https://md-arif-shaikh.github.io/}{md-arif-shaikh.github.io}
+      \rule{\textwidth}{1pt}
+    }
+  \end{flushleft}
+}
+
+\newcommand{\paper}[7]{
+  #1, {\itshape #2}, {\href{#3}{#4}}, {\bfseries #5}, #6, (#7).
+}
+
+\renewcommand{\arraystretch}{0.75}
+\setlength{\LTpre}{0pt}
+% \setlength{\LTpost}{0pt}
+% Local Variables:
+% TeX-engine: xetex
+% End:
