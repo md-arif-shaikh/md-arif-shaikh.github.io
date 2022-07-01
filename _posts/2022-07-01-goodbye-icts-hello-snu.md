@@ -7,7 +7,7 @@ mathjax: "true"
 ---
 After about 3 years (July 02, 2019 - June 28, 2022) of staying as a postdoctoral Fellow at 
 the [International Centre for Theoretical Scineces](https://www.icts.res.in/) (ICTS), Bengaluru,
-I am moving to a new postdoc position in the [Department of Physics and Astronomy](http://astro.snu.ac.kr)
+I am moving to a new postdoc position in the [Department of Physics and Astronomy](http://astro2.snu.ac.kr/e_main.php)
 at [Seoul National University](https://en.snu.ac.kr/) (SNU).
 
 I want to thank all the members of the [Astrorel](https://www.icts.res.in/research/astrorel) group at
