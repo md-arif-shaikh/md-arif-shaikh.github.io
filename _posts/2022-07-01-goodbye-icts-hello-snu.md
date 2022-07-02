@@ -17,4 +17,4 @@ like to thank Dr Shasvath Kapadia (now an assistant professor at IUCAA) with who
 collaborate and learn a lot during these three years.
 
 At SNU, I will be working with Prof [Hyung Mok Lee](http://astro.snu.ac.kr/~hmlee/)
-starting from July 19, 2022.
+starting from July 2022.
