@@ -6,6 +6,7 @@ permalink: /cv/
 Find an up-to-date PDF of CV [here](./cv/cv_md_arif_shaikh.pdf).
 
 # Positions
+- **2022 - 2024** Postdoctoral Fellow, [Seoul National University](https://en.snu.ac.kr/), Seoul, South Korea.
 - **2019 - 2022** Postdoctoral Fellow, [International Centre for Theoretical Sciences](https://www.icts.res.in/), Bengaluru, India
   
 # Education
