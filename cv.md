@@ -23,7 +23,7 @@ Find an up-to-date PDF of CV [here](./cv/cv_md_arif_shaikh.pdf).
 
 - **2022** Membership of [Korean Gravitational Wave Group](https://kgwg.nims.re.kr/home/index.html), July 2022.
 - **2021** Membership of [SXS Collaboration](https://www.black-holes.org/), Feb 2021
-- **2020-2022** Membership of [LIGO-India Scientific Collaboration](https://www.ligo-india.in/lisc/), Aug 2020--July 2022.
+- **2020-2022** Membership of [LIGO-India Scientific Collaboration](https://www.ligo-india.in/lisc/), Aug 2020 - July 2022.
 - **2020** Membership of [LIGO Scientific Collaboration](https://www.ligo.org/), Aug 2020
 - **2018** HRI–Infosys Prize for the year 2018 for distinction in research in Astrophysics, 2018
 - **2017** Qualified National Eligibility Test for JRF (NET), Dec 2016 & Jun 2017
