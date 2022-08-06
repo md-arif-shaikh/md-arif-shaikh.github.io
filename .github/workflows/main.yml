@@ -18,7 +18,7 @@ jobs:
         run: |
           git checkout --orphan pdflatex
           git rm -rf .
-          git add cv_arif.pdf
+          git add cv/cv_arif.pdf
           git -c user.name='GitHub Action' -c user.email='action@github.com' commit -m "Built paper"
       - name: Push changes
         uses: ad-m/github-push-action@master
