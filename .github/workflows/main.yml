@@ -13,7 +13,7 @@ jobs:
         uses: xu-cheng/latex-action@master
         with:
           root_file: cv_arif.tex
-	  working_directory: cv/
+	  working-directory: cv/
       - name: Commit to orphan branch
         run: |
           git checkout --orphan pdflatex
