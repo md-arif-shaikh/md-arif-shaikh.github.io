@@ -6,7 +6,7 @@ excerpt: "Paper of Carter-Penrose diagram for emergent spacetime around accretin
 mathjax: "true"
 ---
 A new paper lead by Susovan Maity at [Harish-Chandra Research Institute](https://www.hri.res.in) on Carter-Penrose diagrams
-for emergent spacetime around accreting Kerr black holes is now accepter in the Phys. Rev. D for publication.
+for emergent spacetime around accreting Kerr black holes is now accepted in the Phys. Rev. D for publication.
 
 #### Abstract
 In this work, we construct and study the Carter-Penrose diagram for sonic black hole and white hole analogues as manifested in
@@ -19,5 +19,7 @@ spacetime to study the corresponding horizon effects. For the first time in lite
 out for analogue spacetime embedded within a natural large scale fluid flow under the influence of strong gravity.
 
 #### Link to Publication
-[Maity *et al* 2022 *Phys. Rev. D* **Accepted**](https://journals.aps.org/prd/accepted/6a071Q0dF6310e3391c4857600be1cb84620086cd?fbclid=IwAR3b3H83dOHQq9BihVVwKJMehm5EX3b2mSBVduUXGBPgL8dWPUR7LDcVCnI)
+<b>Carter-Penrose diagrams for emergent spacetime in axisymmetrically accreting black hole systems</b><br>
+  Maity, S., <u>Shaikh, M. A.</u>, Tarafdar, P. & Das, T. K.<br>
+  <a href="https://journals.aps.org/prd/accepted/6a071Q0dF6310e3391c4857600be1cb84620086cd">Phys. Rev. D</a>, <b>Accepted</b>, 000000, (2022). <a href="https://arxiv.org/pdf/2106.07598.pdf"><img class="svg-icon" src="/assets/pdf.svg"></a>
 
