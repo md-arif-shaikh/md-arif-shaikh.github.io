@@ -7,7 +7,7 @@ Below is a list of my short-authored publications. For a complete list of public
 <ol reversed>
 	<li><b>Carter-Penrose diagrams for emergent spacetime in axisymmetrically accreting black hole systems</b><br>
   Maity, S., <u>Shaikh, M. A.</u>, Tarafdar, P. & Das, T. K.<br>
-  <a href="https://journals.aps.org/prd/accepted/6a071Q0dF6310e3391c4857600be1cb84620086cd">Phys. Rev. D</a>, <b>Accepted</b>, 000000, (2022). <a href="https://arxiv.org/pdf/2106.07598.pdf"><img class="svg-icon" src="/assets/pdf.svg"></a>
+  <a href="https://doi.org/10.1103/PhysRevD.106.044062">Phys. Rev. D</a>, <b>106</b>, 044062, (2022). <a href="https://arxiv.org/pdf/2106.07598.pdf"><img class="svg-icon" src="/assets/pdf.svg"></a>
 	</li>
 	<li><b>Improved early-warning estimates of luminosity distance and orbital inclination of compact binary mergers using higher modes of gravitational radiation</b><br>
   Singh, M. K., Divyajyoti, Kapadia, S. J., <u>Shaikh, M. A.</u> & Ajith, P.,<br>
