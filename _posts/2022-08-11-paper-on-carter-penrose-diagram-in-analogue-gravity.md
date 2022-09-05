@@ -21,5 +21,4 @@ out for analogue spacetime embedded within a natural large scale fluid flow unde
 #### Link to Publication
 <b>Carter-Penrose diagrams for emergent spacetime in axisymmetrically accreting black hole systems</b><br>
   Maity, S., <u>Shaikh, M. A.</u>, Tarafdar, P. & Das, T. K.<br>
-  <a href="https://journals.aps.org/prd/accepted/6a071Q0dF6310e3391c4857600be1cb84620086cd">Phys. Rev. D</a>, <b>Accepted</b>, 000000, (2022). <a href="https://arxiv.org/pdf/2106.07598.pdf"><img class="svg-icon" src="/assets/pdf.svg"></a>
-
+  <a href="https://doi.org/10.1103/PhysRevD.106.044062">Phys. Rev. D</a>, <b>106</b>, 044062, (2022). <a href="https://arxiv.org/pdf/2106.07598.pdf"><img class="svg-icon" src="/assets/pdf.svg"></a>
