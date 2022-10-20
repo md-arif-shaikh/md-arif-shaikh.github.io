@@ -2,7 +2,7 @@
 title: "Publications"
 permalink: /publications/
 ---
-Below is a list of my short-authored publications. For a complete list of publications including publications from large collaborations, please visit my Google Scholar <a href="https://scholar.google.com/citations?user=EcFhopXwEb0C&hl=en&oi=sra"><img class="svg-icon" src="/assets/google_scholar_icon.svg"></a> profile.
+Below is a list of my short-authored publications. For a complete list of publications including publications from large collaborations, please visit my Google Scholar <a href="https://scholar.google.com/citations?user=EcFhopXwEb0C&hl=en&oi=sra"><img class="svg-icon" src="/assets/google_scholar_icon.svg"></a> or [INSPIRE](https://inspirehep.net/authors/1812025) profile.
 
 <ol reversed>
 	<li><b>Carter-Penrose diagrams for emergent spacetime in axisymmetrically accreting black hole systems</b><br>
