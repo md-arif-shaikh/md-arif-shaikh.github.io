@@ -4,14 +4,17 @@ title: "Collaborators"
 permalink: /collaborators/
 ---
 In no particular order
-- [Tapas Kumar Das](http://www.hri.res.in/~tapas/), Proffesor, [Harish-Chandara Research Institute](http://www.hri.res.in/), India.
-- [Parameswaran Ajith](https://home.icts.res.in/~ajith/Home.html), Associate Proffesor, [International Centre for Theoretical Sciences](https://www.icts.res.in/), India.
-- [Prayush Kumar](https://www.icts.res.in/people/prayush-kumar-0), Reader, [International Centre for Theoretical Sciences](https://www.icts.res.in/), India.
-- [Shasvath Kapadia](https://www.icts.res.in/people/Shasvath-Kapadia), Assistant Professor, [The Inter-University Centre for Astronomy and Astrophysics](https://www.iucaa.in), Pune, India.
-- [Mukesh Kumar Singh](https://www.icts.res.in/people/mukesh-kumar-singh), Graduate student, [International Centre for Theoretical Sciences](https://www.icts.res.in/), India.
-- [Eliu Antonio Huerta Escudero](https://eliuhe.wixsite.com/eliu), CASE Senior Scientist, [Argonne National Laboratory and The University of Chicago](https://www.anl.gov/profile/eliu-a-huerta), Chicago, IL, USA.
-- [Vijay Varma](https://vijayvarma.com/), Marie Curie Fellow, Astrophysical and Cosmological Relativity, Max Planck Institute for Gravitational Physics ([Albert Einstein Institute](https://www.aei.mpg.de/)), Potsdam, Germany.
-- [Scott Field](http://www.math.umassd.edu/~sfield/), Assistant Proffesor, [University of Massachusetts](https://www.umassd.edu/), Dartmouth, USA.
-- [Harald Pfeiffer](https://www.aei.mpg.de/person/54205), Professor, Group Leader,  Astrophysical and Cosmological Relativity, Max Planck Institute for Gravitational Physics ([Albert Einstein Institute](https://www.aei.mpg.de/)), Potsdam, Germany.
-- Antoni Ramos Buades, Postdoctoral Fellow, Astrophysical and Cosmological Relativity, Max Planck Institute for Gravitational Physics ([Albert Einstein Institute](https://www.aei.mpg.de/)), Potsdam, Germany.
-- [Tousif Islam](https://tousifislam.com/), Graduate student, [University of Massachusetts](https://www.umassd.edu/), Dartmouth, USA.
+<ul>
+  <li><a href="http://www.hri.res.in/~tapas/">Tapas Kumar Das</a>, Professor, <a href="http://www.hri.res.in/">Harish-Chandara Research Institute</a>, Allabad, India</li>
+  <li><a href="https://home.icts.res.in/~ajith/Home.html">Parameswaran Ajith</a>, Professor, <a href="https://www.icts.res.in/">International Centre for Theoretical Sciences</a>, India</li>
+  <li><a href="https://www.icts.res.in/people/prayush-kumar-0">Prayush Kumar</a>, Reader, <a href="https://www.icts.res.in/">International Centre for Theoretical Sciences</a>, India</li>
+  <li><a href="https://shasvath-kapadia.github.io/">Shasvath Kapadia</a>, Assistant Professor, <a href="https://www.iucaa.in">The Inter-University Centre for Astronomy and Astrophysics</a>, Pune, India</li>
+  <li><a href="https://www.icts.res.in/people/mukesh-kumar-singh">Mukesh Kumar Singh</a>, Graduate student, <a href="https://www.icts.res.in/">International Centre for Theoretical Sciences</a>, India</li>
+  <li><a href="https://eliuhe.wixsite.com/eliu">Eliu Antonio Huerta Escudero</a>, CASE Senior Scientist, <a href="https://www.anl.gov/profile/eliu-a-huerta">Argonne National Laboratory and The University of Chicago</a>, USA.</li>
+  <li><a href="https://vijayvarma.com/">Vijay Varma</a>, Marie Curie Fellow, <a href="https://www.aei.mpg.de/">Albert Einstein Institute</a>, Potsdam, Germany</li>
+  <li><a href="https://www.aei.mpg.de/person/54205">Harald Pfeiffer</a>, Professor, Group Leader, <a href="https://www.aei.mpg.de/">Albert Einstein Institute</a>, Potsdam, Germany</li>
+  <li><a href="">Antoni Ramos Buades</a>, Postdoctoral Fellow, <a href="https://www.aei.mpg.de/">Albert Einstein Institute</a>, Potsdam, Germany</li>
+  <li><a href="https://www.aei.mpg.de/person/52146">Maarten van de Meent</a>, Adjunct Senior Scientist, <a href="https://www.aei.mpg.de/">Albert Einstein Institute</a>, Potsdam, Germany</li>
+  <li><a href="https://scholar.google.co.in/citations?user=b7BJN-0AAAAJ&hl=en">Pratik Tarafdar</a>, Postdoctoral Fellow, <a href="https://www.imsc.res.in/">Institute of Mathematical Sciences</a>, Chennai, India</li>
+  <li><a href="">Susovan Maity</a>, Graduate student, <a href="http://www.hri.res.in/">Harish-Chandara Research Institute</a>, Allahabad, India</li>
+</ul>
