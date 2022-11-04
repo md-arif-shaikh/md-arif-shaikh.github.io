@@ -3,7 +3,7 @@ title: "Talks"
 permalink: /talks/
 ---
 # Seminars
-<ol reveresed>
+<ol reversed>
   <li><a href="https://www.oit.ac.jp/ge/~nozawa/OITGravitySeminar/"><b>Defining eccentricity for gravitational wave astronomy</b></a>, 16 Nov, 2022, OIT, Kyoto, Japan
   </li>
   <li><a href="https://www.yukawa.kyoto-u.ac.jp/seminar/s53052?lang=en-GB"><b>Defining eccentricity for gravitational wave astronomy</b></a>, 14 Nov, 2022, YITP, Osaka, Japan
