@@ -2,6 +2,23 @@
 title: "Teaching"
 permalink: /teaching/
 ---
+# Mentoring
+<ol reversed>
+  <li>
+    Kaustav B (jointly with Dr. Shasvath Kapadia), visiting student at IUCAA. October 2022-
+  </li>
+  <li>
+    Kartikey Sharma (jointly with Dr. Prayush Kumar), visiting student at ICTS-TIFR. July 2022-
+  </li>
+  <li>
+    Udeepta Deka, a grad student at ICTS-TIFR for his term paper on <b>Formation Channels of BBHs</b> as a part of a semester course. Jan-Apr  2020.
+  </li>
+  <li>
+    Soumyadeep Chatterjee, a postgraduate student from IIT Bombay, who was visiting the Cosmology and High Energy Astrophysics group at HRI   during May–June 2015. He studied accretion flow in binary star system via Roche lobe overflow.
+  </li>
+</ol> 
+
+# Tutoring
 <ol reversed>
 <li> Tutored a course on <b>Stochastic gravitational wave background from early universe</b> at the <a href="https://www.icts.res.in/program/gws2021">Summer School on Gravitational Wave Astronomy</a>, July 2021 at ICTS-TIFR, Bengaluru. This course was instructed by Prof. Shi Pi of Kavli Institute for Physics and Mathematics of the Universe, Japan.
 </li>
@@ -18,9 +35,6 @@ Tutored in the <b>ICTS workshop on parameter estimation with bilby</b>, <a href=
 Tutored a course on <b>Numerical Hydrodynamics</b> at the Summer school on <a href="https://icts.res.in/program/gws2020">Gravitational Wave Astrophysics</a>, May-June 2020 at ICTS-TIFR. This course was instructed by <a href="https://twitter.com/IanHawke">Prof. Ian Hawke</a> of University of Southampton. Materials related to this course could be found at the program website. A pdf of the solutions to the numerical hydrodynamics exercises could be found <a href="https://github.com/mdarifshaikh/gw-summer-school-icts-2020/blob/master/solutions/numerical_hydro_GW2020_sol_sec1.pdf">here</a>.
 </li>
 <li>
-Mentored Mr. Udeepta Deka, a grad student at ICTS-TIFR for his term paper on <b>Formation Channels of BBHs</b> as a part of a semester course. Jan-Apr 2020.
-</li>
-<li>
 Tutored a semester course on <b>An Introduction to GW Physics & Astronomy</b>, Jan–Apr 2020 at ICTS-TIFR, Bengaluru. The course is instructed by Prof <a href="https://home.icts.res.in/~ajith/Home.html">P. Ajith</a> and Prof <a href="https://www.icts.res.in/people/bala-iyer">Bala Iyer</a>.
 </li>
 <li>
@@ -28,8 +42,5 @@ Tutored a course on <b>Advanced General Relativity</b> at the <a href="https://w
 </li>
 <li>
 Tutored a semester course on <b>Statistical Physics</b> at Harish-Chandra Research Institute, Allahabad, Jan–May 2016. The course was instructed by Prof G. V. Pai
-</li>
-<li>
-Mentored Mr Soumyadeep Chatterjee, a postgraduate student from IIT Bombay, who was visiting the Cosmology and High Energy Astrophysics group at HRI during May–June 2015. He studied accretion flow in binary star system via Roche lobe overflow.
 </li>
 </ol>
