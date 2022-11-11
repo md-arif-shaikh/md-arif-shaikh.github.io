@@ -15,19 +15,7 @@ Find a PDF version of my CV [here](https://github.com/md-arif-shaikh/md-arif-sha
 - **2009 - 2012** BSc in Physics, [Jadavpur University](http://www.jaduniv.edu.in/), Kolkata, India
 
 # Visits
-<ul>
-{% for visit in site.data.visits %}
-{% assign v = visit[1] %}
-<li> <b> {% if v.from-year == v.to-year %}
-{{ v.from-year }},
-{% else %} {{ v.from-year }} - {{ v.to-year }},
-{% endif %}</b> {{ v.host }}, <a href="{{ v.department-url }}">{{ v.department }}</a>, <a href="{{- v.institute-url -}}">{{ v.institute }}</a>, {{ v.city }}, {{ v.country }}, {% if v.from-year == v.to-year %}
-{% if v.from-month == v.to-month %} {{ v.from-month }} {{ v.from-date }} - {{ v.to-date }},
-{% else %} {{ v.from-month }} {{ v.from-date }} - {{ v.to-month }} {{ v.to-date }},
-{% endif %} {{ v.to-year }} {% else %} {{ v.from-month }} {{v.from-date}}, {{ v.from-year }} - {{ v.from-month }} {{v.to-date}}, {{ v.to-year }}
-{% endif %} </li>
-{% endfor %}
-</ul>
+{%- include visits.html -%}
 
 # Awards, achievements and others
 
