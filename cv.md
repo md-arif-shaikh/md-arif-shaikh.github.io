@@ -2,11 +2,8 @@
 title: "CV"
 permalink: /cv/
 ---
-
-Find an up-to-date PDF of CV [here](https://github.com/md-arif-shaikh/md-arif-shaikh.github.io/blob/pdflatex/cv/cv_arif.pdf).
-
-<object width="400" height="500" type="application/pdf" data="https://github.com/md-arif-shaikh/md-arif-shaikh.github.io/blob/pdflatex/cv/cv_arif.pdf"?#zoom=85&scrollbar=0&toolbar=0&navpanes=0">
-    <p>Insert your error message here, if the PDF cannot be displayed.</p>
+<object width="400" height="500" type="application/pdf" data="https://github.com/md-arif-shaikh/md-arif-shaikh.github.io/blob/pdflatex/cv/cv_arif.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0">
+    <p>Find an up-to-date PDF of CV [here](https://github.com/md-arif-shaikh/md-arif-shaikh.github.io/blob/pdflatex/cv/cv_arif.pdf).</p>
 </object>
 
 # Positions
