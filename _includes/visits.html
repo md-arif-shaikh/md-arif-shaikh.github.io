@@ -8,7 +8,7 @@
     {% else %}
     {{- v.from-year }} - {{ v.to-year -}},
     {% endif %}
-  </b> {{ v.host }}, <a href="{{ v.department-url }}">{{ v.department }}</a>, <a href="{{- v.institute-url -}}">{{ v.institute }}</a>, {{ v.city }}, {{ v.country }},
+  </b> {{- v.host }}, <a href="{{ v.department-url }}">{{ v.department }}</a>, <a href="{{- v.institute-url -}}">{{ v.institute }}</a>, {{ v.city }}, {{ v.country -}},
   {% if v.from-year == v.to-year %}
   {% if v.from-month == v.to-month %}
   {{- v.from-month }} {{ v.from-date }} - {{ v.to-date -}},
