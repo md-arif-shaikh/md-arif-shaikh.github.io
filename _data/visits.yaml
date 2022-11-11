@@ -1,0 +1,29 @@
+AEI-Hannover-2022:
+  from-year: 2022
+  from-month: April
+  from-date: 20
+  to-year: 2022
+  to-month: April
+  to-date: 24
+  institute-name: AEI
+  institute-url: https://www.aei.mpg.de/
+  department: Binary Merger Observations and Numerical Relativity
+  department-url: https://www.aei.mpg.de/BinaryObservationsNR
+  host: Prof Frank Ohme
+  city: Hannover
+  country: Germany
+
+AEI-Potsdam-2022:
+  from-year: 2022
+  from-month: March
+  from-date: 20
+  to-year: 2022
+  to-month: April
+  to-date: 20
+  institute-name: AEI
+  institute-url: https://www.aei.mpg.de/
+  department: Astrophysical and Cosmological Relativity
+  department-url: https://www.aei.mpg.de/astro-cosmo-rel
+  host: Prof Harald Pfeiffer
+  city: Potsdam
+  country: Germany

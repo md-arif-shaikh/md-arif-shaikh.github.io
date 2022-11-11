@@ -2,9 +2,7 @@
 title: "CV"
 permalink: /cv/
 ---
-<object width="400" height="500" type="application/pdf" data="https://github.com/md-arif-shaikh/md-arif-shaikh.github.io/blob/pdflatex/cv/cv_arif.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0">
-    <p>Find an up-to-date PDF of CV [here](https://github.com/md-arif-shaikh/md-arif-shaikh.github.io/blob/pdflatex/cv/cv_arif.pdf).</p>
-</object>
+Find a PDF version of my CV [https://github.com/md-arif-shaikh/md-arif-shaikh.github.io/blob/pdflatex/cv/cv_arif.pdf](here).
 
 # Positions
 - **2022 - 2024** Postdoctoral Fellow, [Seoul National University](https://en.snu.ac.kr/), Seoul, South Korea.
@@ -17,8 +15,26 @@ permalink: /cv/
 - **2009 - 2012** BSc in Physics, [Jadavpur University](http://www.jaduniv.edu.in/), Kolkata, India
 
 # Visits
-- **2022** Prof Harald Pfeiffer, [Albert Einstein Institute](https://www.aei.mpg.de/), Potsdam, Germany, March 20 - April 20, 2022.
-- **2022** Prof Frank Ohme, [Albert Einstein Institute](https://www.aei.mpg.de/), Hannover, Germany, April 20 - April 24, 2022.
+<ul>
+{% for visit in site.data.visits %}
+{% assign v = visit[1] %}
+{% if v.from-year == v.to-year %}
+	{% assign year = v.from-year %}
+	{% assign dates = v.from-month | append: " " | append: v.from-date | append: " - " | append: v.to-month | append: " " | append: v.to-date | append: ", " | append: v.from-year %}
+{% else %}
+	{% assign year = v.from-year | append: " - " | append: v.to-year %}
+	{% assign dates = v.from-month | append: " " | append: v.from-date | append ", " | append: v.from-year | append: " - " | append: v.to-month | append: " " | append: v.to-date | append: ", " | append: v.to-year %}
+{% endif %}
+  <li>
+    <b>{{ v.year }}</b>, {{ v.host }},
+	<a href={{ v.department-url }}>{{ v.department-name }}
+	<a href={{ v.institute-url }}>{{ v.institute-name }},
+	{{ v.city }},
+	{{ v.country }},
+	{{ v.dates }}
+  </li>
+{% endfor %}
+</ul>
 
 # Awards, achievements and others
 
