@@ -1,3 +1,48 @@
+UoT-Tokyo-2022:
+  from-year: 2022
+  from-month: November
+  from-date: 17
+  to-year: 2022
+  to-month: November
+  to-date: 19
+  institute: UoT
+  institute-url: https://www.oit.ac.jp/english/
+  department: Research Center for the Early Universe
+  department-url: https://www.resceu.s.u-tokyo.ac.jp/top.php
+  host: Prof Junichi Yokoyama
+  city: Tokyo
+  country: Japan
+
+OIT-Osaka-2022:
+  from-year: 2022
+  from-month: November
+  from-date: 15
+  to-year: 2022
+  to-month: November
+  to-date: 17
+  institute: OIT
+  institute-url: https://www.oit.ac.jp/english/
+  department: Astrophysics
+  department-url:
+  host: Prof Hisa-aki Shinkai
+  city: Osaka
+  country: Japan
+
+YITP-Kyoto-2022:
+  from-year: 2022
+  from-month: November
+  from-date: 13
+  to-year: 2022
+  to-month: November
+  to-date: 15
+  institute: YITP
+  institute-url: https://www.yukawa.kyoto-u.ac.jp/en-GB/
+  department: Astrophysics
+  department-url:
+  host: Prof Kunihito Ioka
+  city: Kyoto
+  country: Japan
+
 AEI-Hannover-2022:
   from-year: 2022
   from-month: April
