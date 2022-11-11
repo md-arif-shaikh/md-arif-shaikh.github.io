@@ -5,8 +5,7 @@ permalink: /cv/
 
 Find an up-to-date PDF of CV [here](https://github.com/md-arif-shaikh/md-arif-shaikh.github.io/blob/pdflatex/cv/cv_arif.pdf).
 
-<embed src="https://github.com/md-arif-shaikh/md-arif-shaikh.github.io/blob/pdflatex/cv/cv_arif.pdf" width="500" height="375" 
- type="application/pdf">
+{% pdf "https://github.com/md-arif-shaikh/md-arif-shaikh.github.io/blob/pdflatex/cv/cv_arif.pdf" %}
 
 # Positions
 - **2022 - 2024** Postdoctoral Fellow, [Seoul National University](https://en.snu.ac.kr/), Seoul, South Korea.
