@@ -18,20 +18,28 @@ Find a PDF version of my CV [https://github.com/md-arif-shaikh/md-arif-shaikh.gi
 <ul>
 {% for visit in site.data.visits %}
 {% assign v = visit[1] %}
-{% if v.from-year == v.to-year %}
-	{% assign year = v.from-year %}
-	{% assign dates = v.from-month | append: " " | append: v.from-date | append: " - " | append: v.to-month | append: " " | append: v.to-date | append: ", " | append: v.from-year %}
-{% else %}
-	{% assign year = v.from-year | append: " - " | append: v.to-year %}
-	{% assign dates = v.from-month | append: " " | append: v.from-date | append ", " | append: v.from-year | append: " - " | append: v.to-month | append: " " | append: v.to-date | append: ", " | append: v.to-year %}
-{% endif %}
   <li>
-    <b>{{ v.year }}</b>, {{ v.host }},
-	<a href={{ v.department-url }}>{{ v.department-name }}
-	<a href={{ v.institute-url }}>{{ v.institute-name }},
+    <b>
+	{% if v.from-year == v.to-year %}
+		{{ v.from-year }},
+	{% else %}
+		{{ v.from-year }} - {{ v.to-year }},
+	{% endif %}</b>
+	{{ v.host }},
+	<a href="{{ v.department-url }}">{{ v.department }}</a>,
+	<a href="{{ v.institute-url }}">{{ v.institute }}</a>,
 	{{ v.city }},
 	{{ v.country }},
-	{{ v.dates }}
+	{% if v.from-year == v.to-year %}
+		{% if v.from-month == v.to-mont %}
+			{{ v.from-month }} {{ v.from-date }} - {{v.to-date}}
+		{% else %}
+			{{ v.from-month }} {{ v.from-date }} - {{ v.to-month }} {{v.to-date}},
+		{% endif %}
+		{{v.to-year }}
+	{% else %}
+		{{ v.from-month }} {{v.from-date}}, {{ v.from-year }} - {{ v.from-month }} {{v.to-date}}, {{v.to-year }}
+	{% endif %}
   </li>
 {% endfor %}
 </ul>

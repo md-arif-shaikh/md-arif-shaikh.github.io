@@ -5,7 +5,7 @@ AEI-Hannover-2022:
   to-year: 2022
   to-month: April
   to-date: 24
-  institute-name: AEI
+  institute: AEI
   institute-url: https://www.aei.mpg.de/
   department: Binary Merger Observations and Numerical Relativity
   department-url: https://www.aei.mpg.de/BinaryObservationsNR
@@ -20,10 +20,72 @@ AEI-Potsdam-2022:
   to-year: 2022
   to-month: April
   to-date: 20
-  institute-name: AEI
+  institute: AEI
   institute-url: https://www.aei.mpg.de/
   department: Astrophysical and Cosmological Relativity
   department-url: https://www.aei.mpg.de/astro-cosmo-rel
   host: Prof Harald Pfeiffer
   city: Potsdam
   country: Germany
+
+HRI-Allahabad-2019:
+  from-year: 2019
+  from-month: November
+  from-date: 15
+  to-year: 2019
+  to-month: November
+  to-date: 25
+  institute: HRI
+  institute-url: https://www.hri.res.in/
+  department: Cosmology and High Energy Astrophysics
+  department-url:
+  host: Prof Tapas Kumar Das
+  city: Allahabad
+  country: India
+
+ICTS-Bangalore-2019:
+  from-year: 2019
+  from-month: March
+  from-date: 25
+  to-year: 2019
+  to-month: April
+  to-date: 6
+  institute: ICTS-TIFR
+  institute-url: https://www.icts.res.in/
+  department: Astrophysical Relativity
+  department-url: https://www.icts.res.in/research/astrorel
+  host: Prof P Ajith
+  city: Bangalore
+  country: India
+
+ICTS-Bangalore-2017:
+  from-year: 2017
+  from-month: September
+  from-date: 27
+  to-year: 2017
+  to-month: October
+  to-date: 11
+  institute: ICTS-TIFR
+  institute-url: https://www.icts.res.in/
+  department: Astrophysical Relativity
+  department-url: https://www.icts.res.in/research/astrorel
+  host: Prof P Ajith
+  city: Bangalore
+  country: India
+
+IUCAA-Pune-2014:
+  from-year: 2014
+  from-month: September
+  from-date: 6
+  to-year: 2014
+  to-month: October
+  to-date: 20
+  institute: IUCAA
+  institute-url: https://www.iucaa.in/
+  department: Cosmology Group
+  department-url:
+  host: Prof Tarun Souradeep
+  city: Pune
+  country: India
+
+
