@@ -15,7 +15,7 @@ Find a PDF version of my CV [here](https://github.com/md-arif-shaikh/md-arif-sha
 - **2009 - 2012** BSc in Physics, [Jadavpur University](http://www.jaduniv.edu.in/), Kolkata, India
 
 # Visits
-{%- include visits.html -%}
+{% include visits.html %}
 
 # Awards, achievements and others
 
