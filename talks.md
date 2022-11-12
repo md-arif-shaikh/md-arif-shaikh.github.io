@@ -10,13 +10,7 @@ permalink: /talks/
 </div>
 
 # Seminars
-<ol reversed>
-  <li><a href="https://www.oit.ac.jp/ge/~nozawa/OITGravitySeminar/"><b>Defining eccentricity for gravitational wave astronomy</b></a>, 16 Nov, 2022, OIT, Kyoto, Japan
-  </li>
-  <li><a href="https://www.yukawa.kyoto-u.ac.jp/seminar/s53052?lang=en-GB"><b>Defining eccentricity for gravitational wave astronomy</b></a>, 14 Nov, 2022, YITP, Osaka, Japan
-  </li>
-  <li><b>On the emergent sonic geometry through the linear perturbation of relativistic black hole accretion</b>, 18 November, 2019, HRI, Prayagraj, India</li>
-</ol>
+{% include seminars.html %}
 
 # Conference Talks
 <ol reversed>
