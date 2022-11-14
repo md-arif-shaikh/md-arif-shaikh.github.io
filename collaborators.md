@@ -3,7 +3,7 @@
 title: "Collaborators"
 permalink: /collaborators/
 ---
-In no particular order
+Here are some of my collaborators in short-author publications (in no particular order)
 <ul>
 {% for collaborator in site.data.collaborators %}
 {% assign c = collaborator[1] %}
