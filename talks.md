@@ -16,6 +16,8 @@ permalink: /talks/
 {% include conference-talks.html %}
 
 # Conference Posters
+{% include conference-posters.html %}
+
 <ol reversed>
   <li><b>Surrogate and hybrid models of eccentric waveforms using numerical relativity</b>, 25–28 April, 2022, <i>765. WE-Heraeus-Seminar: Gravitational Wave and Multimessenger Astronomy</i>, Bad Honnef, Germany
 	</li>

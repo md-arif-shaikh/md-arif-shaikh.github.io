@@ -1,0 +1,134 @@
+Tapas-Kumar-Das:
+  name: Tapas Kumar Das
+  website: "http://www.hri.res.in/~tapas/"
+  position: Professor
+  institute: HRI
+  institute-url: "https://www.hri.res.in/"
+  city: Allahabad
+  country: India
+  papers: 5
+
+P-Ajth:
+  name: Parameswaran Ajith
+  website: "https://home.icts.res.in/~ajith/Home.html"
+  position: Professor
+  institute: ICTS-TIFR
+  institute-url: "https://www.icts.res.in/"
+  city: Bangalore
+  country: India
+  papers: 3
+
+Prayush-Kumar:
+  name: Prayush Kumar
+  website:
+  position: Reader
+  institute: ICTS-TIFR
+  institute-url: "https://www.icts.res.in/"
+  city: Bangalore
+  country: India
+  papers: 1
+
+Shasvath-Kapadia:
+  name: Shasvath Kapadia
+  website: "https://shasvath-kapadia.github.io/"
+  position: Assistant Professor
+  institute: IUCAA
+  institute-url: "https://www.iucaa.in/"
+  city: Pune
+  country: India
+  papers: 3
+
+Mukesh-Kumar-Singh:
+  name: Mukesh Kumar Singh
+  website:
+  position: Graduate Student
+  institute: ICTS-TIFR
+  institute-url: "https://www.icts.res.in/"
+  city: Bangalore
+  country: India
+  papers: 3
+
+Divyajyoti:
+  name: Divyajyoti
+  website:
+  position: Graduate Student
+  institute: IIT Madras
+  institute-url: "https://www.iitm.ac.in/"
+  city: Chennai
+  country: India
+  papers: 1
+
+Eliu-Huerta:
+  name: Eliu Huerta
+  website: "https://eliuhe.wixsite.com/eliu"
+  position: Senior Scientist
+  institute: The University of Chicago
+  institute-url:
+  city: Chicago
+  country: USA
+  papers: 1
+
+Vijay-Varma:
+  name: Vijay Varma
+  website: "https://vijayvarma.com/"
+  position: Marie Curie Fellow
+  institute: AEI
+  institute-url: "https://www.aei.mpg.de/"
+  city: Potsdam
+  country: Germany
+  papers: 1
+
+Antoni-Ramos-Buades:
+  name: Antoni Ramos Buades
+  website:
+  position: Postdoctoral Fellow
+  institute: AEI
+  institute-url: "https://www.aei.mpg.de/"
+  city: Potsdam
+  country: Germany
+  papers: 1
+
+Harald-Pfeiffer:
+  name: Harald Pfeiffer
+  website: "https://www.aei.mpg.de/person/54205"
+  position: Group Leader
+  institute: AEI
+  institute-url: "https://www.aei.mpg.de/"
+  city: Potsdam
+  country: Germany
+  papers: 1
+
+Maarten-van-de-Meent:
+  name: Maarten van de Meent
+  website: "https://www.aei.mpg.de/person/52146"
+  position: Adjunct Senior Scientist
+  institute: AEI
+  institute-url: "https://www.aei.mpg.de/"
+  city: Potsdam
+  country: Germany
+  papers: 1
+
+Pratik-Tarafdar:
+  name: Pratik Tarafdar
+  website: "https://scholar.google.co.in/citations?user=b7BJN-0AAAAJ&hl=en"
+  position: Postdoctoral Fellow
+  institute: IMSc
+  institute-url: "https://www.imsc.res.in/"
+  city: Chennai
+  country: India
+  papers: 1
+  
+Susovan-Maity:
+  name: Susovan Maity
+  website:
+  position: Graduate Student
+  institute: HRI
+  institute-url: "https://www.hri.res.in/"
+  city: Allahabad
+  country: India
+  papers: 2
+
+
+
+
+
