@@ -13,13 +13,7 @@ permalink: /talks/
 {% include seminars.html %}
 
 # Conference Talks
-<ol reversed>
-  <li><b>Defining eccentricity for gravitational wave astronomy</b>, 5-9 Dec, 2022, <a href="https://www.gwpaw2022.org/">GWPAW</a>, Melbourne, Australia</li>
-  <li><b>Probing the evolution history of compact binaries from higher modes of gravitation waves</b>, 17–18 February, 2020, <i>ICTS In-house symposium</i>, Bengaluru, India</li>
-  <li><b>Relativistic acoustic geometry in general relativistic accretion disc around Kerr black holes</b>, 14–17 November, 2018, <i>Exploring the Universe: Near Earth Space Science to Extra-Galactic Astronomy</i>,
-    SNBNBS, Kolkata, India</li>
-  <li><b>Emergence of curved sonic manifold for isothermal accretion in black hole metric</b>, 11–15 September, 2017, <i>Young Astronomers Meet</i>, IUCAA, Pune, India.</li>
-</ol>
+{% include conference-talks.html %}
 
 # Conference Posters
 <ol reversed>

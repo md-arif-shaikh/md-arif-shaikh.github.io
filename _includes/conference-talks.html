@@ -1,0 +1,10 @@
+<ol reversed>
+{% for talk in site.data.conference-talks %}
+{% assign t = talk[1] %}
+<li> <a href={{ t.url }}>{{ t.title }}</a>, {% if t.from-year == t.to-year %}
+{% if t.from-month == t.to-month %} {{ t.from-month }} {{ t.from-date }} - {{ t.to-date }},
+{% else %} {{ t.from-month }} {{ t.from-date }} - {{ t.to-month }} {{ t.to-date }},
+{% endif %} {{ t.to-year }} {% else %} {{ t.from-month }} {{t.from-date}}, {{ t.from-year }} - {{ t.from-month }} {{t.to-date}}, {{ t.to-year }}
+{% endif %} <a href={{- t.conference-url -}}>{{ t.conference }}</a>, {{ t.city }}, {{ t.country }} </li>
+{% endfor %}
+</ol>
