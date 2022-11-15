@@ -1,9 +1,18 @@
+ICTS-TIFR-2022:
+  title: Defining eccentricity for gravitational wave astronomy
+  date: 2022-12-01
+  talk-url: https://www.icts.res.in/seminar/2022-12-01/md-arif-shaikh
+  institute: ICTS-TIFR
+  institute-url: https://www.icts.res.in/ 
+  city: Bangalore (online)
+  country: India
+  
 OIT-Osaka-2022:
   title: Defining eccentricity for gravitational wave astronomy
   date: 2022-11-16
   talk-url: https://www.oit.ac.jp/ge/~nozawa/OITGravitySeminar/
   institute: OIT
-  institute-url:  
+  institute-url: https://www.oit.ac.jp/english/index.html
   city: Osaka
   country: Japan
 
@@ -12,7 +21,7 @@ YITP-Kyoto-2022:
   date: 2022-11-14
   talk-url: https://www.yukawa.kyoto-u.ac.jp/seminar/s53052?lang=en-GB
   institute: YITP
-  institute-url:  
+  institute-url: https://www.yukawa.kyoto-u.ac.jp/en-GB/
   city: Kyoto
   country: Japan
 
