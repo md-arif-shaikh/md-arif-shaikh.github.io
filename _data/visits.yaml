@@ -10,6 +10,7 @@ UoT-Tokyo-2022:
   department: Research Center for the Early Universe
   department-url: https://www.resceu.s.u-tokyo.ac.jp/top.php
   host: Prof Junichi Yokoyama
+  host-url: https://www.s.u-tokyo.ac.jp/en/people/yokoyama_junichi/
   city: Tokyo
   country: Japan
 
@@ -25,6 +26,7 @@ OIT-Osaka-2022:
   department: Faculty of Information Science and Technology
   department-url: https://www.oit.ac.jp/english/education/ist/
   host: Prof Hisa-aki Shinkai
+  host-url: https://www.oit.ac.jp/is/shinkai/his/
   city: Osaka
   country: Japan
 
@@ -40,6 +42,7 @@ YITP-Kyoto-2022:
   department: Center for Gravitational Physics
   department-url: https://www2.yukawa.kyoto-u.ac.jp/~cgp/en/index.html
   host: Prof Kunihito Ioka
+  host-url: https://www2.yukawa.kyoto-u.ac.jp/~kunihito.ioka/
   city: Kyoto
   country: Japan
 
@@ -55,6 +58,7 @@ AEI-Hannover-2022:
   department: Binary Merger Observations and Numerical Relativity
   department-url: https://www.aei.mpg.de/BinaryObservationsNR
   host: Prof Frank Ohme
+  host-url: https://www.aei.mpg.de/employees/51192/151048
   city: Hannover
   country: Germany
 
@@ -70,6 +74,7 @@ AEI-Potsdam-2022:
   department: Astrophysical and Cosmological Relativity
   department-url: https://www.aei.mpg.de/astro-cosmo-rel
   host: Prof Harald Pfeiffer
+  host-url: https://www.aei.mpg.de/person/54205
   city: Potsdam
   country: Germany
 
@@ -85,6 +90,7 @@ HRI-Allahabad-2019:
   department: Cosmology and High Energy Astrophysics
   department-url:
   host: Prof Tapas Kumar Das
+  host-url: https://www.hri.res.in/~tapas/
   city: Allahabad
   country: India
 
@@ -100,6 +106,7 @@ ICTS-Bangalore-2019:
   department: Astrophysical Relativity
   department-url: https://www.icts.res.in/research/astrorel
   host: Prof P Ajith
+  host-url: https://home.icts.res.in/~ajith/Home.html
   city: Bangalore
   country: India
 
@@ -115,6 +122,7 @@ ICTS-Bangalore-2017:
   department: Astrophysical Relativity
   department-url: https://www.icts.res.in/research/astrorel
   host: Prof P Ajith
+  host-url: https://home.icts.res.in/~ajith/Home.html
   city: Bangalore
   country: India
 
@@ -130,6 +138,7 @@ IUCAA-Pune-2014:
   department: Cosmology Group
   department-url:
   host: Prof Tarun Souradeep
+  host-url:
   city: Pune
   country: India
 
