@@ -10,7 +10,7 @@ Below is a list of my short-authored publications. For a complete list of public
   <li>
     <b>{{ paper.title }}</b><br>
 		{{ paper.author }}<br>
-	<a href="https://{{ paper.doi }}">
+		<a href="https://doi.org/{{ paper.doi }}">
 	{{ paper.journal }},
 	</a> <b>{{ paper.volume }}</b>, {{ paper.pages }}, ({{ paper.year }})
 	<a href="https://arxiv.org/pdf/{{ paper.eprint }}.pdf"><img class="svg-icon" src="/assets/pdf.svg"></a>
