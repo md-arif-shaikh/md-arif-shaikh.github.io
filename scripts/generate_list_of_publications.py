@@ -1,5 +1,6 @@
 import os
 import argparse
+import yaml
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-b", type=str,
@@ -11,6 +12,11 @@ parser.add_argument("-s", type=str,
                     nargs="+",
                     help="Section titles for each bib file."
                     )
+parser.add_argument("-a", type=str,
+                    required=False,
+                    help="Author information."
+                    )
+
 args = parser.parse_args()
 
 if args.s is None:
@@ -31,12 +37,20 @@ tex_file.write("\\usepackage[colorlinks=true, linkcolor=linkcolor,citecolor=link
 tex_file.write("\\begin{document}\n")
 
 tex_file.write("\\begin{flushleft}\n")
-tex_file.write("{\\Large \\bfseries List of Publications}\n\n")
+if args.a:
+    authfile = open(args.a, "r")
+    authinfo = yaml.load(authfile, Loader=yaml.CLoader)
+    authfile.close()
+    tex_file.write(f"{{\\Large \\bfseries {authinfo['title']}}}\n\n")
+else:
+    tex_file.write("{\\Large \\bfseries List of Publications}\n\n")
 tex_file.write("\\vspace{0.25cm}\n\n")
-tex_file.write("{\\bfseries Md Arif Shaikh}, Postdoctoral Fellow\\\\\n")
-tex_file.write("\\href{https://physics.snu.ac.kr/en}{Department of Physics and Astronomy}, \href{https://en.snu.ac.kr}{Seoul National University}\\\\\n")
-tex_file.write("1 Gwanak-ro, Gwanak-gu, Seoul 08826, Korea\\\\\n")
-tex_file.write("Email: \href{mailto:arifshaikh.astro@gmail.com}{arifshaikh.astro@gmail.com}, Web page: \href{https://mdarifshaikh.com/}{https://mdarifshaikh.com/}\\\\\n")
+
+if args.a:
+    tex_file.write(f"{{\\bfseries {authinfo['name']}}}, {authinfo['position']}\\\\\n")
+    tex_file.write(f"\\href{{{authinfo['department-url']}}}{{{authinfo['department']}}}, \href{{{authinfo['institute-url']}}}{{{authinfo['institute']}}}\\\\\n")
+    tex_file.write(f"{authinfo['institute-address']}\\\\\n")
+    tex_file.write(f"Email: \href{{mailto:{authinfo['email']}}}{{{authinfo['email']}}}, Web page: \href{{{authinfo['website']}}}{{{authinfo['website']}}}\\\\\n")
 tex_file.write("\\rule{\\textwidth}{1pt}\n")
 tex_file.write("\\end{flushleft}\n")
 
