@@ -21,8 +21,12 @@ for k in data.keys():
     if "collaboration" in d:
         d["author"] = d["collaboration"]
     p = "\\item "
-    p += d["author"] + ", " + "``" + d["title"] + "\"" + ", " + "\href{" + "https://doi.org/" + d["doi"] + "}{" + d["journal"] + "}" + ", "
-    p += "{\\bfseries " + d["volume"] + "}" + ", " + d["pages"] + ", (" + d["year"] + ")\n"
+    p += d["author"] + ", " + "``" + d["title"] + "\"" + ", "
+    if "journal" in d:
+        p += "\href{" + "https://doi.org/" + d["doi"] + "}{" + d["journal"] + "}" + ", "
+        p += "{\\bfseries " + d["volume"] + "}" + ", " + d["pages"] + ", "
+    p += "(" + d["year"] + "), "
+    p += "\href{" + "https://arxiv.org/abs/" + d["eprint"] + "}{arXiv:" + d["eprint"] + " [" + d["primaryclass"] +"]}" + ", "
     fl.write(p)
 fl.write("\\end{enumerate}\n")
 fl.close()

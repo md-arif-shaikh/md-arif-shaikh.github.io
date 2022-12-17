@@ -54,12 +54,19 @@ if args.a:
 tex_file.write("\\rule{\\textwidth}{1pt}\n")
 tex_file.write("\\end{flushleft}\n")
 
+# generate list of publication
 for idx, bib_file in enumerate(args.b):
-    yaml_data_file = data_file_name = os.path.splitext(os.path.basename(bib_file))[0] + f"_tex" + ".yaml"
+    # create yaml data file from the bib file
+    yaml_data_file = os.path.splitext(os.path.basename(bib_file))[0] + f"_tex" + ".yaml"
     os.system(f"python generate_publication_yaml.py -f 'tex' -p {bib_file}")
+    # get the number of publication
+    pubfile = open(yaml_data_file, "r")
+    pub = yaml.load(pubfile, Loader=yaml.CLoader)
+    pubfile.close()
+    num_pub = len(pub.keys())
     os.system(f"python generate_publication_list_for_tex.py -d {yaml_data_file}")
     tex_file_name = os.path.splitext(os.path.basename(yaml_data_file))[0] + ".tex"
-    tex_file.write("\\subsection*{" + sections[idx] + "}\n")
+    tex_file.write("\\subsection*{" + sections[idx] + " " + f"(Total = {num_pub})" + "}\n")
     tex_file.write(f"\\input{{{tex_file_name}}}\n")
     
 tex_file.write("\\end{document}\n")
