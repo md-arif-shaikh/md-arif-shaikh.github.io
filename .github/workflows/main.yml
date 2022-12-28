@@ -27,7 +27,7 @@ jobs:
       - name: Create CV
         shell: bash -l {0}
         run: |
-          ycv -j cv -y cv:cv.yaml
+          ycv -j arif -y cv:cv.yaml
       - name: Commit to orphan branch
         run: |
           git checkout --orphan pdflatex
