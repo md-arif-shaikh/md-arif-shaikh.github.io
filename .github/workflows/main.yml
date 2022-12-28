@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./_data
+        working-directory: /_data
     steps:
       - name: Set up miniconda
         uses: conda-incubator/setup-miniconda@v2
