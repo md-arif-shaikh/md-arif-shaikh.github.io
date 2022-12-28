@@ -94,9 +94,9 @@ references:
   phd-advisor:
     name: Tapas Kumar Das
     position: Professor
-    website:
+    website: http://www.hri.res.in/~tapas/
     institute: Harish-Chandra Research Institute
-    institute-website:
+    institute-website: http://www.hri.res.in/
     institute-address: Chhatnag Road, Jhunsi, Prayagraj, 211019, Uttar Pradesh, India
     email: tapas@hri.res.in
     phone: +91 5322274321
@@ -104,12 +104,12 @@ references:
   Ajith:
     name: Parameswaran Ajith
     position: Professor
-    website:
+    website: https://home.icts.res.in/~ajith/Home.html
     institute: International Centre for Theoretical Sciences
-    institute-website:
+    institute-website: "https://www.icts.res.in/"
     institute-address: Hesaraghatta Hobli, Karnataka, 560089, India
     email: ajith@icts.res.in
-    phone:
+    phone: +91 8046536210
     relation: Postdoc mentor
   Prayush:
     name: Prayush Kumar
@@ -119,7 +119,7 @@ references:
     institute-website: "https://www.icts.res.in/"
     institute-address: Hesaraghatta Hobli, Karnataka, 560089, India
     email: prayush@icts.res.in
-    phone:
+    phone: +91 8046536390
     relation:
   Shasvath:
     name: Shasvath Kapadia
@@ -133,12 +133,12 @@ references:
     relation:
   Vijay:
     name: Vijay Varma
-    website:
-    position: Assistant Professor
-    institute: University of Massachusetts
-    institute-website:
-    institute-address: Dartmouth, USA
-    email:
+    website: https://vijayvarma.com/
+    position: Marie Curie Fellow
+    institute: Albert Einstein Institute
+    institute-website: https://www.aei.mpg.de/
+    institute-address: Potsdam, USA
+    email: vijay.varma392@gmail.com
     phone:
     relation:
 
