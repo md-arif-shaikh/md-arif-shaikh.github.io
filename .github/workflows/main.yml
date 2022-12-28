@@ -10,6 +10,8 @@ jobs:
       run:
         working-directory: _data
     steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
       - name: Set up miniconda
         uses: conda-incubator/setup-miniconda@v2
         with:
