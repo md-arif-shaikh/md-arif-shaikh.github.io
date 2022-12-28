@@ -7,18 +7,28 @@ jobs:
   build_latex:
     runs-on: ubuntu-latest
     steps:
-      - name: Set up Git repository
-        uses: actions/checkout@v2
-      - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@v2
+      - name: Set up miniconda
+        uses: conda-incubator/setup-miniconda@v2
         with:
-          root_file: cv_arif.tex
-          working_directory: cv/
+          auto-update-conda: true
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        shell: bash -l {0}
+        run: |
+          sudo apt update
+          sudo apt-get install dvipng texlive-latex-extra texlive-fonts-recommended cm-super
+          pip install ycv
+      - name: Create CV
+        shell: bash -l {0}
+        run: |
+          cd _data
+          ycv -j cv -y cv:cv.yaml
       - name: Commit to orphan branch
         run: |
           git checkout --orphan pdflatex
           git rm -rf .
-          git add cv/cv_arif.pdf
+          git add *.pdf
           git -c user.name='GitHub Action' -c user.email='action@github.com' commit -m "Built paper"
       - name: Push changes
         uses: ad-m/github-push-action@master
@@ -26,3 +36,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: pdflatex
           force: true
+      
