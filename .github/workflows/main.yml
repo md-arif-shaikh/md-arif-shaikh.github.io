@@ -6,6 +6,9 @@ on:
 jobs:
   build_latex:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./_data
     steps:
       - name: Set up miniconda
         uses: conda-incubator/setup-miniconda@v2
@@ -22,7 +25,6 @@ jobs:
       - name: Create CV
         shell: bash -l {0}
         run: |
-          cd _data
           ycv -j cv -y cv:cv.yaml
       - name: Commit to orphan branch
         run: |
