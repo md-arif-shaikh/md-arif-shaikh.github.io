@@ -154,12 +154,25 @@ teaching:
   title: Teaching
   file: teaching.yaml
 
+refereeing:
+  title: Refereeing
+  contents:
+    cqg:
+      journal: Classical and Quantum Gravity
+      journal-website: https://iopscience.iop.org/journal/0264-9381
+      number: 2
+    epjc:
+      journal: The European Physical Journal C
+      journal-website: https://epjc.epj.org/
+      number: 1
+
 layout:
   - positions
   - education
   - publications
   - presentations
   - teaching
+  - refereeing
   - achievements
   - visits
   - references
