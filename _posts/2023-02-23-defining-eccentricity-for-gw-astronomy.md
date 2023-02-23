@@ -5,7 +5,7 @@ tags: [Publication, Black Holes, Gravitational Waves, Numerical Relativity, Ecce
 excerpt: "New paper on defining eccentricity for gravitational wave astronomy."
 mathjax: "true"
 ---
-A new [paper](https://arxiv.org/), in collaboration with the Numerical Relativity group at
+A new [paper](https://arxiv.org/abs/2302.11257), in collaboration with the Numerical Relativity group at
 [Albert Einstein Institute, Potsdam](https://www.aei.mpg.de/astro-cosmo-rel),
 is now available on [arXiv](https://arxiv.org/). We also released a `Python` package
 [`gw_eccentricity`](https://pypi.org/project/gw-eccentricity/)
