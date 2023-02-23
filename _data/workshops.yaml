@@ -11,6 +11,20 @@ gwuniverse-2022:
   to-date: 25
   to-month: November
   to-year: 2022
+  
+gwnr-workshop-67:
+  conference:  67th Workshop on Gravitational Waves and Numerical Relativity
+  conference-url: https://gw.nr.re.kr/workshop/67/
+  institute: APCTP
+  institute-url: https://www.apctp.org/
+  city: Pohang
+  country: Korea
+  from-date: 26
+  from-month: October
+  from-year: 2022
+  to-date: 27
+  to-month: October
+  to-year: 2022
 
 Summer-school-icts-2021:
   conference: Summer School on Gravitational-Wave Astronomy
