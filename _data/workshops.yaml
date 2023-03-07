@@ -1,3 +1,17 @@
+gwnr-workshop-68:
+  conference:  68th Workshop on Gravitational Waves and Numerical Relativity
+  conference-url: https://gw.nr.re.kr/workshop/68/
+  institute: APCTP
+  institute-url: https://www.apctp.org/
+  city: Pohang
+  country: Korea
+  from-date: 15
+  from-month: March
+  from-year: 2023
+  to-date: 16
+  to-month: March
+  to-year: 2023
+
 gwuniverse-winter-workshop-2023:
   conference: GW Universe Winter Workshop 2023
   conference-url:
