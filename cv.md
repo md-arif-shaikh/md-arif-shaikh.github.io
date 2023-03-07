@@ -2,7 +2,7 @@
 title: "CV"
 permalink: /cv/
 ---
-Find a PDF version of my CV [here](https://github.com/md-arif-shaikh/md-arif-shaikh.github.io/blob/pdflatex/_data/arif/cv_arif.pdf).
+Find a PDF version of my CV [<img class="svg-icon" src="/assets/pdf.svg">](https://raw.githubusercontent.com/md-arif-shaikh/md-arif-shaikh.github.io/pdflatex/_data/arif/cv_arif.pdf)
 
 # Positions
 - **2022 - 2024** Postdoctoral Fellow, [Seoul National University](https://en.snu.ac.kr/), Seoul, South Korea.
