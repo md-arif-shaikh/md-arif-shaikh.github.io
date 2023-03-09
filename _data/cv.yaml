@@ -96,7 +96,7 @@ presentations:
     title: Seminars
     file: seminars.yaml
   workshops:
-    title: Workshops
+    title: Workshops/Conference Participation
     file: workshops.yaml
 
 references:
