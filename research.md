@@ -13,7 +13,7 @@ overview of my research on some of these topics.
 - [Test of general relativity](#test-of-general-relativity)
 - [Black hole accretion and analogue gravity](#black-hole-accretion-and-analogue-gravity)
 
-# Defining eccentricity
+## Defining eccentricity
 <div> <img src="/assets/research/defining_eccentricity/definitions.png"></div>
 
 The first three observation runs of the [LIGO](https://www.ligo.caltech.edu/)
@@ -47,6 +47,8 @@ challenge, a standard definition of eccentricity that is model-independent,
 free of gauge choices, and has a correct Newtonian limit is needed to enable
 accurate and consistent inference of eccentricity from gravitational wave data.
 
+### Defining eccentricity for gravitational wave astronomy</h1>
+
 In our paper titled [Defining eccentricity for gravitational wave
 astronomy](https://arxiv.org/abs/2302.11257), we provide a standard definition
 of eccentricity that meets all of the above criteria and enables an unambiguous
@@ -61,7 +63,10 @@ terms of the frequency of the waveform at the pericenter and apocenter, which
 eliminates model dependence. To ensure that our definition reduces to the
 correct Newtonian definition when the binary separation is large, we apply an
 additional transformation based on first order post-Newtonian calculation.
-# Early warning with higher modes
-# Waveform modelling
-# Test of general relativity
-# Black hole accretion and analogue gravity
+
+### A Python package to measure eccentricity from gravitational waveform </h1>
+
+## Early warning with higher modes
+## Waveform modelling
+## Test of general relativity
+## Black hole accretion and analogue gravity
