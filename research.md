@@ -1,17 +1,21 @@
 ---
-# layout: posts
-title: "Research"
+title: Research
 permalink: /research/
-# header:
-#  image: "/assets/images/nr_ecc.jpg"
 ---
 My research explores several areas in gravitational physics. Here is a brief
 overview of my research on some of these topics.
+
+<!-- toc -->
+
 - [Defining eccentricity](#defining-eccentricity)
+  * [Defining eccentricity for gravitational wave astronomy](#defining-eccentricity-for-gravitational-wave-astronomy)
+  * [A Python package to measure eccentricity from gravitational waveform](#a-python-package-to-measure-eccentricity-from-gravitational-waveform-)
 - [Early warning with higher modes](#early-warning-with-higher-modes)
 - [Waveform modelling](#waveform-modelling)
 - [Test of general relativity](#test-of-general-relativity)
 - [Black hole accretion and analogue gravity](#black-hole-accretion-and-analogue-gravity)
+
+<!-- tocstop -->
 
 ## Defining eccentricity
 <div> <img src="/assets/research/defining_eccentricity/definitions.png"></div>
@@ -70,3 +74,4 @@ additional transformation based on first order post-Newtonian calculation.
 ## Waveform modelling
 ## Test of general relativity
 ## Black hole accretion and analogue gravity
+
