@@ -1,0 +1,18 @@
+<ul>
+{% for research in site.data.research %}
+{% assign res = research[1] %}
+  <li> <a href={{ "#" | append: res.title | downcase | replace: " ", "-" }}> {{ res.title }}</a>
+  </li>
+{% endfor %}
+</ul>
+
+
+{% for research in site.data.research %}
+{% assign res = research[1] %}
+{{ "## " | append: res.title  }}
+<div> <img src={{ res.header-image }}></div>
+<br>
+<div>
+  {{ res.description }}
+</div>
+{% endfor %}
