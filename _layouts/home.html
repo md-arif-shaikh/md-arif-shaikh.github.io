@@ -13,6 +13,7 @@ layout: default
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
+      <!--
       {% assign count = post.content | number_of_words %}
       {% if count < 360 %}
         {% assign read_time = "1 min" %}
@@ -20,13 +21,14 @@ layout: default
         {% assign read_time =  count | divided_by: 180 | append: " mins" %}	    
       {% endif %}
       {% assign read_time = read_time | append: " to read" %}
+      -->
       <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span><br>
+        {%- assign date_format = site.minima.date_format | default: "%D" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
           <a href="{{ post.url | relative_url }}">
             {{ post.title }}
           </a>
-	  <span class="post-meta">{{ read_time }}</span>
+	  <!-- <span class="post-meta">{{ read_time }}</span> -->
       </li>
       {%- endfor -%}
     </ul>
