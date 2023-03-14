@@ -6,11 +6,12 @@ excerpt: "Convert org time-stamp between different time zones using tzc"
 mathjax: "true"
 ---
 
-[`org-mode`](https://orgmode.org/) is a powerful feature of Emacs that allows
-users to keep track of their tasks and schedules. With
+[`org-mode`](https://orgmode.org/) is an amazing feature of
+[Emacs](https://www.gnu.org/software/emacs/) that allows you not only to take
+notes but also to keep track of tasks and make schedules. With
 [`org-agenda`](https://orgmode.org/manual/Agenda-Views.html), it's easy to view
-and manage your to-do list. However, there is one drawback to using the time
-stamp feature to schedule tasks: it does not include `time-zone`
+and manage to-do list. However, the current `time-stamp` format of
+[`org-mode`](https://orgmode.org/) does not support `time-zone`
 information. This can be inconvenient when trying to schedule meetings across
 multiple time zones.
 
