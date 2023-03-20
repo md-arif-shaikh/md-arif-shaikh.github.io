@@ -1,3 +1,17 @@
+KAS2023April:
+  conference: KAS 2023 Spring Meeting
+  conference-url: http://www.kas.org/
+  institute: Korean Astronomical Society
+  institute-url: http://www.kas.org/
+  city: LAHANHOTEL, JEONJU
+  country: Korea
+  from-date: 12
+  from-month: April
+  from-year: 2023
+  to-date: 14
+  to-month: April
+  to-year: 2023
+  
 LVK2023March:
   conference: LVK 2023 March Meeting
   conference-url: https://sites.northwestern.edu/lvk2023ciera/
