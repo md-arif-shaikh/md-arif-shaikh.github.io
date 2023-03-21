@@ -1,5 +1,5 @@
 ---
-title: "New paper and package `gw_eccentricity`: Defining eccentricity for gravitational wave astronomy"
+title: "New paper and package gw_eccentricity: Defining eccentricity for gravitational wave astronomy"
 date: 2023-02-23
 tags: [Publication, Black Holes, Gravitational Waves, Numerical Relativity, Eccentricity]
 excerpt: "New paper on defining eccentricity for gravitational wave astronomy."
