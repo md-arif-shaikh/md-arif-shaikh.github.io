@@ -1,5 +1,5 @@
 ---
-title: "New paper on arXiv! Improved early-warning estimates of luminosity distance and orbital inclination of compact binary mergers using higher modes of gravitational radiation"
+title: "New paper on arXiv on early-warning estimates of luminosity distance and orbital inclination for gw events"
 date: 2022-02-14
 tags: [Early-Warning, Gravitational-Wave, Population Study]
 excerpt: "GW Early Warning"

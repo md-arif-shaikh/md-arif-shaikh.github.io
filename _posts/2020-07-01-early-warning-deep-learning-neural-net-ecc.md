@@ -1,5 +1,5 @@
 ---
-title: "New publication: Deep Learning with Quantized Neural Networks for Gravitational Wave Forecasting of Eccentric Compact Binary Coalescence"
+title: "New publication on gravitational wave forecasting using deep learning"
 date: 2021-09-28
 tags: [Early-Warning, Gravitational-Wave, Deep Learning, Neural Net, Eccentric]
 excerpt: "GW Early Warning using Deep Learning with Quantized Neural Networks"
