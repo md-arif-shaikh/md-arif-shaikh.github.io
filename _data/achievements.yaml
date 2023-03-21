@@ -1,6 +1,7 @@
 KAS-membership:
   description: Membership
   organization: Korean Astronomical Society
+  organization-website: http://www.kas.org/
   year: 2023--
 SXS-membership:
   description: Membership
