@@ -10,9 +10,9 @@ layout: default
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <h2 class="post-list-heading">{{ page.list_title | default: "Recent Posts" }}</h2>
     <ul class="post-list">
-      {%- for post in site.posts -%}
+      {%- for post in site.posts limit:25 -%}
       <!--
       {% assign count = post.content | number_of_words %}
       {% if count < 360 %}
@@ -33,6 +33,7 @@ layout: default
       {%- endfor -%}
     </ul>
 
+    <p class="rss-subscribe">Find the complete list of posts <a href="{{ site.baseurl | append: '/posts'}}">here</a></p>
     <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
   {%- endif -%}
 
