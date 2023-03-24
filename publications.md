@@ -6,13 +6,21 @@ Below is a list of my short-authored publications. For a complete list of public
 
 <ol reversed>
 {% for publication in site.data.publications %}
-{% assign paper = publication[1] %}
+  {% assign paper = publication[1] %}
+  {% if paper.volume == '' %}
+    {% assign volsep = "" %}
+  {% else %}
+    {% assign volsep = ", " %}
+  {% endif %}
+  {% if paper.pages == '' %}
+    {% assign pagessep = "" %}
+  {% else %}
+    {% assign pagessep = ", " %}
+  {% endif %}
   <li>
     <b>{{ paper.title }}</b><br>
 		{{ paper.author }}<br>
-		<a href="https://doi.org/{{ paper.doi }}">
-	{{ paper.journal }},
-	</a> <b>{{ paper.volume }}</b>, {{ paper.pages }}, ({{ paper.year }})
+		<a href="https://doi.org/{{ paper.doi }}">{{ paper.journal }}, </a><b>{{ paper.volume | append: volsep}}</b>{{ paper.pages | replace: "--", "-" | append: pagessep }}({{ paper.year }})
 	<a href="https://arxiv.org/pdf/{{ paper.eprint }}.pdf"><img class="svg-icon" src="/assets/pdf.svg"></a>
   </li>
 {% endfor %}
