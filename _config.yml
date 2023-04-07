@@ -16,7 +16,7 @@
 title: Md Arif Shaikh
 email: arif.shaikh@snu.ac.kr
 description: >- # this means to ignore newlines until "baseurl:"
-  Astrophysicist working on gravitational wave, black holes
+  Astrophysicist working on gravitational wave and black hole astrophysics
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://md-arif-shaikh.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
