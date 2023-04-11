@@ -1,3 +1,35 @@
+KASI-Daejeon-2023:
+  from-year: 2023
+  from-month: April
+  from-date: 19
+  to-year: 2023
+  to-month: April
+  to-date: 20
+  institute: KASI
+  institute-url: https://www.kasi.re.kr/eng/index
+  department: Cosmology Group
+  department-url: https://cosmology.kasi.re.kr/shafieloo/coskasi.html
+  host: Arman Shafieloo
+  host-url: https://cosmology.kasi.re.kr/shafieloo/
+  city: Daejeon
+  country: Korea
+
+IBS-Daejeon-2023:
+  from-year: 2023
+  from-month: April
+  from-date: 18
+  to-year: 2023
+  to-month: April
+  to-date: 19
+  institute: IBS
+  institute-url: https://www.ibs.re.kr/eng.do
+  department: Center for Theoretical Physics of the Unvierse
+  department-url: https://www.ibs.re.kr/ctpu/
+  host: Young Bok Bae
+  host-url:
+  city: Daejeon
+  country: Korea
+
 UoT-Tokyo-2022:
   from-year: 2022
   from-month: November
