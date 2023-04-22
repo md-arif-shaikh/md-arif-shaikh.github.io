@@ -1,0 +1,9 @@
+seminars:
+  title: Seminars
+  file: seminars.html
+conference-talks:
+  title: Conference talks
+  file: conference-talks.html
+conference-posters:
+  title: Conference posters
+  file: conference-posters.html

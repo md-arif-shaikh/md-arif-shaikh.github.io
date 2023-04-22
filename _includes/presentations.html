@@ -1,0 +1,16 @@
+<ul>
+{% for presentation in site.data.presentation %}
+{% assign pre = presentation[1] %}
+  <li> <a href={{ "#" | append: pre.title | downcase | replace: " ", "-" }}> {{ pre.title }}</a>
+  </li>
+{% endfor %}
+</ul>
+
+
+{% for presentation in site.data.presentation %}
+{% assign pre = presentation[1] %}
+{{ "## " | append: pre.title  }}
+<div>
+  {% include {{ pre.file }} %}
+</div>
+{% endfor %}
