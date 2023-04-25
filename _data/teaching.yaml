@@ -10,10 +10,10 @@ icts-summer-school-2021:
   to: 2021-07-16
   role: Tutor
   instructor:
-    name: Prof. Shi Pi
+    name: Shi Pi
     website:
-    institute: Kavli Institute for Physics and Mathematics of the Universe
-    institute-website:
+    institute: KIPMU
+    institute-website: https://www.ipmu.jp/
     city: Tokyo
     country: Japan
 
@@ -29,7 +29,7 @@ icts-intro-GR-2020:
   to: 2020-12-31
   role: Tutor
   instructor:
-    name: Prof. Bala Iyear
+    name: Bala Iyear
     website:
     institute: ICTS-TIFR
     institute-website: https://www.icts.res.in
@@ -67,7 +67,7 @@ icts-summer-school-2020:
   to: 2020-06-05
   role: Tutor
   instructor:
-    name: Prof. Ian Hawke
+    name: Ian Hawke
     website:
     institute: University of Southampton
     institute-website:
@@ -86,7 +86,7 @@ icts-intro-gw-2020:
   to: 2020-04-30
   role: Tutor
   instructor:
-    name: Prof. P. Ajith \& Bala Iyer
+    name: P. Ajith \& Bala Iyer
     website:
     institute: ICTS-TIFR
     institute-website: https://www.icts.res.in
@@ -105,7 +105,7 @@ icts-summer-school-2019:
   to: 2021-07-26
   role: Tutor
   instructor:
-    name: Prof. Sudipta Sarkar
+    name: Sudipta Sarkar
     website:
     institute: IIT
     institute-website:
@@ -120,11 +120,11 @@ hri-stat-2016:
   institute-website: https://www.hri.res.in
   city: Allahabad
   country: India
-  from: 2020-01-01
-  to: 2020-05-31
+  from: 2017-08-01
+  to: 2017-12-31
   role: Tutor
   instructor:
-    name: Prof. G. V. Pai
+    name: G. V. Pai
     website:
     institute: HRI
     institute-website: https://www.hri.res.in

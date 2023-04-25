@@ -1,0 +1,24 @@
+<ol reversed>
+{% for course in site.data.teaching %}
+{% assign c = course[1] %}
+{% assign day_from = c.from | date: "%d" %}
+{% assign day_to = c.to | date: "%d" %}
+{% assign month_from = c.from | date: "%b" %}
+{% assign month_to = c.to | date: "%b" %}
+{% assign year_from = c.from | date: "%Y" %}
+{% assign year_to = c.to | date: "%Y" %}
+<li> <b>{{ c.course }}</b>, {% if year_from == year_to %}
+  {% if month_from == month_to %}
+  {{- month_from | append: " " -}} {{ day_from }} - {{ day_to }}, {{ year_from }}
+  {% else %}
+  {{- month_from | append: " " -}} {{ day_from }} - {{ month_to }} {{ day_to }}, {{ year_from }}
+  {% endif %}
+  {% else %}
+  {{- month_from | append: " " -}} {{ day_from }}, {{ year_from }} - {{ month_to }} {{ day_to }}, {{ year_to }}
+  {% endif %}
+  <a href="{{ c.school-website }}">{{ c.school }}</a>, <a href="{{ c.institute-website }}">{{ c.institute }}</a>, {{ c.city }}, {{ c.country }}<br>{% if c.role == "Tutor" %}
+  Tutored. Instructor: <a href="{{ c.instructor.website }}">{{ c.instructor.name }}</a>, <a href="{{ c.instructor.institute-website }}">{{ c.instructor.institute }}</a>, {{ c.instructor.city }}, {{ c.instructor.country }}
+  {% endif %}
+</li>
+{% endfor %}
+</ol>
