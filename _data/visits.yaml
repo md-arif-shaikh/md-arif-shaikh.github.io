@@ -1,3 +1,19 @@
+BNU-May-2023:
+  from-year: 2023
+  from-month: May
+  from-date: 09
+  to-year: 2023
+  to-month: May
+  to-date: 11
+  institute: BNU
+  institute-url: https://english.bnu.edu.cn/
+  department: Department of Astronomy
+  department-url: https://astro.bnu.edu.cn/english/index.html
+  host: Zhoujian Cao
+  host-url:
+  city: Beijing
+  country: China
+
 KASI-Daejeon-2023:
   from-year: 2023
   from-month: April
