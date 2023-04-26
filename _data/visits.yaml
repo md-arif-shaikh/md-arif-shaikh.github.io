@@ -1,3 +1,19 @@
+IUCAA-June-2023:
+  from-year: 2023
+  from-month: June
+  from-date: 5
+  to-year: 2023
+  to-month: June
+  to-date: 9
+  institute: IUCAA
+  institute-url: https://www.iucaa.in/
+  department: Gravitational Wave Group
+  department-url:
+  host: Shasvath Kapadia
+  host-url:
+  city: Pune
+  country: India
+
 BNU-May-2023:
   from-year: 2023
   from-month: May
