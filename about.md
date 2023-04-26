@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I'm a postdoctoral research scholar at the [Seoul National University](https://en.snu.ac.kr), Seoul, South Korea. I work in Prof [Hyung Mok Lee](http://astro.snu.ac.kr/~hmlee/)'s group in the department of [physics and astronomy](https://physics.snu.ac.kr/en).
+I'm a postdoctoral research scholar at the [Seoul National University](https://en.snu.ac.kr) in Seoul, South Korea. I work in Prof [Hyung Mok Lee](http://astro.snu.ac.kr/~hmlee/)'s group in the department of [physics and astronomy](https://physics.snu.ac.kr/en).
 
 I work on different aspects of gravitational-wave (GW) physics including 
   - Modeling of eccentric waveform using Numerical Relativity (NR) simulations of binary black hole mergers
@@ -12,7 +12,7 @@ I work on different aspects of gravitational-wave (GW) physics including
   - Testing General Theory of Relativity using GW
   - Gravitational lensing of GW
 
-Currently, I'm a member of the [LIGO Scientific Collaboration](https://www.ligo.org/)(LSC) and the LIGO-India Scientific Collaboration(LISC) the [SXS Collaboration](https://www.black-holes.org/). [Here]({{site.baseurl}}{% link collaborators.md %}) is an incomplete list of my collaborators.
+Currently, I'm a member of the [LIGO Scientific Collaboration](https://www.ligo.org/)(LSC) and the [SXS Collaboration](https://www.black-holes.org/). [Here]({{site.baseurl}}{% link collaborators.md %}) is an incomplete list of my collaborators.
 
 From 2019 to 2022, I was a postdoctoral fellow at [International Centre for Theoretical Sciences](https://www.icts.res.in/) where I worked with Prof [Parameswaran Ajith](https://home.icts.res.in/~ajith/Home.html) and Dr [Prayush Kumar](https://www.icts.res.in/people/prayush-kumar) as a member of the [Astrophysical Relativity Group](https://www.icts.res.in/research/astrorel).
 
