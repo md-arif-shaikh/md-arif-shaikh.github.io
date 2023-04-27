@@ -1,7 +1,7 @@
 <ol reversed>
 {% for seminar in site.data.seminars %}
 {% assign v = seminar[1] %}
-<li> <a href="{{ v.talk-url }}">{{ v.title }}</a>, {{ v.date | date: "%b %-d, %Y" }}, <a href="{{- v.institute-url -}}">{{ v.institute }}</a>, {{ v.city }}, {{ v.country }}
+<li> <b><a href="{{ v.talk-url }}">{{ v.title }}</a></b><br>{{ v.date | date: "%b %-d, %Y" }}, <a href="{{- v.institute-url -}}">{{ v.institute }}</a>, {{ v.city }}, {{ v.country }}
 </li>
 {% endfor %}
 </ol>
