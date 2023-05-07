@@ -1,7 +1,7 @@
 ---
-title: "Giving a seminar at BNU and ITP, Beijing"
+title: "Giving seminars at BNU and ITP, Beijing"
 date: 2023-04-26
-update_date: 2023-05-02
+update_date: 2023-05-07
 tags: [Visits, Travel, Seminars]
 excerpt: "BNU visit and seminar, May 2023"
 mathjax: "true"
