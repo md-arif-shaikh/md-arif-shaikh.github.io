@@ -1,17 +1,33 @@
 IUCAA-June-2023:
   from-year: 2023
   from-month: June
-  from-date: 5
+  from-date: 18
   to-year: 2023
   to-month: June
-  to-date: 9
+  to-date: 21
   institute: IUCAA
   institute-url: https://www.iucaa.in/
   department: Gravitational Wave Group
   department-url:
   host: Shasvath Kapadia
-  host-url:
+  host-url: https://shasvath-kapadia.github.io/home/
   city: Pune
+  country: India
+
+ICTS-Bangalore-2023:
+  from-year: 2023
+  from-month: June
+  from-date: 15
+  to-year: 2023
+  to-month: June
+  to-date: 18
+  institute: ICTS-TIFR
+  institute-url: https://www.icts.res.in/
+  department: Astrophysical Relativity
+  department-url: https://www.icts.res.in/research/astrorel
+  host: Prayush Kumar
+  host-url: https://www.icts.res.in/people/prayush-kumar
+  city: Bangalore
   country: India
 
 BNU-May-2023:

@@ -1,6 +1,7 @@
 ---
 title: "GWUniverse focus workshop 7"
 date: 2023-06-01
+update_date: 2023-06-06
 tags: [Workshop]
 excerpt: "GWUniverse Workshop7"
 mathjax: "true"
@@ -15,7 +16,7 @@ talks by the participants on these topics.
 - Ho Jung Paik (Univ. of Maryland)
 - Achamveedu Gopakumar (TIFR, Mumbai)
 - [Tjonnie Li](https://www.phy.cuhk.edu.hk/people/teaching/tgfli.html) (KLU & Chinese Univ. Hong Kong)
-- [Vijay Varma](https://vijayvarma.com/) (AEI, Potsdam and UMass, Dartmouth)
+- Antoni Ramos-buades (AEI, Potsdam)
 - Zixin Yang (DESY, Hamburg)
 - Zhoujian Cao (BNU, Beijing) (online)
 
