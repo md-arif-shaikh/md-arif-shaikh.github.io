@@ -1,11 +1,12 @@
-#IUCAA-June-2023:
-#  title: TBD
-#  date: 2023-06-07
-#  talk-url: 
-#  institute: IUCAA
-#  institute-url: https://www.iucaa.in/en/
-#  city: Pune
-#  country: India
+ICTS-TIFR-2023-June:
+  title: "gw_eccentricity: a Python package to measure orbital eccentricity from gravitational
+waveforms"
+  date: 2023-06-15
+  talk-url: https://www.icts.res.in/seminar/2023-06-15/md-arif-shaikh
+  institute: ICTS-TIFR
+  institute-url: https://www.icts.res.in/ 
+  city: Bangalore
+  country: India
 
 ITP-May-2023:
   title: Measuring Eccentricity from Gravitational Waveform
