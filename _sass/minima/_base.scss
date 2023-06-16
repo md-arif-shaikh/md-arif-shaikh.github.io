@@ -150,11 +150,11 @@ blockquote {
  */
 pre,
 code {
-  /*color: $code-color;*/
+  color: $code-color;
   @include relative-font-size(0.9375);
   /*border: 1px solid;*/ /* $code-background;*/
   /*border-radius: 3px;*/
-  background-color: $background-color;
+  background-color: $code-background;
   font-family: 'JetBrains Mono', monospace;
 }
 

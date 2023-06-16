@@ -24,6 +24,9 @@ $grey-color:       #E5C07B !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 0%) !default;
 
+$code-color: $grey-color !default;
+$code-background: $background-color !default;
+
 $table-text-align: left !default;
 
 // Width of the content area
