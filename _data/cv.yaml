@@ -185,6 +185,10 @@ refereeing:
       journal: The European Physical Journal C
       journal-website: https://epjc.epj.org/
       number: 1
+    jpamt:
+      journal: "Journal of Physics A: Mathematical and Theoretical"
+      journal-website: "https://iopscience.iop.org/journal/1751-8121"
+      number: 1
 
 layout:
   - positions
