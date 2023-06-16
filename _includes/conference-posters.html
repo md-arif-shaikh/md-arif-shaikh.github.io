@@ -2,9 +2,9 @@
 {% for poster in site.data.conference-posters %}
 {% assign p = poster[1] %}
 <li> <b><a href={{ p.url }}>{{ p.title }}</a></b><br>{% if p.from-year == p.to-year %}
-{% if p.from-month == p.to-month %} {{ p.from-month }} {{ p.from-date }} - {{ p.to-date }},
-{% else %} {{ p.from-month }} {{ p.from-date }} - {{ p.to-month }} {{ p.to-date }},
-{% endif %} {{ p.to-year }}<br> {% else %} {{ p.from-month }} {{p.from-date}}, {{ p.from-year }} - {{ p.from-month }} {{p.to-date}}, {{ p.to-year }}<br>
+{% if p.from-month == p.to-month %} {{ p.from-month }} {{ p.from-date }}-{{ p.to-date }},
+{% else %} {{ p.from-month }} {{ p.from-date }}-{{ p.to-month }} {{ p.to-date }},
+{% endif %} {{ p.to-year }}<br> {% else %} {{ p.from-month }} {{p.from-date}}, {{ p.from-year }}-{{ p.from-month }} {{p.to-date}}, {{ p.to-year }}<br>
 {% endif %} <a href={{- p.conference-url -}}>{{ p.conference }}</a>, {{ p.city }}, {{ p.country }} </li>
 {% endfor %}
 </ol>
