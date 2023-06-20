@@ -254,18 +254,25 @@
   }
 }
 
- /* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
+.columns {
+Width: 100%;
 }
+.column-left, .column-right {
+  width:100%;
+}
+@media (min-width: 48em) {
+  .column-left {
+    width: 70%;
+    float:left;
+  }
+  .column-right {
+    width: 30%;
+    float:left;
+  }
 
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-  text-align: center;
-  vertical-align: middle;
-} 
+  .columns {
+    content:"";
+    display: table;
+    clear: both;
+  }
+}
