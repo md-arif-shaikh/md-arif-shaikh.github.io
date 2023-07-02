@@ -1,0 +1,71 @@
+
+{% assign today_date = 'now' | date: '%s' %}
+<!-- Collect future talks -->
+{% assign talks = site.data.conference-talks %}
+{% assign future_talks_number = 0 %}
+{% assign future_talks = "<ul class='post-list'>" %}
+{% for talk in talks %}
+{% assign t = talk[1] %}
+{% assign date = t.to-month | append: " " | append: t.to-date | append: ", " | append: t.to-year %}
+{% assign talk_date = date | date: "%s" %}
+{% if today_date < talk_date %}
+{% assign future_talks_number = future_talks_number | plus: 1 %}
+{% assign start_date = t.from-month | append: " " | append: t.from-date | append: ", " | append: t.from-year | date: "%d/%m/%y" %}
+{% assign date_formatted = date | date: "%d/%m/%y" %}
+{% assign future_talks = future_talks | append: "<li>" | append: "<span class='post-meta'>" | append: start_date | append: "-" | append: date_formatted | append: " &raquo;" | append: "</span>" | append: " " | append: t.title | append: ", " | append: t.conference | append: ", " | append: t.city | append: ", " | append: t.country | append: "</li>" %}
+{% endif %}
+{% endfor %}
+{% assign future_talks = future_talks | append: "</ul>" %}
+
+<!-- Collect future seminars -->
+{% assign seminars = site.data.seminars %}
+{% assign future_seminars_number = 0 %}
+{% assign future_seminars = "<ul class='post-list'>" %}
+{% for seminar in seminars %}
+{% assign s = seminar[1] %}
+{% assign date = s.date %}
+{% assign seminar_date = date | date: "%s" %}
+{% if today_date < seminar_date %}
+{% assign future_seminars_number = future_seminars_number | plus: 1 %}
+{% assign date_formatted = date | date: "%d/%m/%y" %}
+{% assign future_seminars = future_seminars | append: "<li>" | append: "<span class='post-meta'>" | append: date_formatted | append: " &raquo;" | append: "</span>" | append: " " | append: s.title | append: ", " | append: s.institute | append: ", " | append: s.city | append: ", " | append: t.country | append: "</li>" %}
+{% endif %}
+{% endfor %}
+{% assign future_seminars = future_seminars | append: "</ul>" %}
+
+<!-- Collect future visits -->
+{% assign visits = site.data.visits %}
+{% assign future_visits_number = 0 %}
+{% assign future_visits = "<ul class='post-list'>" %}
+{% for visit in visits %}
+{% assign v = visit[1] %}
+{% assign date = v.to-month | append: " " | append: v.to-date | append: ", " | append: v.to-year %}
+{% assign visit_date = date | date: "%s" %}
+{% if today_date < visit_date %}
+{% assign future_visits_number = future_visits_number | plus: 1 %}
+{% assign start_date = v.from-month | append: " " | append: v.from-date | append: ", " | append: v.from-year | date: "%d/%m/%y" %}
+{% assign date_formatted = date | date: "%d/%m/%y" %}
+{% assign future_visits = future_visits | append: "<li>" | append: "<span class='post-meta'>" | append: start_date | append: "-" | append: date_formatted | append: " &raquo;" | append: "</span>" | append: " " | | append: v.host | append: ", " | append: v.institute | append: ", " | append: v.city | append: ", " | append: v.country | append: "</li>" %}
+{% endif %}
+{% endfor %}
+{% assign future_visits = future_visits | append: "</ul>" %}
+{% assign total = future_talks_number | plus: future_seminars_number | plus: future_visits_number %}
+		   
+{% if total > 0 %}
+<h2 class="post-list-heading">Upcoming</h2>
+{% if future_talks_number > 0 %}
+{% assign talks_url = site.baseurl | append: "presentations/#conference-talks" %}
+<a href={{talks_url}}> Talks</a><br>
+{{ future_talks }}
+{% endif %}
+{% if future_visits_number > 0 %}
+{% assign visits_url = site.baseurl | append: "cv" %}
+<a href={{visits_url}}> Visits</a><br>
+{{ future_visits }}
+{% endif %}
+{% if future_seminars_number > 0 %}
+{% assign seminars_url = site.baseurl | append: "presentations/#seminars" %}
+<a href={{seminars_url}}> Seminars</a><br>
+{{ future_seminars }}
+{% endif %}
+{% endif %}

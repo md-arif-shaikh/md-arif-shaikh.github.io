@@ -262,12 +262,15 @@ Width: 100%;
 }
 @media (min-width: 48em) {
   .column-left {
-    width: 70%;
-    float:left;
+      width: 25%;
+      margin-right: 2.5%;
+      margin-bottom: 2.5%;
+      float:left;
   }
   .column-right {
-    width: 30%;
-    float:left;
+      width: 65%;
+      margin-left: 2.5%;
+      float:right;
   }
 
   .columns {

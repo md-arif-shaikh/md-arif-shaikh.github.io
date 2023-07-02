@@ -16,7 +16,10 @@ I work on different aspects of gravitational-wave (GW) physics including
   - Testing General Theory of Relativity using GW
   - Gravitational lensing of GW
 
-Currently, I'm a member of the [LIGO Scientific Collaboration](https://www.ligo.org/)(LSC) and the [SXS Collaboration](https://www.black-holes.org/). [Here]({{site.baseurl}}{% link collaborators.md %}) is an incomplete list of my collaborators.
+Currently, I'm a member of the [LIGO Scientific
+Collaboration](https://www.ligo.org/)(LSC) and the [SXS
+Collaboration](https://www.black-holes.org/). [Here]({{site.baseurl}}{% link
+collaborators.md %}) is an incomplete list of my collaborators.
 
 # Journey so far
 I was born in a rural village in Murshidabad, about 200 km north of
