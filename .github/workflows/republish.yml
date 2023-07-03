@@ -1,0 +1,16 @@
+name: Republish
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Run at 00:00 every day
+jobs:
+  curl:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger GitHub pages rebuild
+        uses: wei/curl@master
+        with:
+          args:
+            "-X POST -H 'Authorization: token $'
+            -H 'Accept: application/vnd.github.ant-man-preview+json'
+            https://api.github.com/repos/md-arif-shaikh/md-arif-shaikh.github.io/pages/builds"
