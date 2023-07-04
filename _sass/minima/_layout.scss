@@ -258,7 +258,10 @@
 Width: 100%;
 }
 .column-left, .column-right {
-  width:100%;
+    width: 100%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    float:center;
 }
 @media (min-width: 48em) {
   .column-left {
