@@ -2,7 +2,7 @@ name: Republish
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Run at 00:00 every day
+    - cron: "* * * * *" # Run at 00:00 every day
 jobs:
   curl:
     runs-on: ubuntu-latest
