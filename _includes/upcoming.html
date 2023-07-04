@@ -12,7 +12,7 @@
 {% assign future_talks_number = future_talks_number | plus: 1 %}
 {% assign start_date = t.from-month | append: " " | append: t.from-date | append: ", " | append: t.from-year | date: "%d/%m/%y" %}
 {% assign date_formatted = date | date: "%d/%m/%y" %}
-{% assign future_talks = future_talks | append: "<li>" | append: "<span class='post-meta'>" | append: start_date | append: "-" | append: date_formatted | append: " &raquo;" | append: "</span>" | append: " " | append: t.title | append: ", " | append: t.conference | append: ", " | append: t.city | append: ", " | append: t.country | append: "</li>" %}
+{% assign future_talks = future_talks | append: "<li>" | append: "<span class='post-meta'>" | append: start_date | append: "-" | append: date_formatted | append: " &raquo;" | append: "</span>" | append: " " | append: t.title | append: ", <a href='" | append: t.conference-url | append: "'>" | append: t.conference | append: "</a>, " | append: t.city | append: ", " | append: t.country | append: "</li>" %}
 {% endif %}
 {% endfor %}
 {% assign future_talks = future_talks | append: "</ul>" %}
