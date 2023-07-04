@@ -1,8 +1,9 @@
 name: Republish
 
 on:
+  push:
   schedule:
-    - cron: "* * * * *" # Run at 00:00 every day
+    - cron: "0 0 * * *" # Run at 00:00 every day
 jobs:
   curl:
     runs-on: ubuntu-latest
