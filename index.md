@@ -15,6 +15,6 @@ layout: home
 	<a href="https://astron.snu.ac.kr/en/">Department of Physics and Astronomy</a><br>
 	<a href="https://en.snu.ac.kr">Seoul National University</a><br>
 	Seoul, South Korea<br>
-	<a href = "mailto: arif.shaikh@snu.ac.kr">arif.shaikh@snu.ac.kr</a>
+	<a href = "mailto: arif.shaikh@snu.ac.kr">arif.shaikh at the snu.ac.kr</a>
 </div>
 </div>
