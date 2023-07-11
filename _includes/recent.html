@@ -1,0 +1,72 @@
+{% assign max_days = 90 %}
+{% assign max_secs = max_days | times: 86400 %}
+{% assign earliest_date = 'now' | date: '%s' | minus: max_secs | date: '%s' %}
+<!-- Collect recent talks -->
+{% assign talks = site.data.conference-talks %}
+{% assign recent_talks_number = 0 %}
+{% assign recent_talks = "<ul class='post-list'>" %}
+{% for talk in talks %}
+{% assign t = talk[1] %}
+{% assign date = t.to-month | append: " " | append: t.to-date | append: ", " | append: t.to-year %}
+{% assign talk_date = date | date: "%s" %}
+{% if earliest_date < talk_date %}
+{% assign recent_talks_number = recent_talks_number | plus: 1 %}
+{% assign start_date = t.from-month | append: " " | append: t.from-date | append: ", " | append: t.from-year | date: "%d/%m/%y" %}
+{% assign date_formatted = date | date: "%d/%m/%y" %}
+{% assign recent_talks = recent_talks | append: "<li>" | append: "<span class='post-meta'>" | append: start_date | append: "-" | append: date_formatted | append: " &raquo;" | append: "</span>" | append: " " | append: t.title | append: ", <a href='" | append: t.conference-url | append: "'>" | append: t.conference | append: "</a>, " | append: t.city | append: ", " | append: t.country | append: "</li>" %}
+{% endif %}
+{% endfor %}
+{% assign recent_talks = recent_talks | append: "</ul>" %}
+
+<!-- Collect recent seminars -->
+{% assign seminars = site.data.seminars %}
+{% assign recent_seminars_number = 0 %}
+{% assign recent_seminars = "<ul class='post-list'>" %}
+{% for seminar in seminars %}
+{% assign s = seminar[1] %}
+{% assign date = s.date %}
+{% assign seminar_date = date | date: "%s" %}
+{% if earliest_date < seminar_date %}
+{% assign recent_seminars_number = recent_seminars_number | plus: 1 %}
+{% assign date_formatted = date | date: "%d/%m/%y" %}
+{% assign recent_seminars = recent_seminars | append: "<li>" | append: "<span class='post-meta'>" | append: date_formatted | append: " &raquo;" | append: "</span>" | append: " " | append: s.title | append: ", " | append: s.institute | append: ", " | append: s.city | append: ", " | append: t.country | append: "</li>" %}
+{% endif %}
+{% endfor %}
+{% assign recent_seminars = recent_seminars | append: "</ul>" %}
+
+<!-- Collect recent visits -->
+{% assign visits = site.data.visits %}
+{% assign recent_visits_number = 0 %}
+{% assign recent_visits = "<ul class='post-list'>" %}
+{% for visit in visits %}
+{% assign v = visit[1] %}
+{% assign date = v.to-month | append: " " | append: v.to-date | append: ", " | append: v.to-year %}
+{% assign visit_date = date | date: "%s" %}
+{% if earliest_date < visit_date %}
+{% assign recent_visits_number = recent_visits_number | plus: 1 %}
+{% assign start_date = v.from-month | append: " " | append: v.from-date | append: ", " | append: v.from-year | date: "%d/%m/%y" %}
+{% assign date_formatted = date | date: "%d/%m/%y" %}
+{% assign recent_visits = recent_visits | append: "<li>" | append: "<span class='post-meta'>" | append: start_date | append: "-" | append: date_formatted | append: " &raquo;" | append: "</span>" | append: " " | | append: v.host | append: ", " | append: v.institute | append: ", " | append: v.city | append: ", " | append: v.country | append: "</li>" %}
+{% endif %}
+{% endfor %}
+{% assign recent_visits = recent_visits | append: "</ul>" %}
+{% assign total = recent_talks_number | plus: recent_seminars_number | plus: recent_visits_number %}
+		   
+{% if total > 0 %}
+<h2 class="post-list-heading">Recently completed</h2>
+{% if recent_talks_number > 0 %}
+{% assign talks_url = site.baseurl | append: "presentations/#conference-talks" %}
+<a href={{talks_url}}> Talks</a><br>
+{{ recent_talks }}
+{% endif %}
+{% if recent_visits_number > 0 %}
+{% assign visits_url = site.baseurl | append: "cv" %}
+<a href={{visits_url}}> Visits</a><br>
+{{ recent_visits }}
+{% endif %}
+{% if recent_seminars_number > 0 %}
+{% assign seminars_url = site.baseurl | append: "presentations/#seminars" %}
+<a href={{seminars_url}}> Seminars</a><br>
+{{ recent_seminars }}
+{% endif %}
+{% endif %}
