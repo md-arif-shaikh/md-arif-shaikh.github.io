@@ -1,6 +1,7 @@
 {% assign max_days = 90 %}
 {% assign max_secs = max_days | times: 86400 %}
 {% assign earliest_date = 'now' | date: '%s' | minus: max_secs | date: '%s' %}
+{% assign title_length = 80 %}
 <!-- Collect recent talks -->
 {% assign talks = site.data.conference-talks %}
 {% assign recent_talks_number = 0 %}
@@ -29,7 +30,14 @@
 {% if earliest_date < seminar_date %}
 {% assign recent_seminars_number = recent_seminars_number | plus: 1 %}
 {% assign date_formatted = date | date: "%d/%m/%y" %}
-{% assign recent_seminars = recent_seminars | append: "<li>" | append: "<span class='post-meta'>" | append: date_formatted | append: " &raquo;" | append: "</span>" | append: " " | append: s.title | append: ", " | append: s.institute | append: ", " | append: s.city | append: ", " | append: t.country | append: "</li>" %}
+{% if s.title.size > title_length %}
+{% assign seminar_title = s.title | slice: 0, title_length | append: "..." %}
+{% else %}
+{% assign seminar_title = s.title %}
+{% endif %}
+{% assign seminar_title = "<a href='" | append: s.talk-url | append: "'>" | append: seminar_title | append: "</a>" %}
+{% assign seminar_institute = "<a href='" | append: s.institute-url | append: "'>" | append: s.institute | append: "</a>" %}
+{% assign recent_seminars = recent_seminars | append: "<li>" | append: "<span class='post-meta'>" | append: date_formatted | append: " &raquo;" | append: "</span>" | append: " " | append: seminar_title | append: ", " | append: seminar_institute | append: ", " | append: s.city | append: ", " | append: t.country | append: "</li>" %}
 {% endif %}
 {% endfor %}
 {% assign recent_seminars = recent_seminars | append: "</ul>" %}
@@ -46,7 +54,9 @@
 {% assign recent_visits_number = recent_visits_number | plus: 1 %}
 {% assign start_date = v.from-month | append: " " | append: v.from-date | append: ", " | append: v.from-year | date: "%d/%m/%y" %}
 {% assign date_formatted = date | date: "%d/%m/%y" %}
-{% assign recent_visits = recent_visits | append: "<li>" | append: "<span class='post-meta'>" | append: start_date | append: "-" | append: date_formatted | append: " &raquo;" | append: "</span>" | append: " " | | append: v.host | append: ", " | append: v.institute | append: ", " | append: v.city | append: ", " | append: v.country | append: "</li>" %}
+{% assign visit_host = "<a href='" | append: v.host-url | append: "'>" | append: v.host | append: "</a>" %}		      
+{% assign visit_institute = "<a href='" | append: v.institute-url | append: "'>" | append: v.institute | append: "</a>" %}
+{% assign recent_visits = recent_visits | append: "<li>" | append: "<span class='post-meta'>" | append: start_date | append: "-" | append: date_formatted | append: " &raquo;" | append: "</span>" | append: " " | | append: visit_host | append: ", " | append: visit_institute | append: ", " | append: v.city | append: ", " | append: v.country | append: "</li>" %}
 {% endif %}
 {% endfor %}
 {% assign recent_visits = recent_visits | append: "</ul>" %}
