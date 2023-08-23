@@ -1,3 +1,31 @@
+mmaq-2023:
+  title: TBD
+  url: 
+  conference:  9th multimessenger and gravitation workshop
+  conference-url:
+  city: Seoul
+  country: Korea
+  from-date: 18
+  from-month: September
+  from-year: 2023
+  to-date: 20
+  to-month: September
+  to-year: 2023
+  
+2nd-snu-arc-2023:
+  title: TBD
+  url: 
+  conference: 2nd H.S. Yun Astronomy Workshop
+  conference-url: "https://indico.ceou.snu.ac.kr/event/8/"
+  city: Seoul
+  country: Korea
+  from-date: 29
+  from-month: August
+  from-year: 2023
+  to-date: 30
+  to-month: August
+  to-year: 2023
+
 icgac15-2023:
   title: Defining eccentricity for gravitational wave astronomy
   url: 

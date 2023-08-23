@@ -2,6 +2,7 @@
 {% assign max_secs = max_days | times: 86400 %}
 {% assign earliest_date = 'now' | date: '%s' | minus: max_secs | date: '%s' %}
 {% assign title_length = 80 %}
+{% assign today = 'now' | date: '%s' %}
 <!-- Collect recent talks -->
 {% assign talks = site.data.conference-talks %}
 {% assign recent_talks_number = 0 %}
@@ -10,7 +11,7 @@
 {% assign t = talk[1] %}
 {% assign date = t.to-month | append: " " | append: t.to-date | append: ", " | append: t.to-year %}
 {% assign talk_date = date | date: "%s" %}
-{% if earliest_date < talk_date %}
+{% if earliest_date < talk_date and talk_date < today %}
 {% assign recent_talks_number = recent_talks_number | plus: 1 %}
 {% assign start_date = t.from-month | append: " " | append: t.from-date | append: ", " | append: t.from-year | date: "%d/%m/%y" %}
 {% assign date_formatted = date | date: "%d/%m/%y" %}
@@ -27,7 +28,7 @@
 {% assign s = seminar[1] %}
 {% assign date = s.date %}
 {% assign seminar_date = date | date: "%s" %}
-{% if earliest_date < seminar_date %}
+{% if earliest_date < seminar_date and seminar_date < today %}
 {% assign recent_seminars_number = recent_seminars_number | plus: 1 %}
 {% assign date_formatted = date | date: "%d/%m/%y" %}
 {% if s.title.size > title_length %}
@@ -50,7 +51,7 @@
 {% assign v = visit[1] %}
 {% assign date = v.to-month | append: " " | append: v.to-date | append: ", " | append: v.to-year %}
 {% assign visit_date = date | date: "%s" %}
-{% if earliest_date < visit_date %}
+{% if earliest_date < visit_date and visit_date < today %}
 {% assign recent_visits_number = recent_visits_number | plus: 1 %}
 {% assign start_date = v.from-month | append: " " | append: v.from-date | append: ", " | append: v.from-year | date: "%d/%m/%y" %}
 {% assign date_formatted = date | date: "%d/%m/%y" %}
