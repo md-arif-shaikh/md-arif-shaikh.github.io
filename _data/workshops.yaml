@@ -1,3 +1,17 @@
+KAS2023October:
+  conference: KAS 2023 Fall Meeting
+  conference-url: http://www.kas.org/
+  institute: Korean Astronomical Society
+  institute-url: http://www.kas.org/
+  city: RABADA PLAZA, JEJU
+  country: Korea
+  from-date: 18
+  from-month: October
+  from-year: 2023
+  to-date: 20
+  to-month: October
+  to-year: 2023
+  
 LVK2023September:
   conference: LVK 2023 September Meeting
   conference-url: https://www.resceu.s.u-tokyo.ac.jp/symposium/LVK2023toyama/index.php
