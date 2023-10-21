@@ -1,3 +1,19 @@
+Inje-November-2023:
+  from-year: 2023
+  from-month: November
+  from-date: 2
+  to-year: 2023
+  to-month: November
+  to-date: 3
+  institute: Inje University
+  institute-url: https://www.inje.ac.kr/english/
+  department: Department of Computer Simulation
+  department-url:
+  host: Hyung Won Lee
+  host-url: 
+  city: Gimhae
+  country: Korea
+  
 IUCAA-June-2023:
   from-year: 2023
   from-month: June
