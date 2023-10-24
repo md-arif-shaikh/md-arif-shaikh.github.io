@@ -96,9 +96,13 @@ presentations:
   seminars:
     title: Seminars
     file: seminars.yaml
-  workshops:
-    title: Workshops/Conference Participation
-    file: workshops.yaml
+
+meetings:
+  title: Participation in conference \& workshops
+  file:
+    - conference-talks.yaml
+    - conference-posters.yaml
+    - workshops.yaml
 
 references:
   phd-advisor:
@@ -195,6 +199,7 @@ layout:
   - education
   - publications
   - presentations
+  - meetings
   - teaching
   - refereeing
   - achievements
