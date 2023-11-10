@@ -2,7 +2,7 @@
 title: "CV"
 permalink: /cv/
 ---
-Find a PDF version of my CV [<img class="svg-icon" src="/assets/pdf.svg">](https://raw.githubusercontent.com/md-arif-shaikh/md-arif-shaikh.github.io/pdflatex/_data/arif/cv_arif.pdf)
+Find a detailed version of my CV in PDF [<img class="svg-icon" src="/assets/pdf.svg">](https://raw.githubusercontent.com/md-arif-shaikh/md-arif-shaikh.github.io/pdflatex/_data/arif/cv_arif.pdf)
 
 # Positions
 <ul reversed>
