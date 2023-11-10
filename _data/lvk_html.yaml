@@ -1,0 +1,168 @@
+LIGOScientific:2021aug:
+  year: '2023'
+  pages: '76'
+  number: '2'
+  volume: '949'
+  journal: Astrophys. J.
+  doi: 10.3847/1538-4357/ac74bb
+  reportnumber: LIGO-P2100185-v6, LIGO-P2100185-v5
+  primaryclass: astro-ph.CO
+  archiveprefix: arXiv
+  eprint: '2111.03604'
+  title: "Constraints on the Cosmic Expansion History from GWTC\u20133"
+  collaboration: LIGO Scientific, Virgo, KAGRA
+  author:
+  - Abbott, R.
+  - 'others, '
+  ENTRYTYPE: article
+  ID: LIGOScientific:2021aug
+KAGRA:2023pio:
+  year: '2023'
+  pages: '29'
+  number: '2'
+  volume: '267'
+  journal: Astrophys. J. Suppl.
+  doi: 10.3847/1538-4365/acdc9f
+  reportnumber: LIGO-P2200316
+  primaryclass: gr-qc
+  archiveprefix: arXiv
+  eprint: '2302.03676'
+  title: Open Data from the Third Observing Run of LIGO, Virgo, KAGRA, and GEO
+  collaboration: KAGRA, VIRGO, LIGO Scientific
+  author:
+  - Abbott, R.
+  - 'others, '
+  ENTRYTYPE: article
+  ID: KAGRA:2023pio
+LIGOScientific:2022enz:
+  year: '2022'
+  pages: L30
+  number: '2'
+  volume: '941'
+  journal: Astrophys. J. Lett.
+  doi: 10.3847/2041-8213/aca1b0
+  reportnumber: LIGO-P2100110-v11, FERMILAB-PUB-22-948-V, LIGO-P2100110-v13
+  primaryclass: astro-ph.HE
+  archiveprefix: arXiv
+  eprint: '2209.02863'
+  title: Model-based Cross-correlation Search for Gravitational Waves from the Low-mass
+    X-Ray Binary Scorpius X-1 in LIGO O3 Data
+  collaboration: LIGO Scientific, KAGRA, VIRGO
+  author:
+  - Abbott, R.
+  - 'others, '
+  ENTRYTYPE: article
+  ID: LIGOScientific:2022enz
+KAGRA:2022osp:
+  year: '2022'
+  pages: '042003'
+  number: '4'
+  volume: '106'
+  journal: Phys. Rev. D
+  doi: 10.1103/PhysRevD.106.042003
+  primaryclass: astro-ph.HE
+  archiveprefix: arXiv
+  eprint: '2204.04523'
+  title: Search for continuous gravitational wave emission from the Milky~Way center
+    in O3 LIGO-Virgo data
+  collaboration: KAGRA, LIGO Scientific, VIRGO
+  author:
+  - Abbott, R.
+  - 'others, '
+  ENTRYTYPE: article
+  ID: KAGRA:2022osp
+KAGRA:2022twx:
+  year: '2022'
+  pages: 063F01
+  number: '6'
+  volume: '2022'
+  journal: PTEP
+  doi: 10.1093/ptep/ptac073
+  reportnumber: LIGO-P2100286
+  primaryclass: gr-qc
+  archiveprefix: arXiv
+  eprint: '2203.01270'
+  title: First joint observation by the underground gravitational-wave detector KAGRA
+    with GEO 600
+  collaboration: KAGRA, VIRGO, LIGO Scientific
+  author:
+  - Abbott, R.
+  - 'others, '
+  ENTRYTYPE: article
+  ID: KAGRA:2022twx
+KAGRA:2022dqk:
+  year: '2022'
+  pages: '062002'
+  number: '6'
+  volume: '106'
+  journal: Phys. Rev. D
+  doi: 10.1103/PhysRevD.106.062002
+  reportnumber: LIGO-P2100405
+  primaryclass: gr-qc
+  archiveprefix: arXiv
+  eprint: '2201.10104'
+  title: Search for gravitational waves from Scorpius X-1 with a hidden Markov model
+    in O3 LIGO data
+  collaboration: KAGRA, VIRGO, LIGO Scientific
+  author:
+  - Abbott, R.
+  - 'others, '
+  ENTRYTYPE: article
+  ID: KAGRA:2022dqk
+KAGRA:2022dwb:
+  year: '2022'
+  pages: '102008'
+  number: '10'
+  volume: '106'
+  journal: Phys. Rev. D
+  doi: 10.1103/PhysRevD.106.102008
+  reportnumber: LIGO-P2100367
+  primaryclass: gr-qc
+  archiveprefix: arXiv
+  eprint: '2201.00697'
+  title: All-sky search for continuous gravitational waves from isolated neutron stars
+    using Advanced LIGO and Advanced Virgo O3 data
+  collaboration: KAGRA, LIGO Scientific, VIRGO
+  author:
+  - Abbott, R.
+  - 'others, '
+  ENTRYTYPE: article
+  ID: KAGRA:2022dwb
+KAGRA:2021tse:
+  year: '2022'
+  pages: '102001'
+  number: '10'
+  volume: '105'
+  journal: Phys. Rev. D
+  doi: 10.1103/PhysRevD.105.102001
+  reportnumber: P2100343
+  primaryclass: astro-ph.HE
+  archiveprefix: arXiv
+  eprint: '2111.15507'
+  title: All-sky search for gravitational wave emission from scalar boson clouds around
+    spinning black holes in LIGO O3 data
+  collaboration: KAGRA, VIRGO, LIGO Scientific
+  author:
+  - Abbott, R.
+  - 'others, '
+  ENTRYTYPE: article
+  ID: KAGRA:2021tse
+LIGOScientific:2021hvc:
+  year: '2022'
+  pages: '1'
+  number: '1'
+  volume: '935'
+  journal: Astrophys. J.
+  doi: 10.3847/1538-4357/ac6acf
+  reportnumber: LIGO-P2100049
+  primaryclass: astro-ph.HE
+  archiveprefix: arXiv
+  eprint: '2111.13106'
+  title: Searches for Gravitational Waves from Known Pulsars at Two Harmonics in the
+    Second and Third LIGO-Virgo Observing Runs
+  collaboration: LIGO Scientific, VIRGO, KAGRA
+  author:
+  - Abbott, R.
+  - 'others, '
+  ENTRYTYPE: article
+  ID: LIGOScientific:2021hvc

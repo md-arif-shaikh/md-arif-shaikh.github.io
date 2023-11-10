@@ -1,0 +1,12 @@
+Short-author-preprints:
+  title: Short author preprints
+  yaml: short_author_preprints_html.yaml
+  file: short_author_preprints.html
+Short-author-peer-reviewed:
+  title: Short author peer reviewed
+  yaml: publications_html.yaml
+  file: short_author_peer_reviewed.html
+lvk-peer-reviewed:
+  title: LVK peer reviewed
+  yaml: lvk_html.yaml
+  file: lvk_peer_reviewed.html
