@@ -2,6 +2,5 @@
 title: "Publications"
 permalink: /publications/
 ---
-Below is a list of my short-authored and LVK collaboration publications. For a complete list of publications, please visit [INSPIRE](https://inspirehep.net/literature?sort=mostrecent&size=50&page=1&q=M.A.Shaikh.1&arxiv_categories=astro-ph.HE).
-
+Below is a list of my short-authored and LVK collaboration publications. For a complete list of publications, please visit [INSPIRE](https://inspirehep.net/authors/1812025).
 {% include publications.html %}
