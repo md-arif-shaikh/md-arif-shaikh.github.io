@@ -1,16 +1,15 @@
 positions:
-assistant_professor_vsm:
+  assistant_professor_vsm:
     position: Assistant Professor
     department: Department of Physics
     department-website: 
     institute: Vivekananda Satavarshiki Mahavidyalaya
     institute-website: https://www.vsm.org.in/
-    institute-address: Manikpara, Jhargram, West Bengal, 721513
+    institute-address: Manikpara, West Bengal, 721513, India
     from-year: 2023
     from-month: November
     to-year:
     to-month:
-    mentors:
   postdoc_snu:
     position: Postdoctoral Fellow
     department: Department of Physics and Astronomy
