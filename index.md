@@ -11,7 +11,7 @@ layout: home
 <div class="column-right"> 
 	{{site.data.authinfo.name}}<br>
 	{{site.data.authinfo.position}}<br>
-	<a href="{{site.data.authinfo. department-website}}">{{site.data.authinfo. department}}</a><br>
+	<a href="{{site.data.authinfo. department-website}}">{{site.data.authinfo.department}}</a><br>
 	<a href="{{site.data.authinfo. institute-website}}">{{site.data.authinfo.institute}}</a><br>
 	{{site.data.authinfo.institute-address}}<br>
 	<a href = "mailto: {{site.data.authinfo.email}}">{{site.data.authinfo.email}}</a>
