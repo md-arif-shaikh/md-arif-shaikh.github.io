@@ -11,9 +11,9 @@ layout: home
 <div class="column-right"> 
 	{{site.data.authinfo.name}}<br>
 	{{site.data.authinfo.position}}<br>
-	<a href=" ">Department of Physics
-	<a href="https://en.snu.ac.kr">Seoul National University</a><br>
-	Seoul, South Korea<br>
+	<a href="{{site.data.authinfo. department-website}}">{{site.data.authinfo. department}}</a>
+	<a href="{{site.data.authinfo. institute-website}}">{{site.data.authinfo.institute}}</a><br>
+	{{site.data.authinfo.address}}<br>
 	<a href = "mailto: arif.shaikh@snu.ac.kr">arif.shaikh at the snu.ac.kr</a>
 </div>
 </div>
