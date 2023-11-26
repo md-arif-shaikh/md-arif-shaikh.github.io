@@ -25,10 +25,28 @@ positions:
       hyungMok:
         name: Hyung Mok Lee
         website: http://astro.snu.ac.kr/~hmlee/
+  visitor_aei:
+    position: Visitor
+    department: Astrophysical and Cosmological Relativity
+    department-website: https://www.aei.mpg.de/astro-cosmo-rel
+    institute: Max Planck Institute for Gravitational Physics (Albert Einstein Institute)
+    institute-website: https://www.aei.mpg.de/
+    institute-address: Potsdam Science Park, Am Mühlenberg 1, D-14476, Potsdam, Germany
+    from-year: 2022
+    from-month: March
+    to-year: 2022
+    to-month: April
+    mentors:
+      Harald:
+        name: Harald Pfeiffer
+        website: https://www.aei.mpg.de/person/54205/138766
+      Prayush:
+        name: Vijay Varma
+        website: https://vijayvarma.com
   postdoc_icts:
     position: Postdoctoral Fellow
     department: Astrophysical Relativity
-    department-website: 
+    department-website: https://www.icts.res.in/research/astrorel
     institute: International Centre for Theoretical Sciences
     institute-website: https://www.icts.res.in
     institute-address: Hesaraghatta Hobli, Karnataka, 560089, India
