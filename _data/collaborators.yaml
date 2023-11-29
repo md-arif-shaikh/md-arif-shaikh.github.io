@@ -71,21 +71,21 @@ Eliu-Huerta:
 Vijay-Varma:
   name: Vijay Varma
   website: "https://vijayvarma.com/"
-  position: Marie Curie Fellow
-  institute: AEI
-  institute-url: "https://www.aei.mpg.de/"
-  city: Potsdam
-  country: Germany
+  position: Assistant Professor
+  institute: UMass
+  institute-url: https://www.umassd.edu/
+  city: Dartmouth
+  country: USA
   papers: 1
 
 Antoni-Ramos-Buades:
   name: Antoni Ramos Buades
   website:
-  position: Postdoctoral Fellow
-  institute: AEI
-  institute-url: "https://www.aei.mpg.de/"
-  city: Potsdam
-  country: Germany
+  position: Veni Fellow
+  institute: Nikhef
+  institute-url: https://www.nikhef.nl/
+  city: Amsterdam
+  country: NL
   papers: 1
 
 Harald-Pfeiffer:
@@ -100,12 +100,12 @@ Harald-Pfeiffer:
 
 Maarten-van-de-Meent:
   name: Maarten van de Meent
-  website: "https://www.aei.mpg.de/person/52146"
-  position: Adjunct Senior Scientist
-  institute: AEI
-  institute-url: "https://www.aei.mpg.de/"
-  city: Potsdam
-  country: Germany
+  website: https://mvdmeent.wordpress.com/
+  position: Assistant Professor
+  institute: Niels Bohr Institute
+  institute-url: https://nbi.ku.dk/english/
+  city: Copenhagen
+  country: Denmark
   papers: 1
 
 Pratik-Tarafdar:
