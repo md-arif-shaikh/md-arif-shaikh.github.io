@@ -1,7 +1,7 @@
 {% assign max_days = 90 %}
 {% assign max_secs = max_days | times: 86400 %}
 {% assign earliest_date = 'now' | date: '%s' | minus: max_secs | date: '%s' %}
-{% assign title_length = 80 %}
+{% assign title_length = 1000 %}
 {% assign today = 'now' | date: '%s' %}
 <!-- Collect recent talks -->
 {% assign talks = site.data.conference-talks %}
