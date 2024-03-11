@@ -1,3 +1,8 @@
+NPDF:
+  description: Offer for National Postdoctoral Fellowship (NPDF)
+  organization: Science and Engineering Research Board (SERB), Government of India.
+  organization-website: https://serbonline.in/SERB/HomePage
+  year: 2024
 KAS-membership:
   description: Membership
   organization: Korean Astronomical Society
