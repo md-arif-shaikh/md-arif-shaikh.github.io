@@ -3,6 +3,8 @@ on:
   push:
     branches-ignore:
     - '/pdflatex'
+  schedule:
+    - cron: "0 0 * * *" # Run at 00:00 every day
 jobs:
   build_latex:
     runs-on: ubuntu-latest
