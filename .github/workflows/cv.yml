@@ -28,8 +28,10 @@ jobs:
           pip install ycv
       - name: Create CV
         shell: bash -l {0}
+        env:
+          SUPER_SECRET: ${{ secrets.NASA_ADS_TOKEN }}
         run: |
-          ycv -j arif -y cv:cv.yaml
+          ycv -j arif -y cv:cv.yaml -nasa_ads_token $SUPER_SECRET
       - name: Commit to orphan branch
         run: |
           git checkout --orphan pdflatex
