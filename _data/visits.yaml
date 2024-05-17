@@ -1,3 +1,19 @@
+SNU-October-2024:
+  from-year: 2024
+  from-month: October
+  from-date: 05
+  to-year: 2024
+  to-month: October
+  to-date: 19
+  institute: Seoul National University
+  institute-url: https://en.snu.ac.kr/
+  department: Department of Astronomy
+  department-url:
+  host: Hyung Mok Lee
+  host-url: 
+  city: Seoul
+  country: Korea
+  
 Inje-November-2023:
   from-year: 2023
   from-month: November
