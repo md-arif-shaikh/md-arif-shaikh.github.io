@@ -1,14 +1,14 @@
 Shaikh:2024wyn:
   year: '2024'
-  pages: xxxxxx
-  number: xx
-  doi: ''
-  volume: Accepted
+  pages: '024030'
+  number: '2'
+  volume: '110'
   journal: Phys. Rev. D
+  doi: 10.1103/PhysRevD.110.024030
   primaryclass: gr-qc
   archiveprefix: arXiv
   eprint: '2402.15110'
-  title: A study of the Inspiral-Merger-Ringdown Consistency Test with gravitational-wave
+  title: A study of the inspiral-merger-ringdown consistency test with gravitational-wave
     signals from compact binaries in eccentric orbits
   author: <u>M. A. Shaikh</u>, S. A. Bhat & S. J. Kapadia
   ENTRYTYPE: article
