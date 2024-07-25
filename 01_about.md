@@ -25,3 +25,8 @@ University](https://jadavpuruniversity.in/) in Kolkata.
 My primary research interest is gravitational wave physics and astronomy. I am
 a member of the [LIGO Scientific Collaboration](https://www.ligo.org/) and
 [Simulating eXtreme Spacetime](https://www.black-holes.org/) Collaboration.
+
+I develop and maintain the open-source Python library
+[gw_eccentricity](https://pypi.org/project/gw-eccentricity/), which computes
+the orbital eccentricity of compact binaries from the gravitational waveforms
+emitted during their inspiral.
