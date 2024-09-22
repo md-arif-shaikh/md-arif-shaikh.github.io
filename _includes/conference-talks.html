@@ -2,7 +2,7 @@
 {% for talk in site.data.conference-talks %}
 {% assign t = talk[1] %}
 <li> <b><a href={{ t.url }}>{{ t.title }}</a></b><br> {% if t.from-year == t.to-year %}
-{% if t.from-month == t.to-month %} {{ t.from-month }} {{ t.from-date }}-{{ t.to-date }},
+{% if t.from-month == t.to-month %} {{ t.from-month }} {% if t.from-date == t.to-date %} {{ t.from-date -}} {% else %} {{ t.from-date }}-{{ t.to-date -}} {% endif %},
 {% else %} {{ t.from-month }} {{ t.from-date }}-{{ t.to-month }} {{ t.to-date }},
 {% endif %} {{ t.to-year }} {% else %} {{ t.from-month }} {{t.from-date}}, {{ t.from-year }}-{{ t.from-month }} {{t.to-date}}, {{ t.to-year }}
 {% endif %}<br><a href={{- t.conference-url -}}>{{ t.conference }}</a>, {{ t.city }}, {{ t.country }}
