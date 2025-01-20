@@ -18,6 +18,66 @@ P-Ajth:
   country: India
   papers: 3
 
+Shasvath-Kapadia:
+  name: Shasvath Kapadia
+  website: "https://shasvath-kapadia.github.io/"
+  position: Assistant Professor
+  institute: IUCAA
+  institute-url: "https://www.iucaa.in/"
+  city: Pune
+  country: India
+  papers: 3
+
+Vijay-Varma:
+  name: Vijay Varma
+  website: "https://vijayvarma.com/"
+  position: Assistant Professor
+  institute: UMass
+  institute-url: https://www.umassd.edu/
+  city: Dartmouth
+  country: USA
+  papers: 2
+
+Scott-Field:
+  name: Scott Field
+  website: "http://www.math.umassd.edu/~sfield/?_gl=1*d58uin*_gcl_au*ODQ1NTQ0ODM0LjE3MzczNTc3MDc.#"
+  position: Associate Professor
+  institute: UMass
+  institute-url: https://www.umassd.edu/
+  city: Dartmouth
+  country: USA
+  papers: 1
+
+Harald-Pfeiffer:
+  name: Harald Pfeiffer
+  website: "https://www.aei.mpg.de/person/54205"
+  position: Group Leader
+  institute: AEI
+  institute-url: "https://www.aei.mpg.de/"
+  city: Potsdam
+  country: Germany
+  papers: 1
+
+Antoni-Ramos-Buades:
+  name: Antoni Ramos Buades
+  website:
+  position: Veni Fellow
+  institute: Nikhef
+  institute-url: https://www.nikhef.nl/
+  city: Amsterdam
+  country: NL
+  papers: 1
+
+Maarten-van-de-Meent:
+  name: Maarten van de Meent
+  website: https://mvdmeent.wordpress.com/
+  position: Assistant Professor
+  institute: Niels Bohr Institute
+  institute-url: https://nbi.ku.dk/english/
+  city: Copenhagen
+  country: Denmark
+  papers: 1
+
 Prayush-Kumar:
   name: Prayush Kumar
   website:
@@ -28,15 +88,25 @@ Prayush-Kumar:
   country: India
   papers: 1
 
-Shasvath-Kapadia:
-  name: Shasvath Kapadia
-  website: "https://shasvath-kapadia.github.io/"
-  position: Assistant Professor
-  institute: IUCAA
-  institute-url: "https://www.iucaa.in/"
-  city: Pune
+Eliu-Huerta:
+  name: Eliu Huerta
+  website: "https://eliuhe.wixsite.com/eliu"
+  position: Senior Scientist
+  institute: The University of Chicago
+  institute-url:
+  city: Chicago
+  country: USA
+  papers: 1
+
+Uddeepta-Deka:
+  name: Uddeepta Deka
+  website:
+  position: Graduate Student
+  institute: ICTS-TIFR
+  institute-url: "https://www.icts.res.in/"
+  city: Bangalore
   country: India
-  papers: 3
+  papers: 2
 
 Mukesh-Kumar-Singh:
   name: Mukesh Kumar Singh
@@ -56,56 +126,6 @@ Divyajyoti:
   institute-url: "https://www.iitm.ac.in/"
   city: Chennai
   country: India
-  papers: 1
-
-Eliu-Huerta:
-  name: Eliu Huerta
-  website: "https://eliuhe.wixsite.com/eliu"
-  position: Senior Scientist
-  institute: The University of Chicago
-  institute-url:
-  city: Chicago
-  country: USA
-  papers: 1
-
-Vijay-Varma:
-  name: Vijay Varma
-  website: "https://vijayvarma.com/"
-  position: Assistant Professor
-  institute: UMass
-  institute-url: https://www.umassd.edu/
-  city: Dartmouth
-  country: USA
-  papers: 1
-
-Antoni-Ramos-Buades:
-  name: Antoni Ramos Buades
-  website:
-  position: Veni Fellow
-  institute: Nikhef
-  institute-url: https://www.nikhef.nl/
-  city: Amsterdam
-  country: NL
-  papers: 1
-
-Harald-Pfeiffer:
-  name: Harald Pfeiffer
-  website: "https://www.aei.mpg.de/person/54205"
-  position: Group Leader
-  institute: AEI
-  institute-url: "https://www.aei.mpg.de/"
-  city: Potsdam
-  country: Germany
-  papers: 1
-
-Maarten-van-de-Meent:
-  name: Maarten van de Meent
-  website: https://mvdmeent.wordpress.com/
-  position: Assistant Professor
-  institute: Niels Bohr Institute
-  institute-url: https://nbi.ku.dk/english/
-  city: Copenhagen
-  country: Denmark
   papers: 1
 
 Pratik-Tarafdar:
