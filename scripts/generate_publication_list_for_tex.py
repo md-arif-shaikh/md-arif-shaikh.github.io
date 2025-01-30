@@ -26,7 +26,7 @@ for k in data.keys():
         p += "\href{" + "https://doi.org/" + d["doi"] + "}{" + d["journal"] + "}" + ", "
         p += "{\\bfseries " + d["volume"] + "}" + ", " + d["pages"] + ", "
     p += "(" + d["year"] + "), "
-    p += "\href{" + "https://arxiv.org/abs/" + d["eprint"] + "}{arXiv:" + d["eprint"] + " [" + d["primaryclass"] +"]}" + ", "
+    p += "\href{" + "https://arxiv.org/abs/" + d["eprint"] + "}{arXiv:" + d["eprint"] + " [" + d["primaryclass"] +"]}" + ", " if ("eprint" in d) else ""
     fl.write(p)
 fl.write("\\end{enumerate}\n")
 fl.close()

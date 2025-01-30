@@ -1,5 +1,7 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 //@import url('https://fonts.maateen.me/kalpurush/font.css');
 //@import url('https://fonts.maateen.me/adorsho-lipi/font.css');
 //@import url('https://fonts.maateen.me/bangla/font.css');
@@ -8,9 +10,10 @@
 //@import url('https://fonts.maateen.me/solaiman-lipi/font.css');
 // font names are "SolaimanLipi", 'EkusheyLohit', 'CharukolaUltraLight', 'Bangla', 'AdorshoLipi', 'Kalpurush'
 // Define defaults for each variable.
-$base-font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
-$base-font-size:   14px !default;
+$base-font-family: Roboto, "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$base-font-size:   15px !default;
 $base-font-weight: 350 !default;
+$header-font-size: $base-font-size * (3/2) !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.25 !default;
 

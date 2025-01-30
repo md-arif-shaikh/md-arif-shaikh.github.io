@@ -30,7 +30,10 @@ def format_authors(list_of_authors, format_to_use="html"):
     num_authors = len(list_of_authors)
     for idx, author in enumerate(list_of_authors):
         last, first = author.split(", ")
-        initials = "".join([x[0] + ". " for x in first.split(" ")])
+        if len(first) > 0:
+            initials = "".join([x[0] + ". " for x in first.split(" ")])
+        else:
+            initials = ""
         if idx <= (num_authors - 3):
             joining_string = ", "
         elif idx == (num_authors - 2):
