@@ -1,3 +1,14 @@
+Chartier:2025hsw:
+  year: '2025'
+  month: '3'
+  primaryclass: gr-qc
+  archiveprefix: arXiv
+  eprint: '2503.19538'
+  title: A comparison between best-fit eccentricity definitions and the standardized
+    definition of eccentricity
+  author: N. Chartier, <u>M. A. Shaikh</u>, H. M. Lee & J. Kim
+  ENTRYTYPE: article
+  ID: Chartier:2025hsw
 Deka:2025vzx:
   year: '2025'
   month: '1'
