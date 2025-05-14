@@ -1,3 +1,19 @@
+Deka:2025vzx:
+  year: '2025'
+  pages: '104042'
+  number: '10'
+  volume: '111'
+  journal: Phys. Rev. D
+  doi: 10.1103/PhysRevD.111.104042
+  primaryclass: gr-qc
+  archiveprefix: arXiv
+  eprint: '2501.02974'
+  title: Surrogate modeling of gravitational waves microlensed by spherically symmetric
+    potentials
+  author: U. Deka, G. Prabhu, <u>M. A. Shaikh</u>, S. J. Kapadia, V. Varma & S. E.
+    Field
+  ENTRYTYPE: article
+  ID: Deka:2025vzx
 Deka:2024ecp:
   year: '2025'
   pages: 064028
