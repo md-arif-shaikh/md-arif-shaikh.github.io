@@ -6,7 +6,11 @@ Short-author-peer-reviewed:
   title: Short author peer reviewed
   yaml: publications_html.yaml
   file: short_author_peer_reviewed.html
-lvk-peer-reviewed:
-  title: LVK peer reviewed
+sxs:
+  title: SXS collaboration papers
+  yaml: sxs_html.yaml
+  file: sxs.html
+lvk:
+  title: LVK collaboration papers
   yaml: lvk_html.yaml
-  file: lvk_peer_reviewed.html
+  file: lvk.html
