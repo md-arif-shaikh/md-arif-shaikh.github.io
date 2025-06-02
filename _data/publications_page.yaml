@@ -1,11 +1,7 @@
-Short-author-preprints:
-  title: Short author preprints
-  yaml: short_author_preprints_html.yaml
-  file: short_author_preprints.html
-Short-author-peer-reviewed:
-  title: Short author peer reviewed
-  yaml: publications_html.yaml
-  file: short_author_peer_reviewed.html
+Short-author:
+  title: Short author papers
+  yaml: short_author_html.yaml
+  file: short_author.html
 sxs:
   title: SXS collaboration papers
   yaml: sxs_html.yaml

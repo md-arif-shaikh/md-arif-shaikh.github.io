@@ -109,11 +109,13 @@ publications:
   directory:
   short-author:
     title: Short author
-    preprints: short_author_preprints.bib
-    reviewed: publications.bib
-  collaboration:
-    title: Collaboration
-    reviewed: lvk.bib
+    bibfile: short_author.bib
+  sxs-collaboration:
+    title: SXS Collaboration
+    bibfile: sxs.bib
+  lvk-collaboration:
+    title: LVK Collaboration
+    bibfile: lvk.bib
 
 presentations:
   talks:

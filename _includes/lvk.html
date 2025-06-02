@@ -1,11 +1,31 @@
 <ol reversed>
 {% for publication in site.data.lvk_html %}
   {% assign paper = publication[1] %}
-  <li>
-    <b>{{ paper.title }}</b><br>
-    {{ paper.author }}<br>
-	<a href="https://doi.org/{{ paper.doi }}">{{ paper.journal }}</a>, <b>{{ paper.volume}}</b>, {{ paper.pages | replace: "--", "-" }}, ({{ paper.year }}), <a href="https://arxiv.org/abs/{{ paper.eprint }}">arXiv:{{ paper.eprint }}</a>
-	<a href="https://arxiv.org/pdf/{{ paper.eprint }}.pdf"><img class="svg-icon" src="/assets/pdf.svg"></a>
-  </li>
+<li>
+  <b>{{ paper.title }}</b><br>
+  {{ paper.author }}<br>
+  {%- assign meta = "" -%}
+  {%- if paper.journal -%}
+    {%- assign meta = meta | append: '<a href="https://doi.org/' | append: paper.doi | append: '">' | append: paper.journal | append: '</a>' -%}
+  {%- endif -%}
+  {%- if paper.volume -%}
+    {%- if meta != "" -%}{%- assign meta = meta | append: ', ' -%}{%- endif -%}
+    {%- assign meta = meta | append: '<b>' | append: paper.volume | append: '</b>' -%}
+  {%- endif -%}
+  {%- if paper.pages -%}
+    {%- if meta != "" -%}{%- assign meta = meta | append: ', ' -%}{%- endif -%}
+    {%- assign meta = meta | append: paper.pages | replace: "--", "-" -%}
+  {%- endif -%}
+  {%- if paper.year -%}
+    {%- if meta != "" -%}{%- assign meta = meta | append: ', ' -%}{%- endif -%}
+    {%- assign meta = meta | append: '(' | append: paper.year | append: ')' -%}
+  {%- endif -%}
+  {%- if paper.eprint -%}
+    {%- if meta != "" -%}{%- assign meta = meta | append: ', ' -%}{%- endif -%}
+    {%- assign meta = meta | append: '<a href="https://arxiv.org/abs/' | append: paper.eprint | append: '">arXiv:' | append: paper.eprint | append: '</a>' -%}
+    {%- assign meta = meta | append: ' <a href="https://arxiv.org/pdf/' | append: paper.eprint | append: '.pdf"><img class="svg-icon" src="/assets/pdf.svg"></a>' -%}
+  {%- endif -%}
+  {{ meta }}
+</li>
 {% endfor %}
 </ol>
