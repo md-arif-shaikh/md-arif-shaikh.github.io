@@ -1,3 +1,19 @@
+IUCAA-June-2025:
+  from-year: 2025
+  from-month: June
+  from-date: 16
+  to-year: 2025
+  to-month: June
+  to-date: 22
+  institute: IUCAA
+  institute-url: https://www.iucaa.in/
+  department: Gravitational Wave Group
+  department-url:
+  host: Shasvath Kapadia
+  host-url: https://shasvath-kapadia.github.io/home/
+  city: Pune
+  country: India
+
 SNU-October-2024:
   from-year: 2024
   from-month: October
