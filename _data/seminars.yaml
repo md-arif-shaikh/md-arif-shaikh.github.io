@@ -1,3 +1,12 @@
+IUCAA-2025-June:
+  title: "Defining eccentricity for spin-precessing binaries"
+  date: 2025-06-18
+  talk-url:
+  institute: IUCAA
+  institute-url: https://www.iucaa.in/en/
+  city: Pune
+  country: India
+
 Inje-November-2023:
   title: "gw_eccentricity: a Python package to measure orbital eccentricity from gravitational
 waveforms"
