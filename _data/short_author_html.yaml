@@ -1,6 +1,10 @@
 Chartier:2025hsw:
   year: '2025'
-  month: '3'
+  pages: 024029
+  number: '2'
+  volume: '112'
+  journal: Phys. Rev. D
+  doi: 10.1103/kh4t-k6cn
   primaryclass: gr-qc
   archiveprefix: arXiv
   eprint: '2503.19538'
