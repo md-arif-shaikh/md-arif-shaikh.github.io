@@ -282,3 +282,39 @@ Width: 100%;
     clear: both;
   }
 }
+
+.column-left-eq, .column-right-eq {
+  width: 100%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  float:center;
+}
+@media (min-width: 48em) {
+.column-left-eq {
+    width: 45%;
+    margin-right: 2.5%;
+    margin-bottom: 2.5%;
+    float:left;
+}
+.column-right-eq {
+    width: 45%;
+    margin-left: 2.5%;
+    float:right;
+}
+
+.columns {
+  content:"";
+  display: table;
+  clear: both;
+}
+}
+
+hr.research-top {
+  border-radius: 1px;
+  color: $grey-color-dark;
+}
+
+hr.research-bottom {
+  border-radius: 1px;
+  color: $grey-color-dark;
+}

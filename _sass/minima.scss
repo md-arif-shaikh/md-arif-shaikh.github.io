@@ -19,16 +19,19 @@ $base-line-height: 1.25 !default;
 
 $spacing-unit:     30px !default;
 
-$text-color:       #56B6C2 !default;
-$background-color: #282C34 !default;
-$brand-color:      #61AFEF !default;
+$text-color:       #D3D3D3 !default; // Light Gray for primary text
+$background-color: #1E1E1E !default; // Dark Gray for page background
+$brand-color:      #4682B4 !default; // Muted Blue for branding elements
+$link-color:       #5FA7D6 !default; // Lightened version of your brand color
+$link-hover-color: #7FC0EA !default; // even lighter on hover
+$link-active-color: #3D7FA3 !default; // slightly darker tint
 
-$grey-color:       #E5C07B !default;
-$grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark:  darken($grey-color, 0%) !default;
+$grey-color:       #A9A9A9 !default; // Medium Gray for secondary elements
+$grey-color-light: #E0E0E0 !default; // Off-White for subtle highlights
+$grey-color-dark:  #696969 !default; // Darker Gray for muted elements
 
-$code-color: $grey-color !default;
-$code-background: $background-color !default;
+$code-color:       #D4A017 !default; // Soft Gold for code text
+$code-background:  #2A2A2A !default; // Slightly Lighter Dark Gray for code blocks
 
 $table-text-align: left !default;
 
