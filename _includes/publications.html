@@ -9,7 +9,7 @@
 
 {% for publication in site.data.publications_page %}
 {% assign pub = publication[1] %}
-{{ "## " | append: pub.title  }}
+<h2 id="{{ pub.title | downcase | replace: ' ', '-' }}"> {{ pub.title  }} </h2>
 <div>
   {% include {{ pub.file }} %}
 </div>

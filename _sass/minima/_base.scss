@@ -83,6 +83,11 @@ ul, ol {
   margin-left: $spacing-unit;
 }
 
+ol li,
+ul li {
+  margin-bottom: 0.5rem; /* consistent spacing between list items */
+}
+
 li {
   > ul,
   > ol {
