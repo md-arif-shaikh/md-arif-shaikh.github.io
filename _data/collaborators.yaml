@@ -26,7 +26,7 @@ Shasvath-Kapadia:
   institute-url: "https://www.iucaa.in/"
   city: Pune
   country: India
-  papers: 3
+  papers: 6
 
 Vijay-Varma:
   name: Vijay Varma
@@ -36,7 +36,7 @@ Vijay-Varma:
   institute-url: https://www.umassd.edu/
   city: Dartmouth
   country: USA
-  papers: 2
+  papers: 3
 
 Scott-Field:
   name: Scott Field
@@ -56,7 +56,7 @@ Harald-Pfeiffer:
   institute-url: "https://www.aei.mpg.de/"
   city: Potsdam
   country: Germany
-  papers: 1
+  papers: 2
 
 Antoni-Ramos-Buades:
   name: Antoni Ramos Buades
@@ -66,7 +66,7 @@ Antoni-Ramos-Buades:
   institute-url: https://www.nikhef.nl/
   city: Amsterdam
   country: NL
-  papers: 1
+  papers: 2
 
 Maarten-van-de-Meent:
   name: Maarten van de Meent
@@ -111,31 +111,31 @@ Uddeepta-Deka:
 Mukesh-Kumar-Singh:
   name: Mukesh Kumar Singh
   website:
-  position: Graduate Student
-  institute: ICTS-TIFR
-  institute-url: "https://www.icts.res.in/"
-  city: Bangalore
-  country: India
+  position: Postdoctoral Fellow
+  institute: Cardiff University
+  institute-url: "https://profiles.cardiff.ac.uk/staff/singhm37"
+  city: Cardiff
+  country: UK
   papers: 3
 
 Divyajyoti:
   name: Divyajyoti
   website:
-  position: Graduate Student
-  institute: IIT Madras
-  institute-url: "https://www.iitm.ac.in/"
-  city: Chennai
-  country: India
+  position: Postdoctoral Fellow
+  institute: Cardiff University
+  institute-url: "https://www.cardiff.ac.uk/"
+  city: Cardiff
+  country: UK
   papers: 1
 
 Pratik-Tarafdar:
   name: Pratik Tarafdar
   website: "https://scholar.google.co.in/citations?user=b7BJN-0AAAAJ&hl=en"
   position: Postdoctoral Fellow
-  institute: IMSc
-  institute-url: "https://www.imsc.res.in/"
-  city: Chennai
-  country: India
+  institute: INAF, Observatory of Cagliari
+  institute-url: "https://www.oa-cagliari.inaf.it/index.php?set_language=1"
+  city: Selargius
+  country: Italy
   papers: 1
   
 Susovan-Maity:
@@ -148,7 +148,35 @@ Susovan-Maity:
   country: India
   papers: 2
 
+Michael_Boyle:
+  name: Michael Boyle
+  website: https://astro.cornell.edu/michael-boyle
+  position: Research Associate, CCAPS
+  institute: Cornell University
+  institute-url: https://astro.cornell.edu/
+  city: Ithaca, NY
+  country: US
+  papers: 1
 
+Larry_Kidder:
+  name: Larry Kidder
+  website: https://astro.cornell.edu/lawrence-kidder
+  position: Senior Research Associate, CCAPS
+  institute: Cornell University
+  institute-url: https://astro.cornell.edu/
+  city: Ithaca, NY
+  country: US
+  papers: 1
+
+Mark_Scheel:
+  name: Mark A. Scheel
+  website: https://www.pma.caltech.edu/people/mark-scheel
+  position: Research Professor of Physics
+  institute: Caltech
+  institute-url: https://www.pma.caltech.edu/
+  city: Pasadena CA
+  country: US
+  papers: 1
 
 
 
