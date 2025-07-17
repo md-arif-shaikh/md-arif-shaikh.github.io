@@ -2,15 +2,22 @@
 title: "Publications"
 permalink: /publications/
 layout: default
+update_date: 17-07-2025
 ---
 {% assign short_paper_count = site.data.short_author_html | size %}
 {% assign lvk_paper_count = site.data.lvk_html | size %}
 {% assign sxs_paper_count = site.data.sxs_html | size %}
+{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+{%- assign last_updated = page.update_date | date: date_format -%}
+
+<p>
+<i> Updated on {{last_updated}} </i>
+</p> 
 
 <p>
   Below is a list of <u>{{short_paper_count}}
   short-authored</u>, <u>{{lvk_paper_count}} <a href="https://www.ligo.caltech.edu/page/ligo-scientific-collaboration">LVK
-  collaboration</a></u> and {{sxs_paper_count}} <u><a href="">SXS collaboration</a></u> publications.
+  collaboration</a></u> and <u> {{sxs_paper_count}} <a href="">SXS collaboration</a></u> publications.
   For a complete list of publications, please visit
   <a href="https://inspirehep.net/authors/1812025">INSPIRE</a>.
 </p>
