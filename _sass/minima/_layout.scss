@@ -318,3 +318,33 @@ hr.research-bottom {
   border-radius: 1px;
   color: $grey-color-dark;
 }
+
+.paper-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.paper-label {
+  margin-right: 0.5em;
+  white-space: nowrap;
+}
+
+.paper-list {
+  display: inline;
+}
+
+.collaborator-container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1em; /* spacing between items, optional */
+}
+
+.collaborator-label {
+  margin-right: 0.5em;
+  white-space: nowrap;
+}
+
+.collaborator-list {
+  display: inline;
+  max-width: 100%;
+}

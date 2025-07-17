@@ -1,80 +1,113 @@
 defining-eccentricity:
-  title: Defining eccentricity for gravitational wave astronomy
+  title: GWs from eccentric systems
   header-image: "/assets/research/defining_eccentricity/definitions.png"
+  header-pdf: "/assets/research/defining_eccentricity/definitions.pdf"
   collaborators:
-  papers:
+    - Vijay-Varma
+    - Antoni-Ramos-Buades
+    - Harald-Pfeiffer
+    - Michael_Boyle
+    - Mark_Scheel
+    - Larry_Kidder
+  papers: 
+    1: "2302.11257"
+    2: "2507.08345"
+    3: "2503.19538"
   description: |
-    The first three observation runs of the <a
-    href="https://www.ligo.caltech.edu/">LIGO</a> and <a
-    href="https://www.virgo-gw.eu/">Virgo</a> detectors has resulted in the
-    detection of nearly 90 mergers of compact binaries. Among these, the
-    majority of the events were caused by the coalescences of binary black
-    holes (BBH), while the rest of the mergers originated from black
-    hole-neutron star (BHNS) or neutron star-neutron star (BNS) systems.
+    <h3> <u>Defining eccentricity for GW Astronomy</u> </h3>
+    <p> Defines a standard framework for measuring eccentricity in gravitational
+    wave (GW) astronomy, along with methods to calculate eccentricity directly
+    from gravitational waveforms.
+    </p>
 
-    Gravitational wave data is analyzed using "matched filtering," which involves
-    searching for the gravitational wave signal buried deep within detector noise
-    by using templates of the gravitational wave. Therefore, the accuracy of
-    waveform models is critical for correctly inferring parameters such as the mass
-    and spins of the binary system from the gravitational wave data.
+    <p> In General Theory of Relativity, there is no unique way to
+    define the eccentricity of a binary system's orbit. This can lead
+    to ambiguity about the binary's eccentricity inferred from GW
+    observations. In our works, we propose a standardized definion
+    that relies solely on the gravitational waveforms, removing gauge
+    ambiguity and model dependence. This standardized definion can
+    used to measure eccentricity from gravitational waveform emitted
+    by binaries on generic bound orbits.
+    </p>
     
-    While current waveform models are highly accurate, they rely on certain
-    assumptions about the binaries emitting gravitational waves. For example, they
-    assume that the binary's orbit is almost circular by the time the gravitational
-    wave enters the detector's sensitive frequency band, which is valid for
-    binaries formed in galactic fields but not necessarily for those formed in
-    dynamic environments such as dense globular clusters. Consequently, it becomes
-    crucial to incorporate eccentricity in waveform models. To this end, several
-    research groups have been actively developing eccentric waveform models in
-    recent years.
-
-    The issue at hand is that there is no unique natural definition of eccentricity
-    in General Relativity. As a result, various waveform models utilize different
-    internal parameterisations of eccentricity, making the inference of
-    eccentricity from gravitational wave data model-dependent. To overcome this
-    challenge, a standard definition of eccentricity that is model-independent,
-    free of gauge choices, and has a correct Newtonian limit is needed to enable
-    accurate and consistent inference of eccentricity from gravitational wave data.
-
-    In our paper titled <a href="https://arxiv.org/abs/2302.11257">Defining
-    eccentricity for gravitational wave astronomy</a>, we provide a standard
-    definition of eccentricity that meets all of the above criteria and enables
-    an unambiguous inference of eccentricity by applying our definition on the
-    posterior of eccentricity obtained using model-defined eccentricity. In
-    this paper, we show how this standard definition could be implemented and
-    show it's robustness using various tests.
-
-    Our standard definition of eccentricity is based in measuring it directly
-    from the gravitational waveform. We accomplish this by defining eccentricity in
-    terms of the frequency of the waveform at the pericenter and apocenter, which
-    eliminates model dependence. To ensure that our definition reduces to the
-    correct Newtonian definition when the binary separation is large, we apply an
-    additional transformation based on first order post-Newtonian calculation.
-
-early-warning:
-  title: Early warning with higher modes
-  header-image:
-  collaborators:
-  papers:
-  description: |
-    
-waveform-modelling:
-  title: Gravitational waveform modelling
-  header-image:
-  collaborators:
-  papers:
-  description: |
+    <p> A Python implementation of the method is available on GitHub:
+    <a href="https://github.com/vijayvarma392/gw_eccentricity">gw_eccentricity</a>.
+    </p>
 
 test-of-gr:
-  title: Test of General Relativity
-  header-image:
+  title: Test of General Relativity using GWs
+  header-image: "/assets/research/tgr/imrct_eccentric.png"
+  header-pdf: "/assets/research/tgr/imrct_eccentric.pdf"
   collaborators:
+    - Shasvath-Kapadia
   papers:
+    1: "2402.15110"
   description: |
+    <h3> <u>IMRCT meets eccentricity</u> </h3>
+    <p>The Inspiral-Merger-Ringdown Consistency Test (IMRCT) is a key tool for testing
+    the validity of General Relativity (GR) using gravitational waves (GWs) emitted
+    by compact binary systems. However, the use of quasicircular templates in the
+    IMRCT analysis of signals from binaries on eccentric orbits can lead to false
+    indications of GR violations.</p>
+
+    <p>This study demonstrates that adopting templates accounting for orbital
+    eccentricity eliminates such spurious violations, emphasizing the critical need
+    for accurate eccentric templates in gravitational wave astronomy. These
+    findings highlight the importance of template accuracy in ensuring robust GR
+    tests, particularly for eccentric binary systems.</p>
+
+gw-lensing:
+  title: Gravitational Lensing of GWs
+  header-image: "/assets/research/lensing/surrogate_timing.png"
+  header-pdf: "/assets/research/lensing/surrogate_timing.pdf"
+  collaborators:
+    - Uddeepta-Deka
+    - Shasvath-Kapadia
+    - P-Ajth
+    - Vijay-Varma
+    - Scott-Field
+  papers:
+    1: "2401.06553"
+    2: "2501.02974"
+  description: |
+    <p>This study focuses on modeling the gravitational lensing effect on
+    gravitational waves (GWs) produced by different lens configurations. By
+    employing numerical simulations and surrogate modeling techniques, it provides
+    an efficient and accurate framework for understanding these interactions.</p>
+
+    <p>The research highlights the potential of gravitational wave lensing as a tool
+    to probe the properties and nature of the lens, offering new insights into
+    astrophysical and cosmological phenomena.</p>
+
+early-warning:
+  title: Early warning with GW higher modes
+  header-image: "/assets/research/EW/EW.png"
+  header-pdf: "/assets/research/EW/EW.pdf"
+  collaborators:
+    - Shasvath-Kapadia
+    - Mukesh-Kumar-Singh
+    - P-Ajth
+  papers:
+    1: "2005.08830"
+    2: "2010.12407"
+    3: "2012.03963"
+    4: "2202.05802"
+  description: |
+    Coming soon!
 
 analogue-gravity:
   title: Black hole accretion and analogue gravity
-  header-image:
+  header-image: "/assets/research/AGravity/AGravity.png"
+  header-pdf: "/assets/research/AGravity/AGravity.pdf"
   collaborators:
+    - Tapas-Kumar-Das
+    - Pratik-Tarafdar
   papers:
+    1: "1612.07963"
+    2: "1612.07954"
+    3: "1705.04918"
+    4: "1803.09896"
+    5: "1806.04084"
+    6: "2106.07598"
   description: |
+    Coming soon!
