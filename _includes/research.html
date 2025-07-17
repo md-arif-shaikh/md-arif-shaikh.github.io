@@ -1,51 +1,55 @@
 <ul>
-{% for research in site.data.research %}
-{% assign res = research[1] %}
-  <li> <a href={{ "#" | append: res.title | downcase | replace: " ", "-" }}> {{ res.title }}</a>
-  </li>
-{% endfor %}
+  {% for research in site.data.research %}
+    {% assign res = research[1] %}
+    {% assign anchor = res.title | downcase | replace: ' ', '-' | replace: '.', '' | replace: ':', '' | replace: ',', '' | replace: '(', '' | replace: ')', '' %}
+    <li><a href="#{{ anchor }}">{{ res.title }}</a></li>
+  {% endfor %}
 </ul>
 
 {% for research in site.data.research %}
-<hr class="research-top">
-{% assign res = research[1] %}
-<h2>{{ res.title }}</h2>
+  {% assign res = research[1] %}
+  {% assign anchor = res.title | downcase | replace: ' ', '-' | replace: '.', '' | replace: ':', '' | replace: ',', '' | replace: '(', '' | replace: ')', '' %}
 
-<div class="columns">
-  <div class="column-left-eq">
-    <a href="{{ res.header-pdf | relative_url }}" target="_blank">
-      <img src="{{ res.header-image | relative_url }}" 
-           alt="Plot for {{ res.title }}"
-           style="max-width: 100%; height: auto; margin: 10px 0; border: 1px solid #444;">
-    </a>
-    <div class="paper-container">
-      <span class="paper-label"><b>Papers:</b></span>
-      <span class="paper-list">
-	{% for p in res.papers %}
-	{% assign paper = p[1] %}
-	<a href="https://arxiv.org/abs/{{ paper }}">arxiv:{{ paper }}</a>{% if forloop.last == false %}, {% endif %}
-	{% endfor %}
-      </span>
+  <hr class="research-top">
+  <h2 id="{{ anchor }}">{{ res.title }}</h2>
+
+  <div class="columns">
+    <div class="column-left-eq">
+      <a href="{{ res.header-pdf | relative_url }}" target="_blank">
+        <img src="{{ res.header-image | relative_url }}" 
+             alt="Plot for {{ res.title }}"
+             style="max-width: 100%; height: auto; margin: 10px 0; border: 1px solid #444;">
+      </a>
+
+      <div class="paper-container">
+        <span class="paper-label"><b>Papers:</b></span>
+        <span class="paper-list">
+          {% for p in res.papers %}
+            {% assign paper = p[1] %}
+            <a href="https://arxiv.org/abs/{{ paper }}">arxiv:{{ paper }}</a>{% if forloop.last == false -%},{% endif %}
+          {% endfor %}
+        </span>
+      </div>
+
+      <div class="collaborator-container">
+        <span class="collaborator-label"><b>Collaborators:</b></span>
+        <span class="collaborator-list">
+          {% for c in res.collaborators %}
+            {% assign collaborator = site.data.collaborators[c] -%}
+            {% if collaborator.website %}
+              <a href="{{ collaborator.website }}" target="_blank">{{ collaborator.name }}</a>{% if forloop.last == false -%},{% endif %}
+            {% else %}
+              {{ collaborator.name }}{% if forloop.last == false -%},{% endif %}
+            {% endif %}
+          {% endfor %}
+        </span>
+      </div>
     </div>
 
-    <div class="collaborator-container">
-      <span class="collaborator-label"><b>Collaborators:</b></span>
-      <span class="collaborator-list">
-	{% for c in res.collaborators %}
-	{% assign collaborator = site.data.collaborators[c] -%}
-	{% if collaborator.website %}
-        <a href="{{ collaborator.website }}" target="_blank">{{ collaborator.name }}</a>{% if forloop.last == false -%},{% endif %}
-	{% else %}
-        {{ collaborator.name }}{% if forloop.last == false -%},{% endif %}
-	{% endif %}
-	{% endfor %}
-      </span>
+    <div class="column-right-eq">
+      {{ res.description }}
     </div>
   </div>
-  <div class="column-right-eq"> 
-    {{ res.description }}
-  </div>
-</div>
 
-<div style="margin-bottom: 10px"></div>
+  <div style="margin-bottom: 10px"></div>
 {% endfor %}

@@ -103,11 +103,13 @@ li {
 h1, h2, h4, h5, h6 {
   font-size: $header-font-size;
   font-weight: $base-font-weight;
+  text-align: left;
 }
 
 h3 {
   font-size: $header-font-size * 0.9;
   font-weight: $base-font-weight;
+  text-align: left;
 }
 
 

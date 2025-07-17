@@ -300,6 +300,7 @@ Width: 100%;
     width: 45%;
     margin-left: 2.5%;
     float:right;
+    text-align: justify;
 }
 
 .columns {
@@ -311,7 +312,8 @@ Width: 100%;
 
 hr.research-top {
   border-radius: 1px;
-  color: $grey-color-dark;
+  color: $grey-color-light;
+  margin-bottom: 10px;
 }
 
 hr.research-bottom {
