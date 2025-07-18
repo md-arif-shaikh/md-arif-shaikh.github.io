@@ -364,11 +364,11 @@ hr.research-bottom {
 /* Optional: 40-60 split for desktop */
 @media (min-width: 768px) {
   .column-left-eq {
-    flex: 0 0 40%;
+    flex: 0 0 50%;
   }
 
   .column-right-eq {
-    flex: 0 0 60%;
+    flex: 0 0 50%;
   }
 }
 
