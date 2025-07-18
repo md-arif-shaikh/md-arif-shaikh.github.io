@@ -255,58 +255,56 @@
 }
 
 .columns {
-Width: 100%;
-}
-.column-left, .column-right {
-    width: 100%;
-    margin-right: 5%;
-    margin-bottom: 5%;
-    float:center;
-}
-@media (min-width: 48em) {
-  .column-left {
-      width: 25%;
-      margin-right: 2.5%;
-      margin-bottom: 2.5%;
-      float:left;
-  }
-  .column-right {
-      width: 65%;
-      margin-left: 2.5%;
-      float:right;
-  }
-
-  .columns {
-    content:"";
-    display: table;
-    clear: both;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5%;
+  margin-bottom: 2.5%;
 }
 
-.column-left-eq, .column-right-eq {
-  width: 100%;
-  margin-right: 5%;
-  margin-bottom: 5%;
-  float:center;
+.column-left {
+  flex: 1 1 25%;
+  max-width: 25%;
 }
-@media (min-width: 48em) {
-.column-left-eq {
-    width: 45%;
-    margin-right: 2.5%;
-    margin-bottom: 2.5%;
-    float:left;
+
+.column-right {
+  flex: 1 1 65%;
+  max-width: 65%;
 }
+
+/* Equal column variant */
+.column-left-eq,
 .column-right-eq {
-    width: 45%;
-    margin-left: 2.5%;
-    float:right;
+  flex: 1 1 45%;
+  max-width: 45%;
 }
 
-.columns {
-  content:"";
-  display: table;
-  clear: both;
+/* Responsive behavior for small screens */
+@media (max-width: 48em) {
+  .column-left,
+  .column-right,
+  .column-left-eq,
+  .column-right-eq {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
 }
+
+.column-left p,
+.column-right p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ccc; /* or any subtle light color for dark background */
+}
+
+.column-right h3 {
+  font-size: 1.2rem;
+  color: #61AFEF;
+  margin-top: 0;
+}
+
+.column-left img {
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
 hr.research-top {
