@@ -12,7 +12,8 @@ layout: default
   {% include upcoming.html %}
   {% include recent.html %}
 
-  {%- if site.posts.size > 0 -%}
+    {%- if site.posts.size > 0 -%}
+    <hr class="research-top">
     <h2 class="post-list-heading">{{ page.list_title | default: "Recent Posts" }}</h2>
     <ul class="post-list">
       {%- for post in site.posts limit:10 -%}

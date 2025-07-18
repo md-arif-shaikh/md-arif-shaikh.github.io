@@ -64,6 +64,7 @@
 {% assign total = recent_talks_number | plus: recent_seminars_number | plus: recent_visits_number %}
 		   
 {% if total > 0 %}
+<hr class="research-top">		   
 <h2 class="post-list-heading">Recently completed</h2>
 {% if recent_talks_number > 0 %}
 {% assign talks_url = site.baseurl | append: "presentations/#conference-talks" %}
