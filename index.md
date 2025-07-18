@@ -9,8 +9,7 @@ layout: home
 	<img src="/assets/home.jpg">
 </div>
 <div class="column-right"> 
-	{{site.data.authinfo.name}}<br>
-	{{site.data.authinfo.position}}<br>
+	<h1> {{site.data.authinfo.position}} <br> Gravitational Wave Astrophysicist</h2>
 	<a href="{{site.data.authinfo. department-website}}">{{site.data.authinfo.department}}</a><br>
 	<a href="{{site.data.authinfo. institute-website}}">{{site.data.authinfo.institute}}</a><br>
 	{{site.data.authinfo.institute-address}}<br>
