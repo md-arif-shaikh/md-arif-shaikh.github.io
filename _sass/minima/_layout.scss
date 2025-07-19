@@ -385,3 +385,27 @@ hr.research-bottom {
 .column-left-eq {
   /* No text-align or flexbox applied */
 }
+
+.social-icons {
+  margin-top: 12px;
+}
+
+.social-icons a {
+  margin-right: 12px;
+  font-size: 1.3rem;
+  color: #61AFEF;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #98C379;
+}
+
+.social-icons img.inspirehep-icon {
+  height: 1.3rem;
+  width: auto;
+  vertical-align: middle;
+  position: relative;
+  top: 0px;  /* tweak this value to align better */
+  margin-right: 0px;
+}
