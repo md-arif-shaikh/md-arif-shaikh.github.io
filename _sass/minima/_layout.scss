@@ -387,18 +387,31 @@ hr.research-bottom {
 }
 
 .social-icons {
-  margin-top: 12px;
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .social-icons a {
-  margin-right: 12px;
-  font-size: 1.3rem;
-  color: #61AFEF;
-  transition: color 0.3s;
+  color: white;
+  font-size: 1.5rem;
+  transition: transform 0.2s ease;
+  text-decoration: none;
 }
 
 .social-icons a:hover {
-  color: #98C379;
+  transform: scale(1.1);
+  color: #61AFEF;
+}
+
+.inspirehep-icon {
+  height: 24px;
+  width: 24px;
+  object-fit: contain;
+  vertical-align: middle;
+  border-radius: 4px;
 }
 
 .social-icons img.inspirehep-icon {
@@ -408,4 +421,108 @@ hr.research-bottom {
   position: relative;
   top: 0px;  /* tweak this value to align better */
   margin-right: 0px;
+}
+
+.hero {
+  /*background-color: #282C34;*/
+  padding: 0rem 0rem 2rem 0;
+  color: white;
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: left;
+  justify-content: left;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hero-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid #61AFEF;
+  object-fit: cover;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #61AFEF;
+}
+
+.hero-text h2 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.hero-text .affiliation {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text .affiliation a {
+  color: #61AFEF;
+  text-decoration: none;
+}
+
+.hero-text .intro {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  background-color: #61AFEF;
+  color: #282C34;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #4FA2DB;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #61AFEF;
+  border: 2px solid #61AFEF;
+}
+
+.btn-outline:hover {
+  background-color: #61AFEF;
+  color: #282C34;
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .hero-image img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .hero-cta {
+    /*flex-direction: column;*/
+    align-items: left;
+  }
 }
