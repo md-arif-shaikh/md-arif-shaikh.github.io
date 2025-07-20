@@ -1,0 +1,19 @@
+figure.facecolor : 0.157, 0.173, 0.204
+axes.facecolor   : 0.157, 0.173, 0.204
+axes.edgecolor   : white
+axes.labelcolor  : white
+xtick.color      : white
+ytick.color      : white
+axes.titlecolor  : 0.38, 0.686, 0.937
+text.color       : white
+font.size        : 12
+axes.titlesize   : 14
+axes.labelsize   : 12
+xtick.labelsize  : 11
+ytick.labelsize  : 11
+grid.color       : 0.67, 0.698, 0.75
+grid.alpha       : 0.2
+grid.linestyle   : --
+grid.linewidth   : 0.5
+legend.fontsize  : 11
+text.usetex      : True
