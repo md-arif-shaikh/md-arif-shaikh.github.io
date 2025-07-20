@@ -323,36 +323,6 @@ hr.research-bottom {
   color: $grey-color-dark;
 }
 
-.paper-container {
-  display: flex;
-  align-items: flex-start;
-}
-
-.paper-label {
-  margin-right: 0.5em;
-  white-space: nowrap;
-}
-
-.paper-list {
-  display: inline;
-}
-
-.collaborator-container {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 1em; /* spacing between items, optional */
-}
-
-.collaborator-label {
-  margin-right: 0.5em;
-  white-space: nowrap;
-}
-
-.collaborator-list {
-  display: inline;
-  max-width: 100%;
-}
-
 .column-left-eq,
 .column-right-eq {
   flex: 1;
@@ -526,3 +496,104 @@ hr.research-bottom {
     align-items: left;
   }
 }
+
+/* ========== Grid Layout ========== */
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+
+.research-card {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease-in-out;
+}
+
+.research-card:hover {
+  transform: scale(1.02);
+}
+
+.research-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.card-content h2 {
+  font-size: 1.3rem;
+  color: #61AFEF;
+  margin-bottom: 0.5rem;
+}
+
+.card-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0.5rem 0;
+}
+
+.full-text-box {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #dddddd;
+}
+
+.read-more-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #61AFEF;
+  color: #282C34;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.read-more-btn:hover {
+  background-color: #4fa0db;
+}
+
+.read-more-link {
+  margin-left: 1rem;
+  font-size: 0.9rem;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Paper and collaborator styles */
+.paper-container,
+.collaborator-container {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.paper-label,
+.collaborator-label {
+  font-weight: bold;
+  color: #bbbbbb;
+  margin-right: 0.5rem;
+}
+
+.paper-list a,
+.collaborator-list a {
+  color: #61AFEF;
+  text-decoration: none;
+}
+
+.paper-list a:hover,
+.collaborator-list a:hover {
+  text-decoration: underline;
+}
+

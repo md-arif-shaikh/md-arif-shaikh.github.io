@@ -13,13 +13,13 @@ defining-eccentricity:
     1: "2302.11257"
     2: "2507.08345"
     3: "2503.19538"
-  description: |
-    <h3> <u>Defining eccentricity for GW Astronomy</u> </h3>
+  summary: |
     <p> Defines a standard framework for measuring eccentricity in
     gravitational wave (GW) astronomy, along with methods to calculate
     eccentricity directly from gravitational waveforms.
     </p>
 
+  full-text: |
     <p> In General Theory of Relativity, there is no unique way to
     define the eccentricity of a binary system's orbit. This can lead
     to ambiguity about the binary's eccentricity inferred from GW
@@ -42,15 +42,15 @@ test-of-gr:
     - Shasvath-Kapadia
   papers:
     1: "2402.15110"
-  description: |
-    <h3> <u>IMRCT meets eccentricity</u> </h3>
+  summary: |
     <p>The Inspiral-Merger-Ringdown Consistency Test (IMRCT) is a key
     tool for testing the validity of General Relativity (GR) using
     gravitational waves (GWs) emitted by compact binary
     systems. However, the use of quasicircular templates in the IMRCT
     analysis of signals from binaries on eccentric orbits can lead to
     false indications of GR violations.</p>
-
+  full-text: |
+    <h3> <u>IMRCT meets eccentricity</u> </h3>
     <p>This study demonstrates that adopting templates accounting for
     orbital eccentricity eliminates such spurious violations,
     emphasizing the critical need for accurate eccentric templates in
@@ -71,13 +71,16 @@ gw-lensing:
   papers:
     1: "2401.06553"
     2: "2501.02974"
-  description: |
+  summary: |
+    We build fast and accurate surrogate model of microlensed
+    gravitational wave, and probe nature of the lens using
+    gravitational wave observations.
+  full-text: |
     <h3> <u>Fast and accurate microlensing template via surrogate
     modeling</u></h3> 
     <p>This study focuses on modeling the gravitational microlensing
     effect on gravitational waves (GWs) produced by different lens
     configurations.</p>
-
     <p>The microlensing effect is computed via a numerically expensive
     integration, making the generation of templates required for
     gravitational wave (GW) data analysis prohibitive. We circumvent
@@ -86,7 +89,7 @@ gw-lensing:
     microlensed GW templates, making parameter estimation from GW
     observations feasible.
     </p>
-
+    
     <h3> <u>Probing the nature of black holes using microlensing of
     GWs</u></h3>
     <p>The research highlights the potential of gravitational wave

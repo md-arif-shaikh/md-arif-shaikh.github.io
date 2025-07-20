@@ -1,3 +1,4 @@
+<!--
 <ul>
   {% for research in site.data.research %}
     {% assign res = research[1] %}
@@ -5,51 +6,65 @@
     <li><a href="#{{ anchor }}">{{ res.title }}</a></li>
   {% endfor %}
 </ul>
+-->
 
-{% for research in site.data.research %}
+
+<div class="research-grid">
+  {% for research in site.data.research %}
   {% assign res = research[1] %}
-  {% assign anchor = res.title | downcase | replace: ' ', '-' | replace: '.', '' | replace: ':', '' | replace: ',', '' | replace: '(', '' | replace: ')', '' %}
+  <div class="research-card">
+    <img src="{{ res.header-image | relative_url }}" alt="Research image">
+    <div class="card-content">
+      <h2>{{ res.title }}</h2>
+      <p>{{ res.summary }}</p>
 
-  <hr class="research-top">
-  <h2 id="{{ anchor }}">{{ res.title }}</h2>
-
-  <div class="columns">
-    <div class="column-left-eq">
-      <a href="{{ res.header-pdf | relative_url }}" target="_blank">
-        <img src="{{ res.header-image | relative_url }}" 
-             alt="Plot for {{ res.title }}"
-             style="max-width: 100%; height: auto; margin: 10px 0; border: 1px solid #444;">
-      </a>
-
+      <!-- 📄 Papers -->
+      {% if res.papers %}
       <div class="paper-container">
         <span class="paper-label"><b>Papers:</b></span>
         <span class="paper-list">
           {% for p in res.papers %}
             {% assign paper = p[1] %}
-            <a href="https://arxiv.org/abs/{{ paper }}">arxiv:{{ paper }}</a>{% if forloop.last == false -%},{% endif %}
+            <a href="https://arxiv.org/abs/{{ paper }}" target="_blank">arXiv:{{ paper }}</a>{% if forloop.last == false %}, {% endif %}
           {% endfor %}
         </span>
       </div>
+      {% endif %}
 
+      <!-- 👥 Collaborators -->
+      {% if res.collaborators %}
       <div class="collaborator-container">
         <span class="collaborator-label"><b>Collaborators:</b></span>
         <span class="collaborator-list">
           {% for c in res.collaborators %}
-            {% assign collaborator = site.data.collaborators[c] -%}
+            {% assign collaborator = site.data.collaborators[c] %}
             {% if collaborator.website %}
-              <a href="{{ collaborator.website }}" target="_blank">{{ collaborator.name }}</a>{% if forloop.last == false -%},{% endif %}
+              <a href="{{ collaborator.website }}" target="_blank">{{ collaborator.name }}</a>{% if forloop.last == false %}, {% endif %}
             {% else %}
-              {{ collaborator.name }}{% if forloop.last == false -%},{% endif %}
+              {{ collaborator.name }}{% if forloop.last == false %}, {% endif %}
             {% endif %}
           {% endfor %}
         </span>
       </div>
-    </div>
+      {% endif %}
 
-    <div class="column-right-eq">
-      {{ res.description }}
+      <!-- 🔽 Hidden full text -->
+      {% if res.full-text %}
+      <div class="full-text-box" style="display: none;">
+        <p>{{ res.full-text }}</p>
+      </div>
+      <button class="read-more-btn" onclick="toggleFullText(this)">Read More</button>
+      {% endif %}
     </div>
   </div>
+  {% endfor %}
+</div>
 
-  <div style="margin-bottom: 10px"></div>
-{% endfor %}
+<script>
+  function toggleFullText(button) {
+    const fullText = button.previousElementSibling;
+    const isVisible = fullText.style.display === "block";
+    fullText.style.display = isVisible ? "none" : "block";
+    button.textContent = isVisible ? "Read More" : "Read Less";
+  }
+</script>
