@@ -17,3 +17,4 @@ grid.linestyle   : --
 grid.linewidth   : 0.5
 legend.fontsize  : 11
 text.usetex      : True
+legend.frameon   : False

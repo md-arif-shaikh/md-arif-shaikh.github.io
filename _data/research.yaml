@@ -1,5 +1,5 @@
 defining-eccentricity:
-  title: GWs from eccentric systems
+  title: Defining eccentricity for GW astronomy
   header-image: "/assets/research/defining_eccentricity/definitions-dark.svg"
   header-pdf: "/assets/research/defining_eccentricity/definitions.pdf"
   collaborators:
@@ -36,7 +36,7 @@ defining-eccentricity:
 
 test-of-gr:
   title: Test of General Relativity using GWs
-  header-image: "/assets/research/tgr/imrct_eccentric.png"
+  header-image: "/assets/research/tgr/imrct_eccentric-dark.svg"
   header-pdf: "/assets/research/tgr/imrct_eccentric.pdf"
   collaborators:
     - Shasvath-Kapadia
@@ -46,17 +46,18 @@ test-of-gr:
     <p>The Inspiral-Merger-Ringdown Consistency Test (IMRCT) is a key
     tool for testing the validity of General Relativity (GR) using
     gravitational waves (GWs) emitted by compact binary
-    systems. However, the use of quasicircular templates in the IMRCT
-    analysis of signals from binaries on eccentric orbits can lead to
-    false indications of GR violations.</p>
+    systems. We extend this test to GW signals from eccentric binaries.</p>
   full-text: |
     <h3> <u>IMRCT meets eccentricity</u> </h3>
-    <p>This study demonstrates that adopting templates accounting for
-    orbital eccentricity eliminates such spurious violations,
-    emphasizing the critical need for accurate eccentric templates in
-    gravitational wave astronomy. These findings highlight the
-    importance of template accuracy in ensuring robust GR 
-    tests, particularly for eccentric binary systems.</p>
+    <p>The IMRCT is usually peformed using quasicircular template
+    which assumes the binary's orbit to be circular. We first show
+    that using quasicircular template for IMRCT on eccentric signals
+    may lead to false violation of GR. We then show that when the
+    IMRCT is peformed using eccentric template such spurious violation
+    of GR goes away. This emphasises the need for using eccentric
+    templates when analysing GW data and peforming test of GR using GW
+    observations.
+    </p>
 
 gw-lensing:
   title: Gravitational Lensing of GWs
