@@ -7,38 +7,5 @@ layout: default
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
-  {{ content }}
-
-  {% include upcoming.html %}
-  {% include recent.html %}
-
-    {%- if site.posts.size > 0 -%}
-    <hr class="research-top">
-    <h2 class="post-list-heading">{{ page.list_title | default: "Recent Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts limit:10 -%}
-      <!--
-      {% assign count = post.content | number_of_words %}
-      {% if count < 360 %}
-        {% assign read_time = "1 min" %}
-      {% else %}
-        {% assign read_time =  count | divided_by: 180 | append: " mins" %}	    
-      {% endif %}
-      {% assign read_time = read_time | append: " to read" %}
-      -->
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%d/%m/%y" -%}
-        <span class="post-meta">{{ post.date | date: date_format | append: " &raquo;"}}</span>
-          <a href="{{ post.url | relative_url }}">
-            <span lang="{{ post.lang | default: 'en' }}">{{ post.title }}</span>
-          </a>
-	  <!-- <span class="post-meta">{{ read_time }}</span> -->
-      </li>
-      {%- endfor -%}
-    </ul>
-
-    <p class="rss-subscribe">Find the complete list of posts <a href="{{ site.baseurl | append: '/posts'}}">here</a></p>
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {%- endif -%}
-
+    {{ content }}
 </div>

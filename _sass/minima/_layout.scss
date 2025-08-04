@@ -365,8 +365,8 @@ hr.research-bottom {
 }
 
 .social-icons a {
-  color: white;
-  font-size: 1.5rem;
+  /*color: white;*/
+  font-size: 1.2rem;
   transition: transform 0.2s ease;
   text-decoration: none;
 }
@@ -389,7 +389,7 @@ hr.research-bottom {
   width: auto;
   vertical-align: middle;
   position: relative;
-  top: 0px;  /* tweak this value to align better */
+  top: -2px;  /* tweak this value to align better */
   margin-right: 0px;
 }
 
