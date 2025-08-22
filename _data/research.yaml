@@ -34,6 +34,18 @@ defining-eccentricity:
     <a href="https://github.com/vijayvarma392/gw_eccentricity">gw_eccentricity</a>.
     </p>
 
+eect:
+  title: Eccentricity Evolution Consistency Test (EECT)
+  header-image: "/assets/research/EECT/microlensed.svg"
+  header-pdf: "/assets/research/EECT/microlensed.pdf"
+  collaborators:
+    - Shasvath-Kapadia
+  papers:
+    1: 2508.14850
+  summary: |
+    A test to identify truly eccentric signal and discard eccentricity mimickers.
+  full-text:
+
 test-of-gr:
   title: Test of General Relativity using GWs
   header-image: "/assets/research/tgr/imrct_eccentric-dark.svg"

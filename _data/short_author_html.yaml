@@ -1,3 +1,14 @@
+Bhat:2025lri:
+  year: '2025'
+  month: '8'
+  primaryclass: gr-qc
+  archiveprefix: arXiv
+  eprint: '2508.14850'
+  title: 'EECT: an Eccentricity Evolution Consistency Test to distinguish eccentric
+    gravitational-wave signals from eccentricity mimickers'
+  author: S. A. Bhat, A. Tiwari, <u>M. A. Shaikh</u> & S. J. Kapadia
+  ENTRYTYPE: article
+  ID: Bhat:2025lri
 Shaikh:2025tae:
   year: '2025'
   month: '7'
