@@ -1,3 +1,51 @@
+Ewha-October-2025:
+  from-year: 2025
+  from-month: October
+  from-date: 20
+  to-year: 2025
+  to-month: October
+  to-date: 21
+  institute: Ewha Womans University
+  institute-url: https://www.ewha.ac.kr/ewhaen/index.do
+  department: Department of Physics
+  department-url: 
+  host: Chunglee Kim
+  host-url: "https://www.ewha.ac.kr/ewhaen/professor/info.do?mode=view&pId=nufukFY1RWc4mY1OSKh5OA%3D%3D"
+  city: Seoul
+  country: Korea
+
+SNU-October-2025:
+  from-year: 2025
+  from-month: October
+  from-date: 15
+  to-year: 2025
+  to-month: October
+  to-date: 25
+  institute: Seoul National University
+  institute-url: https://en.snu.ac.kr/
+  department: Department of Astronomy
+  department-url:
+  host: Hyung Mok Lee
+  host-url: 
+  city: Seoul
+  country: Korea
+
+CUHK_2025:
+  from-year: 2025
+  from-month: October
+  from-date: 10
+  to-year: 2025
+  to-month: October
+  to-date: 15
+  institute: CUHK
+  institute-url: https://www.cuhk.edu.hk/english/index.html
+  department: CUHK GW Group
+  department-url: https://www.oahannuksela.com/cuhk-gw-group/
+  host: Otto A. Hannuksela
+  host-url: https://www.oahannuksela.com/
+  city: Hong Kong
+  country: Hong Kong
+
 ICTS-Bangalore-2025:
   from-year: 2025
   from-month: August
