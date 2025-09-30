@@ -1,6 +1,5 @@
 import bibtexparser
-from bibtexparser.bparser import BibTexParser
-from bibtexparser.customization import author, convert_to_unicode
+import bibtexparser.middlewares as m
 import yaml
 import argparse
 import os
@@ -25,51 +24,50 @@ parser.add_argument(
 
 args = parser.parse_args()
 
-def format_authors(list_of_authors, format_to_use="html"):
-    authors = ""
-    num_authors = len(list_of_authors)
-    for idx, author in enumerate(list_of_authors):
-        last, first = author.split(", ")
-        if len(first) > 0:
-            initials = "".join([x[0] + ". " for x in first.split(" ")])
+def format_author_list(authors, format="html"):
+    authors_list = []
+    for author in authors:
+        first = author.first
+        last = author.last
+        first = [x[0] + "." for x in first]
+        first = " ".join(first)
+        new_author = first + " " + last[0]
+        if new_author == "M. A. Shaikh":
+            if format == "html":
+                new_author = "<u>" + new_author + "</u>"
+            if format == "tex":
+                new_author = r"\underline{" + new_author + "}"
+        authors_list.append(new_author)
+    if len(authors_list) == 1:
+        return authors_list[0]
+    elif len(authors_list) == 2:
+        return " and ".join(authors_list)
+    else:
+        return ", ".join(authors_list[:-1]) + " and " + authors_list[-1]
+
+layers = [
+    #m.MonthIntMiddleware(), # Months should be represented as int (0-12)
+    m.SeparateCoAuthors(), # Co-authors should be separated as list of strings
+    m.SplitNameParts() # Individual Names should be split into first, von, last, jr parts
+]
+
+library= bibtexparser.parse_file(args.publication, append_middleware=layers)
+entries_list = library.entries
+# list to dict
+entries_dict = {}
+for entry in entries_list:
+    # each entry is bib entry. We want to convert it to a dict as well
+    entry_dict = {}
+    for key in entry.fields_dict:
+        if key == "title":
+            entry_dict.update({key: entry.fields_dict[key].value[1:-1]})
+        elif key == "author":
+            authors = entry.fields_dict[key]
+            entry_dict.update({key: format_author_list(authors.value)})
         else:
-            initials = ""
-        if idx <= (num_authors - 3):
-            joining_string = ", "
-        elif idx == (num_authors - 2):
-            joining_string = " \& " if format_to_use == "tex" else " & "
-        else:
-            joining_string = ""
-        author_name = initials + last
-        if author_name == "M. A. Shaikh":
-            if format_to_use == "html":
-                author_name = "<u>" + author_name + "</u>"
-            elif format_to_use == "tex":
-                author_name = r"\underline{" + author_name + "}"
-            else:
-                raise Exception(f"Unknown format to use {format_to_use}.")
-        authors += author_name + joining_string
-    return authors
+            entry_dict.update({key: entry.fields_dict[key].value})
+    entries_dict.update({entry.key: entry_dict})
 
-def customizations(record):
-    record = author(record)
-    record = convert_to_unicode(record)
-    return record
-
-def format_entries(entries_dict, format_to_use="html"):
-    for k in entries_dict.keys():
-        if "collaboration" not in entries_dict[k]:
-            entries_dict[k]["author"] = format_authors(
-                entries_dict[k]["author"],
-                format_to_use=format_to_use)
-
-bib_file = open(args.publication, "r")
-parser = BibTexParser()
-parser.customization = customizations
-bib_database = bibtexparser.load(bib_file, parser=parser)
-bib_file.close()
-entries_dict = bib_database.entries_dict
-format_entries(entries_dict, args.format)
 data_file_name = os.path.splitext(os.path.basename(args.publication))[0] + f"_{args.format}" + ".yaml"
 yaml_file = open(f"{args.data_dir}/{data_file_name}", "w")
 yaml.dump(entries_dict, yaml_file, sort_keys=False)
