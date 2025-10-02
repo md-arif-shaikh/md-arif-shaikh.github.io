@@ -1,10 +1,17 @@
-Scheel:2025jct:
+Nee:2025nmh:
+  author: P. J. Nee and  others
+  title: 'Eccentric binary black holes: A new framework for numerical relativity waveform
+    surrogates'
+  eprint: '2510.00106'
+  archivePrefix: arXiv
+  primaryClass: gr-qc
+  month: '9'
   year: '2025'
-  month: '5'
-  primaryclass: gr-qc
-  archiveprefix: arXiv
-  eprint: '2505.13378'
+Scheel:2025jct:
+  author: M. A. Scheel and  others
   title: The SXS Collaboration's third catalog of binary black hole simulations
-  author: M. A. Scheel & others
-  ENTRYTYPE: article
-  ID: Scheel:2025jct
+  eprint: '2505.13378'
+  archivePrefix: arXiv
+  primaryClass: gr-qc
+  month: '5'
+  year: '2025'

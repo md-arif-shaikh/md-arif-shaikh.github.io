@@ -1,368 +1,288 @@
 LIGOScientific:2025kei:
-  year: '2025'
-  pages: '99'
-  number: '2'
-  volume: '983'
-  journal: Astrophys. J.
-  doi: 10.3847/1538-4357/adb3a0
-  reportnumber: LIGO-P2400315
-  primaryclass: astro-ph.HE
-  archiveprefix: arXiv
-  eprint: '2501.01495'
+  author: A. G. Abac and  others
+  collaboration: LIGO Scientific, VIRGO, KAGRA
   title: Search for Continuous Gravitational Waves from Known Pulsars in the First
     Part of the Fourth LIGO-Virgo-KAGRA Observing Run
-  collaboration: LIGO Scientific, VIRGO, KAGRA
-  author:
-  - Abac, A. G.
-  - 'others, '
-  ENTRYTYPE: article
-  ID: LIGOScientific:2025kei
-LIGOScientific:2024jxh:
+  eprint: '2501.01495'
+  archivePrefix: arXiv
+  primaryClass: astro-ph.HE
+  reportNumber: LIGO-P2400315
+  doi: 10.3847/1538-4357/adb3a0
+  journal: Astrophys. J.
+  volume: '983'
+  number: '2'
+  pages: '99'
   year: '2025'
-  pages: '183'
-  number: '2'
-  volume: '985'
-  journal: Astrophys. J.
-  doi: 10.3847/1538-4357/adc681
-  reportnumber: LIGO-P2400125
-  primaryclass: astro-ph.HE
-  archiveprefix: arXiv
-  eprint: '2410.16565'
-  title: Search for Gravitational Waves Emitted from SN 2023ixf
+LIGOScientific:2024jxh:
+  author: A. G. Abac and  others
   collaboration: LIGO Scientific, Virgo,, KAGRA, VIRGO
-  author:
-  - Abac, A. G.
-  - 'others, '
-  ENTRYTYPE: article
-  ID: LIGOScientific:2024jxh
-LIGOScientific:2024avz:
-  year: '2024'
-  pages: '255'
-  number: '2'
-  volume: '977'
+  title: Search for Gravitational Waves Emitted from SN 2023ixf
+  eprint: '2410.16565'
+  archivePrefix: arXiv
+  primaryClass: astro-ph.HE
+  reportNumber: LIGO-P2400125
+  doi: 10.3847/1538-4357/adc681
   journal: Astrophys. J.
-  doi: 10.3847/1538-4357/ad8de0
-  reportnumber: LIGO-P2400192
-  primaryclass: astro-ph.HE
-  archiveprefix: arXiv
-  eprint: '2410.09151'
+  volume: '985'
+  number: '2'
+  pages: '183'
+  year: '2025'
+LIGOScientific:2024avz:
+  author: A. G. Abac and  others
+  collaboration: LIGO Scientific, KAGRA, VIRGO
   title: A Search Using GEO600 for Gravitational Waves Coincident with Fast Radio
     Bursts from SGR 1935+2154
-  collaboration: LIGO Scientific, KAGRA, VIRGO
-  author:
-  - Abac, A. G.
-  - 'others, '
-  ENTRYTYPE: article
-  ID: LIGOScientific:2024avz
+  eprint: '2410.09151'
+  archivePrefix: arXiv
+  primaryClass: astro-ph.HE
+  reportNumber: LIGO-P2400192
+  doi: 10.3847/1538-4357/ad8de0
+  journal: Astrophys. J.
+  volume: '977'
+  number: '2'
+  pages: '255'
+  year: '2024'
 LIGOScientific:2024sgg:
-  year: '2025'
-  pages: '207'
-  number: '2'
-  volume: '980'
-  journal: Astrophys. J.
-  doi: 10.3847/1538-4357/ad9749
-  primaryclass: astro-ph.HE
-  archiveprefix: arXiv
-  eprint: '2407.12867'
-  title: "Swift-BAT GUANO Follow-up of Gravitational-wave Triggers in the Third LIGO\u2013\
-    Virgo\u2013KAGRA Observing Run"
+  author: G. Raman and  others
   collaboration: LIGO Scientific, Virgo,, KAGRA, Virgo, Swift, Swift-BAT/GUANO
-  author:
-  - Raman, Gayathri
-  - 'others, '
-  ENTRYTYPE: article
-  ID: LIGOScientific:2024sgg
-LIGOScientific:2024elc:
-  year: '2024'
-  pages: L34
-  number: '2'
-  volume: '970'
-  journal: Astrophys. J. Lett.
-  doi: 10.3847/2041-8213/ad5beb
-  reportnumber: LIGO-P2300352
-  primaryclass: astro-ph.HE
-  archiveprefix: arXiv
-  eprint: '2404.04248'
-  title: "Observation of Gravitational Waves from the Coalescence of a 2.5\u20134.5\
-    \ M $_\xF8dot$ Compact Object and a Neutron Star"
-  collaboration: LIGO Scientific, Virgo,, KAGRA, VIRGO
-  author:
-  - Abac, A. G.
-  - 'others, '
-  ENTRYTYPE: article
-  ID: LIGOScientific:2024elc
-KAGRA:2024ipf:
-  year: '2024'
-  pages: '042001'
-  number: '4'
-  volume: '110'
-  journal: Phys. Rev. D
-  doi: 10.1103/PhysRevD.110.042001
-  reportnumber: LIGO-P2300250
-  primaryclass: astro-ph.CO
-  archiveprefix: arXiv
-  eprint: '2403.03004'
-  title: Ultralight vector dark matter search using data from the KAGRA O3GK run
-  collaboration: KAGRA, LIGO Scientific, VIRGO
-  author:
-  - Abac, A. G.
-  - 'others, '
-  ENTRYTYPE: article
-  ID: KAGRA:2024ipf
-FermiGamma-RayBurstMonitorTeam:2023mtr:
-  year: '2024'
-  pages: '149'
-  number: '2'
-  volume: '964'
+  title: Swift-BAT GUANO Follow-up of Gravitational-wave Triggers in the Third LIGO\textendash{}Virgo\textendash{}KAGRA
+    Observing Run
+  eprint: '2407.12867'
+  archivePrefix: arXiv
+  primaryClass: astro-ph.HE
+  doi: 10.3847/1538-4357/ad9749
   journal: Astrophys. J.
-  doi: 10.3847/1538-4357/ad1eed
-  primaryclass: astro-ph.HE
-  archiveprefix: arXiv
-  eprint: '2308.13666'
+  volume: '980'
+  number: '2'
+  pages: '207'
+  year: '2025'
+LIGOScientific:2024elc:
+  author: A. G. Abac and  others
+  collaboration: LIGO Scientific, Virgo,, KAGRA, VIRGO
+  title: Observation of Gravitational Waves from the Coalescence of a 2.5\textendash{}4.5
+    $M$ Compact Object and a Neutron Star
+  eprint: '2404.04248'
+  archivePrefix: arXiv
+  primaryClass: astro-ph.HE
+  reportNumber: LIGO-P2300352
+  doi: 10.3847/2041-8213/ad5beb
+  journal: Astrophys. J. Lett.
+  volume: '970'
+  number: '2'
+  pages: L34
+  year: '2024'
+KAGRA:2024ipf:
+  author: A. G. Abac and  others
+  collaboration: KAGRA, LIGO Scientific, VIRGO
+  title: Ultralight vector dark matter search using data from the KAGRA O3GK run
+  eprint: '2403.03004'
+  archivePrefix: arXiv
+  primaryClass: astro-ph.CO
+  reportNumber: LIGO-P2300250
+  doi: 10.1103/PhysRevD.110.042001
+  journal: Phys. Rev. D
+  volume: '110'
+  number: '4'
+  pages: '042001'
+  year: '2024'
+FermiGamma-RayBurstMonitorTeam:2023mtr:
+  author: C. Fletcher and  others
+  collaboration: Fermi Gamma-Ray Burst Monitor Team, LIGO Scientific, Virgo, KAGRA
   title: A Joint Fermi-GBM and Swift-BAT Analysis of Gravitational-wave Candidates
     from the Third Gravitational-wave Observing Run
-  collaboration: Fermi Gamma-Ray Burst Monitor Team, LIGO Scientific, Virgo, KAGRA
-  author:
-  - Fletcher, C.
-  - 'others, '
-  ENTRYTYPE: article
-  ID: FermiGamma-RayBurstMonitorTeam:2023mtr
-LIGOScientific:2023lpe:
-  year: '2024'
-  pages: '132'
-  number: '2'
-  volume: '973'
+  eprint: '2308.13666'
+  archivePrefix: arXiv
+  primaryClass: astro-ph.HE
+  doi: 10.3847/1538-4357/ad1eed
   journal: Astrophys. J.
-  doi: 10.3847/1538-4357/ad65ce
-  reportnumber: LIGO-P2300080
-  primaryclass: astro-ph.HE
-  archiveprefix: arXiv
-  eprint: '2308.03822'
+  volume: '964'
+  number: '2'
+  pages: '149'
+  year: '2024'
+LIGOScientific:2023lpe:
+  author: A. G. Abac and  others
+  collaboration: LIGO Scientific, KAGRA, VIRGO
   title: Search for Eccentric Black Hole Coalescences during the Third Observing Run
     of LIGO and Virgo
-  collaboration: LIGO Scientific, KAGRA, VIRGO
-  author:
-  - Abac, A. G.
-  - 'others, '
-  ENTRYTYPE: article
-  ID: LIGOScientific:2023lpe
+  eprint: '2308.03822'
+  archivePrefix: arXiv
+  primaryClass: astro-ph.HE
+  reportNumber: LIGO-P2300080
+  doi: 10.3847/1538-4357/ad65ce
+  journal: Astrophys. J.
+  volume: '973'
+  number: '2'
+  pages: '132'
+  year: '2024'
 LIGOScientific:2023bwz:
-  year: '2024'
-  pages: '191'
-  number: '2'
-  volume: '970'
-  journal: Astrophys. J.
-  doi: 10.3847/1538-4357/ad3e83
-  reportnumber: LIGO-P2200031
-  primaryclass: gr-qc
-  archiveprefix: arXiv
-  eprint: '2304.08393'
-  title: "Search for Gravitational-lensing Signatures in the Full Third Observing\
-    \ Run of the LIGO\u2013Virgo Network"
+  author: R. Abbott and  others
   collaboration: LIGO Scientific, KAGRA, VIRGO
-  author:
-  - Abbott, R.
-  - 'others, '
-  ENTRYTYPE: article
-  ID: LIGOScientific:2023bwz
-KAGRA:2023pio:
-  year: '2023'
-  pages: '29'
-  number: '2'
-  volume: '267'
-  journal: Astrophys. J. Suppl.
-  doi: 10.3847/1538-4365/acdc9f
-  reportnumber: LIGO-P2200316
-  primaryclass: gr-qc
-  archiveprefix: arXiv
-  eprint: '2302.03676'
-  title: Open Data from the Third Observing Run of LIGO, Virgo, KAGRA, and GEO
-  collaboration: KAGRA, VIRGO, LIGO Scientific
-  author:
-  - Abbott, R.
-  - 'others, '
-  ENTRYTYPE: article
-  ID: KAGRA:2023pio
-LIGOScientific:2022sts:
-  year: '2024'
-  pages: '137'
-  number: '1'
-  volume: '966'
+  title: Search for Gravitational-lensing Signatures in the Full Third Observing Run
+    of the LIGO\textendash{}Virgo Network
+  eprint: '2304.08393'
+  archivePrefix: arXiv
+  primaryClass: gr-qc
+  reportNumber: LIGO-P2200031
+  doi: 10.3847/1538-4357/ad3e83
   journal: Astrophys. J.
-  doi: 10.3847/1538-4357/ad27d3
-  reportnumber: LIGO-P2100387
-  primaryclass: astro-ph.HE
-  archiveprefix: arXiv
-  eprint: '2210.10931'
+  volume: '970'
+  number: '2'
+  pages: '191'
+  year: '2024'
+KAGRA:2023pio:
+  author: R. Abbott and  others
+  collaboration: KAGRA, VIRGO, LIGO Scientific
+  title: Open Data from the Third Observing Run of LIGO, Virgo, KAGRA, and GEO
+  eprint: '2302.03676'
+  archivePrefix: arXiv
+  primaryClass: gr-qc
+  reportNumber: LIGO-P2200316
+  doi: 10.3847/1538-4365/acdc9f
+  journal: Astrophys. J. Suppl.
+  volume: '267'
+  number: '2'
+  pages: '29'
+  year: '2023'
+LIGOScientific:2022sts:
+  author: R. Abbott and  others
+  collaboration: LIGO Scientific, Virgo,, KAGRA, VIRGO
   title: Search for Gravitational-wave Transients Associated with Magnetar Bursts
     in Advanced LIGO and Advanced Virgo Data from the Third Observing Run
-  collaboration: LIGO Scientific, Virgo,, KAGRA, VIRGO
-  author:
-  - Abbott, R.
-  - 'others, '
-  ENTRYTYPE: article
-  ID: LIGOScientific:2022sts
+  eprint: '2210.10931'
+  archivePrefix: arXiv
+  primaryClass: astro-ph.HE
+  reportNumber: LIGO-P2100387
+  doi: 10.3847/1538-4357/ad27d3
+  journal: Astrophys. J.
+  volume: '966'
+  number: '1'
+  pages: '137'
+  year: '2024'
 LIGOScientific:2022enz:
-  year: '2022'
-  pages: L30
-  number: '2'
-  volume: '941'
-  journal: Astrophys. J. Lett.
-  doi: 10.3847/2041-8213/aca1b0
-  reportnumber: LIGO-P2100110-v11, FERMILAB-PUB-22-948-V, LIGO-P2100110-v13
-  primaryclass: astro-ph.HE
-  archiveprefix: arXiv
-  eprint: '2209.02863'
+  author: R. Abbott and  others
+  collaboration: LIGO Scientific, KAGRA, VIRGO
   title: Model-based Cross-correlation Search for Gravitational Waves from the Low-mass
     X-Ray Binary Scorpius X-1 in LIGO O3 Data
-  collaboration: LIGO Scientific, KAGRA, VIRGO
-  author:
-  - Abbott, R.
-  - 'others, '
-  ENTRYTYPE: article
-  ID: LIGOScientific:2022enz
-KAGRA:2022osp:
+  eprint: '2209.02863'
+  archivePrefix: arXiv
+  primaryClass: astro-ph.HE
+  reportNumber: LIGO-P2100110-v11, FERMILAB-PUB-22-948-V, LIGO-P2100110-v13
+  doi: 10.3847/2041-8213/aca1b0
+  journal: Astrophys. J. Lett.
+  volume: '941'
+  number: '2'
+  pages: L30
   year: '2022'
-  pages: '042003'
-  number: '4'
-  volume: '106'
-  journal: Phys. Rev. D
-  doi: 10.1103/PhysRevD.106.042003
-  primaryclass: astro-ph.HE
-  archiveprefix: arXiv
-  eprint: '2204.04523'
+KAGRA:2022osp:
+  author: R. Abbott and  others
+  collaboration: KAGRA, LIGO Scientific, VIRGO
   title: Search for continuous gravitational wave emission from the Milky~Way center
     in O3 LIGO-Virgo data
-  collaboration: KAGRA, LIGO Scientific, VIRGO
-  author:
-  - Abbott, R.
-  - 'others, '
-  ENTRYTYPE: article
-  ID: KAGRA:2022osp
-KAGRA:2022twx:
+  eprint: '2204.04523'
+  archivePrefix: arXiv
+  primaryClass: astro-ph.HE
+  doi: 10.1103/PhysRevD.106.042003
+  journal: Phys. Rev. D
+  volume: '106'
+  number: '4'
+  pages: '042003'
   year: '2022'
-  pages: 063F01
-  number: '6'
-  volume: '2022'
-  journal: PTEP
-  doi: 10.1093/ptep/ptac073
-  reportnumber: LIGO-P2100286
-  primaryclass: gr-qc
-  archiveprefix: arXiv
-  eprint: '2203.01270'
+KAGRA:2022twx:
+  author: R. Abbott and  others
+  collaboration: KAGRA, VIRGO, LIGO Scientific
   title: First joint observation by the underground gravitational-wave detector KAGRA
     with GEO 600
-  collaboration: KAGRA, VIRGO, LIGO Scientific
-  author:
-  - Abbott, R.
-  - 'others, '
-  ENTRYTYPE: article
-  ID: KAGRA:2022twx
-KAGRA:2022dqk:
-  year: '2022'
-  pages: '062002'
+  eprint: '2203.01270'
+  archivePrefix: arXiv
+  primaryClass: gr-qc
+  reportNumber: LIGO-P2100286
+  doi: 10.1093/ptep/ptac073
+  journal: PTEP
+  volume: '2022'
   number: '6'
-  volume: '106'
-  journal: Phys. Rev. D
-  doi: 10.1103/PhysRevD.106.062002
-  reportnumber: LIGO-P2100405
-  primaryclass: gr-qc
-  archiveprefix: arXiv
-  eprint: '2201.10104'
+  pages: 063F01
+  year: '2022'
+KAGRA:2022dqk:
+  author: R. Abbott and  others
+  collaboration: KAGRA, VIRGO, LIGO Scientific
   title: Search for gravitational waves from Scorpius X-1 with a hidden Markov model
     in O3 LIGO data
-  collaboration: KAGRA, VIRGO, LIGO Scientific
-  author:
-  - Abbott, R.
-  - 'others, '
-  ENTRYTYPE: article
-  ID: KAGRA:2022dqk
-KAGRA:2022dwb:
-  year: '2022'
-  pages: '102008'
-  number: '10'
-  volume: '106'
+  eprint: '2201.10104'
+  archivePrefix: arXiv
+  primaryClass: gr-qc
+  reportNumber: LIGO-P2100405
+  doi: 10.1103/PhysRevD.106.062002
   journal: Phys. Rev. D
-  doi: 10.1103/PhysRevD.106.102008
-  reportnumber: LIGO-P2100367
-  primaryclass: gr-qc
-  archiveprefix: arXiv
-  eprint: '2201.00697'
+  volume: '106'
+  number: '6'
+  pages: '062002'
+  year: '2022'
+KAGRA:2022dwb:
+  author: R. Abbott and  others
+  collaboration: KAGRA, LIGO Scientific, VIRGO
   title: All-sky search for continuous gravitational waves from isolated neutron stars
     using Advanced LIGO and Advanced Virgo O3 data
-  collaboration: KAGRA, LIGO Scientific, VIRGO
-  author:
-  - Abbott, R.
-  - 'others, '
-  ENTRYTYPE: article
-  ID: KAGRA:2022dwb
-LIGOScientific:2021sio:
-  year: '2021'
-  month: '12'
-  reportnumber: LIGO-P2100275
-  primaryclass: gr-qc
-  archiveprefix: arXiv
-  eprint: '2112.06861'
-  title: Tests of General Relativity with GWTC-3
-  collaboration: LIGO Scientific, VIRGO, KAGRA
-  author:
-  - Abbott, R.
-  - 'others, '
-  ENTRYTYPE: article
-  ID: LIGOScientific:2021sio
-LIGOScientific:2021rnv:
-  year: '2022'
-  pages: '102001'
-  number: '10'
-  volume: '105'
+  eprint: '2201.00697'
+  archivePrefix: arXiv
+  primaryClass: gr-qc
+  reportNumber: LIGO-P2100367
+  doi: 10.1103/PhysRevD.106.102008
   journal: Phys. Rev. D
-  doi: 10.1103/PhysRevD.105.102001
-  reportnumber: P2100343
-  primaryclass: astro-ph.HE
-  archiveprefix: arXiv
-  eprint: '2111.15507'
+  volume: '106'
+  number: '10'
+  pages: '102008'
+  year: '2022'
+LIGOScientific:2021sio:
+  author: R. Abbott and  others
+  collaboration: LIGO Scientific, VIRGO, KAGRA
+  title: Tests of General Relativity with GWTC-3
+  eprint: '2112.06861'
+  archivePrefix: arXiv
+  primaryClass: gr-qc
+  reportNumber: LIGO-P2100275
+  month: '12'
+  year: '2021'
+LIGOScientific:2021rnv:
+  author: R. Abbott and  others
+  collaboration: LIGO Scientific, Virgo, KAGRA
   title: All-sky search for gravitational wave emission from scalar boson clouds around
     spinning black holes in LIGO O3 data
-  collaboration: LIGO Scientific, Virgo, KAGRA
-  author:
-  - Abbott, R.
-  - 'others, '
-  ENTRYTYPE: article
-  ID: LIGOScientific:2021rnv
-LIGOScientific:2021hvc:
+  eprint: '2111.15507'
+  archivePrefix: arXiv
+  primaryClass: astro-ph.HE
+  reportNumber: P2100343
+  doi: 10.1103/PhysRevD.105.102001
+  journal: Phys. Rev. D
+  volume: '105'
+  number: '10'
+  pages: '102001'
   year: '2022'
-  pages: '1'
-  number: '1'
-  volume: '935'
-  journal: Astrophys. J.
-  doi: 10.3847/1538-4357/ac6acf
-  reportnumber: LIGO-P2100049
-  primaryclass: astro-ph.HE
-  archiveprefix: arXiv
-  eprint: '2111.13106'
+LIGOScientific:2021hvc:
+  author: R. Abbott and  others
+  collaboration: LIGO Scientific, VIRGO, KAGRA
   title: Searches for Gravitational Waves from Known Pulsars at Two Harmonics in the
     Second and Third LIGO-Virgo Observing Runs
-  collaboration: LIGO Scientific, VIRGO, KAGRA
-  author:
-  - Abbott, R.
-  - 'others, '
-  ENTRYTYPE: article
-  ID: LIGOScientific:2021hvc
-LIGOScientific:2021aug:
-  year: '2023'
-  pages: '76'
-  number: '2'
-  volume: '949'
+  eprint: '2111.13106'
+  archivePrefix: arXiv
+  primaryClass: astro-ph.HE
+  reportNumber: LIGO-P2100049
+  doi: 10.3847/1538-4357/ac6acf
   journal: Astrophys. J.
-  doi: 10.3847/1538-4357/ac74bb
-  reportnumber: LIGO-P2100185-v6, LIGO-P2100185-v5
-  primaryclass: astro-ph.CO
-  archiveprefix: arXiv
-  eprint: '2111.03604'
-  title: "Constraints on the Cosmic Expansion History from GWTC\u20133"
+  volume: '935'
+  number: '1'
+  pages: '1'
+  year: '2022'
+LIGOScientific:2021aug:
+  author: R. Abbott and  others
   collaboration: LIGO Scientific, Virgo, KAGRA
-  author:
-  - Abbott, R.
-  - 'others, '
-  ENTRYTYPE: article
-  ID: LIGOScientific:2021aug
+  title: Constraints on the Cosmic Expansion History from GWTC\textendash{}3
+  eprint: '2111.03604'
+  archivePrefix: arXiv
+  primaryClass: astro-ph.CO
+  reportNumber: LIGO-P2100185-v6, LIGO-P2100185-v5
+  doi: 10.3847/1538-4357/ac74bb
+  journal: Astrophys. J.
+  volume: '949'
+  number: '2'
+  pages: '76'
+  year: '2023'
