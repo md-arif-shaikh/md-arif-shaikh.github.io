@@ -32,6 +32,9 @@ def format_author_list(authors, format="html"):
         first = [x[0] + "." for x in first]
         first = " ".join(first)
         new_author = first + " " + last[0]
+        if format == "html" and r"{\"u}" in new_author:
+            new_author = new_author.replace(r"{\"u}", "&uuml;")
+            print(new_author)
         if new_author == "M. A. Shaikh":
             if format == "html":
                 new_author = "<u>" + new_author + "</u>"
