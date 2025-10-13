@@ -30,21 +30,21 @@ SNU-October-2025:
   city: Seoul
   country: Korea
 
-CUHK_2025:
-  from-year: 2025
-  from-month: October
-  from-date: 10
-  to-year: 2025
-  to-month: October
-  to-date: 15
-  institute: CUHK
-  institute-url: https://www.cuhk.edu.hk/english/index.html
-  department: CUHK GW Group
-  department-url: https://www.oahannuksela.com/cuhk-gw-group/
-  host: Otto A. Hannuksela
-  host-url: https://www.oahannuksela.com/
-  city: Hong Kong
-  country: Hong Kong
+# CUHK_2025:
+#   from-year: 2025
+#   from-month: October
+#   from-date: 10
+#   to-year: 2025
+#   to-month: October
+#   to-date: 15
+#   institute: CUHK
+#   institute-url: https://www.cuhk.edu.hk/english/index.html
+#   department: CUHK GW Group
+#   department-url: https://www.oahannuksela.com/cuhk-gw-group/
+#   host: Otto A. Hannuksela
+#   host-url: https://www.oahannuksela.com/
+#   city: Hong Kong
+#   country: Hong Kong
 
 ICTS-Bangalore-2025:
   from-year: 2025
