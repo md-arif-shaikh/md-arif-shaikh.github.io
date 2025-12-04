@@ -16,8 +16,15 @@ Tiwari:2025fua:
   eprint: '2509.26152'
   archivePrefix: arXiv
   primaryClass: astro-ph.HE
-  month: '9'
+  doi: 10.3847/1538-4357/ae1d74
+  url: https://doi.org/10.3847/1538-4357/ae1d74
   year: '2025'
+  month: dec
+  publisher: The American Astronomical Society
+  volume: '995'
+  number: '1'
+  pages: '48'
+  journal: Astrophys. J.
 Bhat:2025lri:
   author: S. A. Bhat, A. Tiwari, <u>M. A. Shaikh</u> and S. J. Kapadia
   title: Eccentricity evolution consistency test to distinguish eccentric gravitational-wave
