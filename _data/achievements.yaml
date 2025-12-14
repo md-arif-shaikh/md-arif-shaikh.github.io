@@ -1,3 +1,8 @@
+LISA-membership:
+  description: Core member
+  organization: LISA Consortium
+  organization-website: "https://www.lisamission.org/"
+  year: 2025--
 NPDF:
   description: Offer for National Postdoctoral Fellowship (NPDF)
   organization: Science and Engineering Research Board (SERB), Government of India.
