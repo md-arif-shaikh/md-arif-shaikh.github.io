@@ -32,10 +32,10 @@ jobs:
       
       - name: Commit to orphan branch
         run: |
+          cp _data/arif/cv_arif.pdf cv_arif.pdf
           git checkout --orphan pdflatex
           git rm -rf .
-          git checkout main -- _data/arif/cv_arif.pdf
-          mv _data/arif/cv_arif.pdf .
+          mv cv_arif.pdf .
           git add cv_arif.pdf
           git -c user.name='GitHub Action' -c user.email='action@github.com' commit -m "Built CV with AcademicCV.jl"
       
