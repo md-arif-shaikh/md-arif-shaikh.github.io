@@ -145,7 +145,7 @@ ICTS-Bangalore-2023:
 BNU-May-2023:
   from-year: 2023
   from-month: May
-  from-date: 09
+  from-date: "09"
   to-year: 2023
   to-month: May
   to-date: 11

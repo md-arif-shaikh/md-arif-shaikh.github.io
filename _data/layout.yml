@@ -1,0 +1,56 @@
+# CV Layout Configuration
+# This file defines which sections appear in your CV and in what order
+# Each section should have:
+#   - id: unique identifier matching data file or special section name
+#   - enabled: true/false to include/exclude the section
+#   - title: display title for the section (optional, uses id if not specified)
+
+sections:
+  - id: positions
+    enabled: true
+    title: Positions
+  
+  - id: education
+    enabled: true
+    title: Education
+  
+  - id: achievements
+    enabled: true
+    title: Awards, Fellowships \& Memberships
+  
+  - id: publications
+    enabled: true
+    title: Publications
+  
+  - id: seminars
+    enabled: true
+    title: Seminars
+
+  - id: conference-talks
+    enabled: true
+    title: Conference Talks
+  
+  - id: conference-posters
+    enabled: true
+    title: Conference Posters
+
+  - id: workshops
+    enabled: true
+    title: Workshops
+
+  - id: visits
+    enabled: true
+    title: Research Visits
+  
+  - id: teaching
+    enabled: true
+    title: Teaching
+  
+  - id: refereeing
+    enabled: true
+    title: Refereeing
+    show_numbers: false
+    
+  - id: references
+    enabled: true
+    title: References

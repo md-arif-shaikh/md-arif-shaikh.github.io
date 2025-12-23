@@ -61,7 +61,7 @@ Chartier:2025hsw:
   journal: Phys. Rev. D
   volume: '112'
   number: '2'
-  pages: 024029
+  pages: "024029"
   year: '2025'
 Deka:2025vzx:
   author: U. Deka, G. Prabhu, <u>M. A. Shaikh</u>, S. J. Kapadia, V. Varma and S.
@@ -88,7 +88,7 @@ Deka:2024ecp:
   journal: Phys. Rev. D
   volume: '111'
   number: '6'
-  pages: 064028
+  pages: "064028"
   year: '2025'
 Shaikh:2024wyn:
   author: <u>M. A. Shaikh</u>, S. A. Bhat and S. J. Kapadia

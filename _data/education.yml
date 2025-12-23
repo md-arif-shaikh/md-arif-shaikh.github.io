@@ -1,0 +1,42 @@
+PhD:
+  degree: Doctor of Philosophy (PhD)
+  department: Cosmology & High Energy Astrophysics
+  department-website: 
+  institute: Harish-Chandra Research Institute
+  institute-website: https://www.hri.res.in
+  institute-address: Chhatnag Road, Jhunsi, Prayagraj, 211019, Uttar Pradesh, India 
+  from-year: 2014
+  from-month: July
+  to-year: 2019
+  to-month: June
+  advisor: Tapas Kumar Das
+  advisor-website:
+  advisor-email: tapas@hri.res.in
+MSc:
+  degree: Master of Science (MSc)
+  department: Cosmology & High Energy Astrophysics
+  department-website: 
+  institute: Harish-Chandra Research Institute
+  institute-website: https://www.hri.res.in
+  institute-address: Chhatnag Road, Jhunsi, Prayagraj, 211019, Uttar Pradesh, India 
+  from-year: 2012
+  from-month: July
+  to-year: 2014
+  to-month: June
+  advisor: Tapas Kumar Das
+  advisor-website:
+  advisor-email: tapas@hri.res.in
+BSc:
+  degree: Bachelor of Science (BSc)
+  department: Faculty of Physics
+  department-website: 
+  institute: Jadavpur University
+  institute-website: http://www.jaduniv.edu.in/
+  institute-address: 188, Raja S.C. Mallick Rd, Kolkata 700032, India
+  from-year: 2009
+  from-month: July
+  to-year: 2012
+  to-month: June
+  advisor: 
+  advisor-website:
+  advisor-email:
