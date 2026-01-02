@@ -2,11 +2,11 @@
 title: "Publications"
 permalink: /publications/
 layout: page
-update_date: 22-10-2025
+update_date: 02-01-2026
 ---
-{% assign short_paper_count = site.data.short_author_html | size %}
-{% assign lvk_paper_count = site.data.lvk_html | size %}
-{% assign sxs_paper_count = site.data.sxs_html | size %}
+{% assign short_paper_count = site.data.short_author | size %}
+{% assign lvk_paper_count = site.data.lvk | size %}
+{% assign sxs_paper_count = site.data.sxs | size %}
 {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 {%- assign last_updated = page.update_date | date: date_format -%}
 
