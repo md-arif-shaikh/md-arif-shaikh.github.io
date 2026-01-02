@@ -204,7 +204,7 @@ KAGRA:2025yfg:
 LIGOScientific:2025rsn:
   author: "Abac, A. G. and others."
   collaboration: "LIGO Scientific, VIRGO, KAGRA"
-  title: "GW231123: A Binary Black Hole Merger with Total Mass 190–265 M_☉"
+  title: "GW231123: A Binary Black Hole Merger with Total Mass 190–265 M<sub>☉</sub>"
   eprint: "2507.08219"
   archiveprefix: "arXiv"
   primaryclass: "astro-ph.HE"
@@ -291,7 +291,7 @@ LIGOScientific:2024sgg:
 LIGOScientific:2024elc:
   author: "Abac, A. G. and others."
   collaboration: "LIGO Scientific, KAGRA, VIRGO"
-  title: "Observation of Gravitational Waves from the Coalescence of a 2.5–4.5 M _☉ Compact Object and a Neutron Star"
+  title: "Observation of Gravitational Waves from the Coalescence of a 2.5–4.5 M <sub>☉</sub> Compact Object and a Neutron Star"
   eprint: "2404.04248"
   archiveprefix: "arXiv"
   primaryclass: "astro-ph.HE"
