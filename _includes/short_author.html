@@ -20,7 +20,7 @@
     {%- if meta != "" -%}{%- assign meta = meta | append: ', ' -%}{%- endif -%}
     {%- assign meta = meta | append: '(' | append: paper.year | append: ')' -%}
   {%- endif -%}
-  {%- if paper.eprint -%}
+  {%- if paper.eprint != "" -%}
     {%- if meta != "" -%}{%- assign meta = meta | append: ', ' -%}{%- endif -%}
     {%- assign meta = meta | append: '<a href="https://arxiv.org/abs/' | append: paper.eprint | append: '">arXiv:' | append: paper.eprint | append: '</a>' -%}
     {%- assign meta = meta | append: ' <a href="https://arxiv.org/pdf/' | append: paper.eprint | append: '.pdf"><img class="svg-icon" src="/assets/pdf.svg"></a>' -%}
