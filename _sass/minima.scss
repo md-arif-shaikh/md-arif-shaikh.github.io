@@ -19,19 +19,45 @@ $base-line-height: 1.25 !default;
 
 $spacing-unit:     30px !default;
 
-$text-color:       #D3D3D3 !default; // Light Gray for primary text
-$background-color: #1E1E1E !default; // Dark Gray for page background
-$brand-color:      #4682B4 !default; // Muted Blue for branding elements
-$link-color:       #5FA7D6 !default; // Lightened version of your brand color
-$link-hover-color: #7FC0EA !default; // even lighter on hover
-$link-active-color: #3D7FA3 !default; // slightly darker tint
+// ---- Tokyo Night (night) palette ----
+$tn-bg:            #1a1b26; // editor background
+$tn-bg-dark:       #16161e; // darker chrome (header/footer)
+$tn-bg-highlight:  #292e42; // selection / hover
+$tn-bg-float:      #1f2335; // cards, popups, code blocks
+$tn-border:        #3b4261; // borders / rules
+$tn-terminal-black:#414868;
+$tn-comment:       #565f89;
+$tn-fg:            #c0caf5; // primary text
+$tn-fg-dark:       #a9b1d6; // secondary text
+$tn-fg-gutter:     #3b4261;
+$tn-blue:          #7aa2f7;
+$tn-cyan:          #7dcfff;
+$tn-blue1:         #2ac3de;
+$tn-blue5:         #89ddff;
+$tn-blue6:         #b4f9f8;
+$tn-magenta:       #bb9af7;
+$tn-purple:        #9d7cd8;
+$tn-orange:        #ff9e64;
+$tn-yellow:        #e0af68;
+$tn-green:         #9ece6a;
+$tn-green1:        #73daca;
+$tn-teal:          #1abc9c;
+$tn-red:           #f7768e;
+$tn-red1:          #db4b4b;
 
-$grey-color:       #A9A9A9 !default; // Medium Gray for secondary elements
-$grey-color-light: #E0E0E0 !default; // Off-White for subtle highlights
-$grey-color-dark:  #696969 !default; // Darker Gray for muted elements
+$text-color:       $tn-fg !default;
+$background-color: $tn-bg !default;
+$brand-color:      $tn-blue !default;
+$link-color:       $tn-blue !default;
+$link-hover-color: $tn-cyan !default;
+$link-active-color: $tn-magenta !default;
 
-$code-color:       #D4A017 !default; // Soft Gold for code text
-$code-background:  #2A2A2A !default; // Slightly Lighter Dark Gray for code blocks
+$grey-color:       $tn-fg-dark !default;
+$grey-color-light: $tn-border !default;
+$grey-color-dark:  $tn-comment !default;
+
+$code-color:       $tn-orange !default;
+$code-background:  $tn-bg-float !default;
 
 $table-text-align: left !default;
 

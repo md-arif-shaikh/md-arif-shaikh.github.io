@@ -5,6 +5,7 @@
   /*border-top: 5px solid $grey-color-dark;
   border-bottom: 1px solid $grey-color-light;*/
   min-height: $spacing-unit * 1.865;
+  border-bottom: 1px solid $tn-border;
 
   // Positioning context for the mobile navigation icon
   position: relative;
@@ -20,7 +21,7 @@
 
   &,
   &:visited {
-    color: $grey-color-dark;
+    color: $tn-blue;
   }
 }
 
@@ -106,7 +107,7 @@
  * Site footer
  */
 .site-footer {
-  /*border-top: 1px solid $grey-color-light;*/
+  border-top: 1px solid $tn-border;
   padding: $spacing-unit 0;
 }
 
@@ -373,7 +374,7 @@ hr.research-bottom {
 
 .social-icons a:hover {
   transform: scale(1.1);
-  color: #61AFEF;
+  color: $tn-blue;
 }
 
 .inspirehep-icon {
@@ -394,7 +395,7 @@ hr.research-bottom {
 }
 
 .hero {
-  /*background-color: #282C34;*/
+  /*background-color: $tn-bg;*/
   padding: 0rem 0rem 2rem 0;
   color: white;
 }
@@ -413,7 +414,7 @@ hr.research-bottom {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: 3px solid #61AFEF;
+  border: 3px solid $tn-blue;
   object-fit: cover;
 }
 
@@ -424,7 +425,7 @@ hr.research-bottom {
 .hero-text h1 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  color: #61AFEF;
+  color: $tn-blue;
 }
 
 .hero-text h2 {
@@ -440,7 +441,7 @@ hr.research-bottom {
 }
 
 .hero-text .affiliation a {
-  color: #61AFEF;
+  color: $tn-blue;
   text-decoration: none;
 }
 
@@ -456,8 +457,8 @@ hr.research-bottom {
 }
 
 .btn {
-  background-color: #61AFEF;
-  color: #282C34;
+  background-color: $tn-blue;
+  color: $tn-bg;
   padding: 0.6rem 0.75rem;
   border-radius: 8px;
   text-decoration: none;
@@ -466,18 +467,18 @@ hr.research-bottom {
 }
 
 .btn:hover {
-  background-color: #4FA2DB;
+  background-color: $tn-cyan;
 }
 
 .btn-outline {
   background-color: transparent;
-  color: #61AFEF;
-  border: 2px solid #61AFEF;
+  color: $tn-blue;
+  border: 2px solid $tn-blue;
 }
 
 .btn-outline:hover {
-  background-color: #61AFEF;
-  color: #282C34;
+  background-color: $tn-blue;
+  color: $tn-bg;
 }
 
 @media (max-width: 768px) {
@@ -506,8 +507,8 @@ hr.research-bottom {
 }
 
 .research-card {
-  background-color: #1e1e1e;
-  color: #ffffff;
+  background-color: $tn-bg-float;
+  color: $tn-fg;
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
@@ -530,7 +531,7 @@ hr.research-bottom {
 
 .card-content h2 {
   font-size: 1.3rem;
-  color: #61AFEF;
+  color: $tn-blue;
   margin-bottom: 0.5rem;
 }
 
@@ -544,14 +545,14 @@ hr.research-bottom {
   margin-top: 1rem;
   font-size: 0.95rem;
   line-height: 1.4;
-  color: #dddddd;
+  color: $tn-fg-dark;
 }
 
 .read-more-btn {
   display: inline-block;
   margin-top: 1rem;
-  background-color: #61AFEF;
-  color: #282C34;
+  background-color: $tn-blue;
+  color: $tn-bg;
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 0.5rem;
@@ -561,13 +562,13 @@ hr.research-bottom {
 }
 
 .read-more-btn:hover {
-  background-color: #4fa0db;
+  background-color: $tn-cyan;
 }
 
 .read-more-link {
   margin-left: 1rem;
   font-size: 0.9rem;
-  color: #ffffff;
+  color: $tn-fg;
   text-decoration: underline;
 }
 
@@ -582,13 +583,13 @@ hr.research-bottom {
 .paper-label,
 .collaborator-label {
   font-weight: bold;
-  color: #bbbbbb;
+  color: $tn-comment;
   margin-right: 0.5rem;
 }
 
 .paper-list a,
 .collaborator-list a {
-  color: #61AFEF;
+  color: $tn-blue;
   text-decoration: none;
 }
 
