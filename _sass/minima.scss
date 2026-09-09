@@ -45,14 +45,15 @@ $tn-teal:          #1abc9c;
 $tn-red:           #f7768e;
 $tn-red1:          #db4b4b;
 
-$text-color:       $tn-fg !default;
+$text-color:       $tn-fg-dark !default;
+$heading-color:    $tn-fg-dark !default;
 $background-color: $tn-bg !default;
 $brand-color:      $tn-blue !default;
 $link-color:       $tn-blue !default;
 $link-hover-color: $tn-cyan !default;
 $link-active-color: $tn-magenta !default;
 
-$grey-color:       $tn-fg-dark !default;
+$grey-color:       $tn-comment !default;
 $grey-color-light: $tn-border !default;
 $grey-color-dark:  $tn-comment !default;
 

@@ -397,7 +397,7 @@ hr.research-bottom {
 .hero {
   /*background-color: $tn-bg;*/
   padding: 0rem 0rem 2rem 0;
-  color: white;
+  color: $text-color;
 }
 
 .hero-content {
@@ -508,7 +508,7 @@ hr.research-bottom {
 
 .research-card {
   background-color: $tn-bg-float;
-  color: $tn-fg;
+  color: $text-color;
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
@@ -568,7 +568,7 @@ hr.research-bottom {
 .read-more-link {
   margin-left: 1rem;
   font-size: 0.9rem;
-  color: $tn-fg;
+  color: $text-color;
   text-decoration: underline;
 }
 
