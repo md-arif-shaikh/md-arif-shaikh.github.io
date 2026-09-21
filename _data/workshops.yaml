@@ -1,4 +1,18 @@
 Future-GW-icts-2025:
+  conference: LIGO-Virgo-KAGRA Collaboration Meeting
+  conference-url: https://web.iucaa.in/ws/~lvk2026pune/
+  institute: IUCAA
+  institute-url: https://www.iucaa.in/en/
+  city: Pune
+  country: India
+  from-date: 21
+  from-month: September
+  from-year: 2026
+  to-date: 25
+  to-month: September
+  to-year: 2026
+  
+Future-GW-icts-2025:
   conference: The Future of Gravitational-Wave Astronomy
   conference-url:
   institute: ICTS
