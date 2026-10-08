@@ -14,7 +14,7 @@
 .site-title {
   @include relative-font-size(1.625);
   font-weight: 300;
-  line-height: $base-line-height * $base-font-size * 2.25;
+  line-height: $nav-line-height * $base-font-size * 2.25;
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
@@ -27,7 +27,7 @@
 
 .site-nav {
     float: right;
-    line-height: $base-line-height * $base-font-size * 2.25;
+    line-height: $nav-line-height * $base-font-size * 2.25;
 
   .nav-trigger {
       display: none;
@@ -39,7 +39,7 @@
 
   .page-link {
     color: $text-color;
-    line-height: $base-line-height;
+    line-height: $nav-line-height;
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
@@ -227,89 +227,39 @@
   }
 }
 
+// Type scale shared by every page (matches the publications page)
 .post-content {
   margin-bottom: $spacing-unit;
 
+  h1,
   h2 {
-    @include relative-font-size(2);
-
-    @include media-query($on-laptop) {
-      @include relative-font-size(1.75);
-    }
+    @include relative-font-size(1.5);
+    margin-top: $spacing-unit * 1.25;
+    margin-bottom: 0.75rem;
+    color: $tn-fg;
   }
 
   h3 {
-    @include relative-font-size(1.625);
-
-    @include media-query($on-laptop) {
-      @include relative-font-size(1.375);
-    }
+    @include relative-font-size(1.25);
+    margin-top: $spacing-unit;
+    margin-bottom: 0.6rem;
+    color: $tn-fg;
   }
 
   h4 {
-    @include relative-font-size(1.25);
-
-    @include media-query($on-laptop) {
-      @include relative-font-size(1.125);
-    }
-  }
-}
-
-/* Default (Desktop) layout */
-.columns {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 2rem;
-}
-
-.column-left {
-  width: 30%;
-  margin-right: 2.5%;
-}
-
-.column-right {
-  width: 67.5%; /* Remaining space */
-}
-
-/* Profile image settings */
-.column-left img {
-  display: block;
-  max-width: 200px;
-  width: 100%;
-  height: auto;
-  margin-bottom: 1.5rem;
-  border-radius: 50%; /* Optional: for rounded corners */
-  padding: 0;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-/* Responsive (Mobile) layout */
-@media (max-width: 48em) {
-  .columns {
-    display: block;
+    @include relative-font-size(1.05);
+    font-weight: 500;
+    margin-top: $spacing-unit * 0.75;
+    margin-bottom: 0.5rem;
+    color: $tn-fg;
   }
 
-  .column-left {
-    width: 100%;
-    margin: 0;
-    padding: 0;          /* Remove padding to match text alignment */
-    text-align: left;
+  > :first-child {
+    margin-top: 0;
   }
 
-  .column-right {
-    width: 100%;
-    margin: 0;
-  }
-
-  .column-left img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 0 0 1.5rem 0; /* Left-aligned with space below */
-    padding: 0;
+  li {
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -393,208 +343,3 @@ hr.research-bottom {
   top: -2px;  /* tweak this value to align better */
   margin-right: 0px;
 }
-
-.hero {
-  /*background-color: $tn-bg;*/
-  padding: 0rem 0rem 2rem 0;
-  color: $text-color;
-}
-
-.hero-content {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: left;
-  justify-content: left;
-  gap: 2rem;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.hero-image img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border: 3px solid $tn-blue;
-  object-fit: cover;
-}
-
-.hero-text {
-  max-width: 600px;
-}
-
-.hero-text h1 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: $tn-blue;
-}
-
-.hero-text h2 {
-  font-size: 1.2rem;
-  font-weight: normal;
-  margin-top: 0;
-}
-
-.hero-text .affiliation {
-  font-size: 1rem;
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.hero-text .affiliation a {
-  color: $tn-blue;
-  text-decoration: none;
-}
-
-.hero-text .intro {
-  font-size: 1rem;
-  line-height: 1.5;
-  margin-bottom: 1.5rem;
-}
-
-.hero-cta {
-  display: flex;
-  gap: 1rem;
-}
-
-.btn {
-  background-color: $tn-blue;
-  color: $tn-bg;
-  padding: 0.6rem 0.75rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: $tn-cyan;
-}
-
-.btn-outline {
-  background-color: transparent;
-  color: $tn-blue;
-  border: 2px solid $tn-blue;
-}
-
-.btn-outline:hover {
-  background-color: $tn-blue;
-  color: $tn-bg;
-}
-
-@media (max-width: 768px) {
-  .hero-content {
-    flex-direction: column;
-    text-align: left;
-  }
-
-  .hero-image img {
-    width: 150px;
-    height: 150px;
-  }
-
-  .hero-cta {
-    /*flex-direction: column;*/
-    align-items: left;
-  }
-}
-
-/* ========== Grid Layout ========== */
-.research-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-  padding: 2rem 1rem;
-}
-
-.research-card {
-  background-color: $tn-bg-float;
-  color: $text-color;
-  border-radius: 1rem;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease-in-out;
-}
-
-.research-card:hover {
-  transform: scale(1.02);
-}
-
-.research-card img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.card-content {
-  padding: 1.5rem;
-}
-
-.card-content h2 {
-  font-size: 1.3rem;
-  color: $tn-blue;
-  margin-bottom: 0.5rem;
-}
-
-.card-content p {
-  font-size: 1rem;
-  line-height: 1.5;
-  margin: 0.5rem 0;
-}
-
-.full-text-box {
-  margin-top: 1rem;
-  font-size: 0.95rem;
-  line-height: 1.4;
-  color: $tn-fg-dark;
-}
-
-.read-more-btn {
-  display: inline-block;
-  margin-top: 1rem;
-  background-color: $tn-blue;
-  color: $tn-bg;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 0.5rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
-}
-
-.read-more-btn:hover {
-  background-color: $tn-cyan;
-}
-
-.read-more-link {
-  margin-left: 1rem;
-  font-size: 0.9rem;
-  color: $text-color;
-  text-decoration: underline;
-}
-
-/* Paper and collaborator styles */
-.paper-container,
-.collaborator-container {
-  margin-top: 0.75rem;
-  font-size: 0.9rem;
-  line-height: 1.5;
-}
-
-.paper-label,
-.collaborator-label {
-  font-weight: bold;
-  color: $tn-comment;
-  margin-right: 0.5rem;
-}
-
-.paper-list a,
-.collaborator-list a {
-  color: $tn-blue;
-  text-decoration: none;
-}
-
-.paper-list a:hover,
-.collaborator-list a:hover {
-  text-decoration: underline;
-}
-

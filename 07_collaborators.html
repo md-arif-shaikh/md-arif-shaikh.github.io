@@ -1,0 +1,98 @@
+---
+layout: page
+title: "Collaborators"
+permalink: /collaborators/
+---
+{%- comment -%}
+  _data/collaborators.yaml is also read by the research page (by key), so country
+  abbreviations are tidied here for display rather than in the data.
+
+  Joint papers are counted from the short-author list (_data/short_author.yaml), whose
+  author strings read "Surname, F. M.". A collaborator is matched as "<last word of name>,
+  <first initial>." (e.g. "Das, T." for Tapas Kumar Das, which also catches
+  "Ramos-Buades, A." and "van de Meent, M."). If someone appears differently in the
+  bibliography, set `bib-name: "Surname, F."` on them in collaborators.yaml.
+
+  Cards are ranked by joint papers (most first), then by name.
+{%- endcomment -%}
+{%- assign people = site.data.collaborators | where_exp: "c", "c.name" | sort: "name" -%}
+{%- assign short_papers = site.data.short_author | where_exp: "p", "p.author" -%}
+{%- assign institutes = people | map: "institute" | uniq -%}
+{%- assign countries = "" | split: "" -%}
+{%- assign joints = "" | split: "" -%}
+{%- assign ranking = "" | split: "" -%}
+{%- for c in people -%}
+  {%- assign country = c.country -%}
+  {%- if country == "US" -%}{%- assign country = "USA" -%}{%- elsif country == "NL" -%}{%- assign country = "Netherlands" -%}{%- endif -%}
+  {%- assign countries = countries | push: country -%}
+
+  {%- assign words = c.name | split: " " -%}
+  {%- if words.size > 1 -%}
+    {%- assign first_initial = words.first | slice: 0 -%}
+    {%- assign bib_key = words.last | append: ", " | append: first_initial | append: "." -%}
+  {%- else -%}
+    {%- assign bib_key = c.name -%}
+  {%- endif -%}
+  {%- if c.bib-name -%}{%- assign bib_key = c.bib-name -%}{%- endif -%}
+  {%- assign after_space = " " | append: bib_key -%}
+  {%- assign after_hyphen = "-" | append: bib_key -%}
+  {%- assign joint = 0 -%}
+  {%- for p in short_papers -%}
+    {%- assign authors = p.author | replace: " and ", ", " | prepend: " " -%}
+    {%- if authors contains after_space or authors contains after_hyphen -%}
+      {%- assign joint = joint | plus: 1 -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- assign joints = joints | push: joint -%}
+
+  {%- comment -%} sort key "RR|PPP": joint papers descending, then alphabetical position {%- endcomment -%}
+  {%- assign rank = 99 | minus: joint | prepend: "00" | slice: -2, 2 -%}
+  {%- assign position = forloop.index0 | prepend: "000" | slice: -3, 3 -%}
+  {%- assign sort_key = rank | append: "|" | append: position -%}
+  {%- assign ranking = ranking | push: sort_key -%}
+{%- endfor -%}
+{%- assign ranking = ranking | sort -%}
+{%- assign unique_countries = countries | uniq -%}
+
+<div class="entry-intro">
+  <p class="entry-lead">Some of the people I have worked with, ranked by the number of short-author papers we have written together.</p>
+  <dl class="entry-stats">
+    <div><dt>Collaborators</dt><dd>{{ people | size }}</dd></div>
+    <div><dt>Institutes</dt><dd>{{ institutes | size }}</dd></div>
+    <div><dt>Countries</dt><dd>{{ unique_countries | size }}</dd></div>
+  </dl>
+</div>
+
+{% include collaborator-map.html people=people countries=countries %}
+
+<ul class="people-grid">
+{%- for sort_key in ranking %}
+  {%- assign i = sort_key | split: "|" | last | plus: 0 -%}
+  {%- assign c = people[i] -%}
+  {%- assign joint = joints[i] -%}
+  {%- assign words = c.name | split: " " -%}
+  {%- assign initials = words.first | slice: 0 -%}
+  {%- if words.size > 1 -%}
+    {%- assign last_initial = words.last | slice: 0 -%}
+    {%- assign initials = initials | append: last_initial -%}
+  {%- endif %}
+  <li class="entry-card person-card">
+    <span class="person-avatar" aria-hidden="true">{{ initials }}</span>
+    <div class="person-body">
+      <h3 class="entry-title">
+        {%- if c.website -%}<a href="{{ c.website }}">{{ c.name }}</a>{%- else -%}{{ c.name }}{%- endif -%}
+      </h3>
+      <p class="entry-org">{{ c.position }}</p>
+      <p class="entry-meta">
+        <span><i class="fas fa-university" aria-hidden="true"></i>
+          {%- if c.institute-url -%}<a href="{{ c.institute-url }}">{{ c.institute }}</a>{%- else -%}{{ c.institute }}{%- endif -%}
+        </span>
+        <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i>{{ c.city }}, {{ countries[i] }}</span>
+        {%- if joint > 0 %}
+        <span><i class="far fa-file-alt" aria-hidden="true"></i>{{ joint }} joint {% if joint == 1 %}paper{% else %}papers{% endif %}</span>
+        {%- endif %}
+      </p>
+    </div>
+  </li>
+{%- endfor %}
+</ul>

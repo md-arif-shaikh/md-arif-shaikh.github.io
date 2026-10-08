@@ -1,0 +1,25 @@
+---
+title: "Presentations"
+permalink: /presentations/
+layout: page
+---
+<div class="entry-intro">
+  <p class="entry-lead">
+    Seminars, conference talks and posters on my research, newest first.
+  </p>
+  <div class="entry-actions">
+    <nav class="entry-jump" aria-label="Presentation sections">
+      {%- for section in site.data.presentation -%}
+        {%- assign s = section[1] %}
+      <a href="#{{ s.title | slugify }}">{{ s.label }} <span>{{ site.data[s.data] | size }}</span></a>
+      {%- endfor %}
+    </nav>
+  </div>
+</div>
+
+{% for section in site.data.presentation %}
+  {%- assign s = section[1] -%}
+  {%- assign section_id = s.title | slugify -%}
+  {%- assign section_items = site.data[s.data] -%}
+  {% include presentation-list.html id=section_id title=s.title description=s.description items=section_items %}
+{% endfor %}

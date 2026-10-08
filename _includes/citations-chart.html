@@ -1,0 +1,46 @@
+{%- comment -%}
+  Citations-per-year chart, fetched live from the INSPIRE-HEP API by assets/js/citations.js.
+  "Short-author" uses the same author-count cut (< 30) as the INSPIRE link on this page.
+{%- endcomment -%}
+{%- assign inspire_author = "a " | append: site.inspirehep_bai -%}
+<section class="cite" data-cite hidden
+  data-query-short="{{ inspire_author }} and ac < 30"
+  data-query-all="{{ inspire_author }}"
+  aria-labelledby="cite-title">
+  <div class="cite-head">
+    <div>
+      <h2 class="cite-title" id="cite-title">Citations per year</h2>
+      <p class="cite-source">Live from <a href="https://inspirehep.net/authors/{{ site.inspirehep_username }}">INSPIRE-HEP</a></p>
+    </div>
+    <div class="pub-tabs cite-toggle" role="group" aria-label="Papers counted">
+      <button type="button" class="pub-tab is-active" data-mode="short" aria-pressed="true">Short-author</button>
+      <button type="button" class="pub-tab" data-mode="all" aria-pressed="false">All papers</button>
+    </div>
+  </div>
+
+  <dl class="cite-stats">
+    <div class="cite-stat"><dt>Citations</dt><dd data-stat="citations">&ndash;</dd></div>
+    <div class="cite-stat"><dt>h-index</dt><dd data-stat="h">&ndash;</dd></div>
+    <div class="cite-stat"><dt>Papers</dt><dd data-stat="papers">&ndash;</dd></div>
+  </dl>
+
+  <div class="cite-plot">
+    <div class="cite-chart"><p class="cite-loading">Loading citations&hellip;</p></div>
+    <div class="cite-tooltip" hidden></div>
+  </div>
+
+  <p class="cite-error" hidden>
+    Couldn't reach INSPIRE-HEP right now. See the
+    <a href="https://inspirehep.net/authors/{{ site.inspirehep_username }}">citation summary on INSPIRE-HEP</a>.
+  </p>
+
+  <details class="cite-table">
+    <summary>Show as table</summary>
+    <table>
+      <thead><tr><th scope="col">Year</th><th scope="col">Citations</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </details>
+</section>
+
+<script src="{{ '/assets/js/citations.js' | relative_url }}" defer></script>

@@ -23,9 +23,9 @@ defining-eccentricity:
     <p> In General Theory of Relativity, there is no unique way to
     define the eccentricity of a binary system's orbit. This can lead
     to ambiguity about the binary's eccentricity inferred from GW
-    observations. In our works, we propose a standardized definion
+    observations. In our works, we propose a standardized definition
     that relies solely on the gravitational waveforms, removing gauge
-    ambiguity and model dependence. This standardized definion can be
+    ambiguity and model dependence. This standardized definition can be
     used to measure eccentricity from gravitational waveform emitted
     by binaries on generic bound orbits.
     </p>
@@ -62,13 +62,13 @@ test-of-gr:
     systems. We extend this test to GW signals from eccentric binaries.</p>
   full-text: |
     <h3> <u>IMRCT meets eccentricity</u> </h3>
-    <p>The IMRCT is usually peformed using quasicircular template
+    <p>The IMRCT is usually performed using quasicircular template
     which assumes the binary's orbit to be circular. We first show
     that using quasicircular template for IMRCT on eccentric signals
     may lead to false violation of GR. We then show that when the
-    IMRCT is peformed using eccentric template such spurious violation
+    IMRCT is performed using eccentric template such spurious violation
     of GR goes away. This emphasises the need for using eccentric
-    templates when analysing GW data and peforming test of GR using GW
+    templates when analysing GW data and performing test of GR using GW
     observations.
     </p>
 

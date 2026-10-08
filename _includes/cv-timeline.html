@@ -1,0 +1,60 @@
+{%- comment -%}
+  Positions / education section of the CV page, one card per entry, newest first.
+  Params: id, title, entries (site.data.positions or site.data.education),
+          person_label (text before the advisor/host name)
+{%- endcomment -%}
+{%- assign entries = include.entries | where_exp: "e", "e.institute" -%}
+<section class="entry-section" id="{{ include.id }}">
+  <header class="entry-section-head">
+    <h2>{{ include.title }} <span class="entry-count">{{ entries | size }}</span></h2>
+  </header>
+  {%- for e in entries %}
+  {%- assign current = false -%}
+  {%- if e.to-year == nil or e.to-year == "" -%}{%- assign current = true -%}{%- endif -%}
+  {%- assign country = e.institute-address | split: "," | last | strip -%}
+  {%- assign from = e.from-month | slice: 0, 3 | append: " " | append: e.from-year -%}
+  {%- if current -%}
+    {%- assign to = "Present" -%}
+  {%- else -%}
+    {%- assign to = e.to-month | slice: 0, 3 | append: " " | append: e.to-year -%}
+  {%- endif %}
+  <div class="entry-year-group">
+    <div class="entry-year">{{ e.from-year }}<span class="entry-year-end">&ndash; {% if current %}now{% else %}{{ e.to-year }}{% endif %}</span></div>
+    <ol class="entry-list">
+      <li class="entry-card">
+        {%- if current %}
+        <span class="entry-status">Current</span>
+        {%- endif %}
+        <h3 class="entry-title">{{ e.position | default: e.degree }}</h3>
+        <p class="entry-org">
+          {%- if e.institute-website and e.institute-website != "" -%}
+          <a href="{{ e.institute-website }}">{{ e.institute }}</a>
+          {%- else -%}
+          {{ e.institute }}
+          {%- endif -%}
+          {%- if e.department and e.department != "" %}
+          <span class="entry-sep" aria-hidden="true">&middot;</span>
+          {% if e.department-website and e.department-website != "" -%}
+          <a class="entry-dept" href="{{ e.department-website }}">{{ e.department }}</a>
+          {%- else -%}
+          <span class="entry-dept">{{ e.department }}</span>
+          {%- endif -%}
+          {%- endif %}
+        </p>
+        <p class="entry-meta">
+          <span><i class="far fa-calendar" aria-hidden="true"></i>{{ from }} &ndash; {{ to }}</span>
+          <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i>{{ country }}</span>
+          {%- for a in e.advisors -%}
+            {%- assign person = a[1] %}
+          <span><i class="fas fa-user" aria-hidden="true"></i>{{ include.person_label }} <a href="{{ person.website }}">{{ person.name }}</a></span>
+          {%- endfor -%}
+          {%- if e.advisor and e.advisor != "" %}
+          <span><i class="fas fa-user" aria-hidden="true"></i>{{ include.person_label }}
+            {% if e.advisor-website and e.advisor-website != "" %}<a href="{{ e.advisor-website }}">{{ e.advisor }}</a>{% else %}{{ e.advisor }}{% endif %}</span>
+          {%- endif %}
+        </p>
+      </li>
+    </ol>
+  </div>
+  {%- endfor %}
+</section>

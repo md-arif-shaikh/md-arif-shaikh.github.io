@@ -1,0 +1,55 @@
+---
+title: "Teaching"
+permalink: /teaching/
+layout: page
+---
+{%- comment -%}
+  _data/teaching.yaml also feeds the LaTeX CV, so "\&" is unescaped here for the web.
+{%- endcomment -%}
+{%- assign courses = site.data.teaching | where_exp: "c", "c.course" -%}
+{%- assign groups = courses | group_by_exp: "c", "c.from | date: '%Y'" | sort: "name" | reverse -%}
+
+<div class="entry-intro">
+  <p class="entry-lead">
+    Courses and schools I have taught or tutored, newest first.
+  </p>
+</div>
+
+<section class="entry-section" id="courses">
+  <header class="entry-section-head">
+    <h2>Courses and schools <span class="entry-count">{{ courses | size }}</span></h2>
+  </header>
+  {%- for group in groups %}
+  <div class="entry-year-group">
+    <div class="entry-year">{{ group.name }}</div>
+    <ol class="entry-list">
+    {%- for c in group.items -%}
+      {%- assign teacher = c.instructor %}
+      <li class="entry-card entry-card--compact">
+        {%- if c.role %}
+        <span class="entry-badge">{{ c.role }}</span>
+        {%- endif %}
+        <h3 class="entry-title">{{ c.course | replace: "\&", "&amp;" }}</h3>
+        <p class="entry-org">
+          {%- if c.school-website -%}<a href="{{ c.school-website }}">{{ c.school }}</a>{%- else -%}{{ c.school }}{%- endif %}
+          <span class="entry-sep" aria-hidden="true">&middot;</span>
+          {% if c.institute-website -%}<a class="entry-dept" href="{{ c.institute-website }}">{{ c.institute }}</a>{%- else -%}<span class="entry-dept">{{ c.institute }}</span>{%- endif -%}
+        </p>
+        <p class="entry-meta">
+          <span><i class="far fa-calendar" aria-hidden="true"></i>{% include date-range.html item=c %}</span>
+          <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i>{{ c.city }}, {{ c.country }}</span>
+          {%- if teacher.name %}
+          <span><i class="fas fa-user" aria-hidden="true"></i>Instructor:&nbsp;
+            {%- if teacher.website -%}<a href="{{ teacher.website }}">{{ teacher.name | replace: "\&", "&amp;" }}</a>{%- else -%}{{ teacher.name | replace: "\&", "&amp;" }}{%- endif -%}
+            {%- if teacher.institute and teacher.institute != c.institute %}
+            ({{ teacher.institute }}{% unless teacher.institute contains teacher.city %}, {{ teacher.city }}{% endunless %})
+            {%- endif -%}
+          </span>
+          {%- endif %}
+        </p>
+      </li>
+    {%- endfor %}
+    </ol>
+  </div>
+  {%- endfor %}
+</section>

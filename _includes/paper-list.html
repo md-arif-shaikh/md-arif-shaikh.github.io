@@ -1,0 +1,67 @@
+{%- comment -%}
+  Renders one publication section, grouped by year (newest first).
+  Params: papers = a hash from _data (e.g. site.data.lvk)
+{%- endcomment -%}
+{%- assign papers = include.papers | where_exp: "p", "p.title" -%}
+{%- assign groups = papers | group_by: "year" | sort: "name" | reverse -%}
+{%- assign number = papers | size -%}
+{%- for group in groups %}
+<div class="pub-year-group">
+  <h3 class="pub-year">{{ group.name | default: "&mdash;" }}</h3>
+  <ol class="pub-list">
+  {%- for paper in group.items -%}
+    {%- assign doi_url = nil -%}
+    {%- assign arxiv_id = nil -%}
+    {%- if paper.doi and paper.doi != "" -%}
+      {%- assign doi_url = "https://doi.org/" | append: paper.doi -%}
+    {%- endif -%}
+    {%- if paper.eprint and paper.eprint != "" -%}
+      {%- assign arxiv_id = paper.eprint -%}
+    {%- endif -%}
+    {%- if doi_url -%}
+      {%- assign title_url = doi_url -%}
+    {%- elsif arxiv_id -%}
+      {%- assign title_url = "https://arxiv.org/abs/" | append: arxiv_id -%}
+    {%- else -%}
+      {%- assign title_url = paper.url -%}
+    {%- endif -%}
+    {%- assign authors = paper.author
+        | replace: " and others.", " et al."
+        | replace: '"a', "&auml;" | replace: '"o', "&ouml;" | replace: '"u', "&uuml;" -%}
+    <li class="pub-card">
+      <span class="pub-num" aria-hidden="true">#{{ number }}</span>
+      <h4 class="pub-title">
+        {%- if title_url -%}<a href="{{ title_url }}">{{ paper.title | replace: "--", "&ndash;" }}</a>{%- else -%}{{ paper.title | replace: "--", "&ndash;" }}{%- endif -%}
+      </h4>
+      <p class="pub-authors">
+        {{ authors }}
+        {%- if paper.collaboration and paper.collaboration != "" %}
+        <span class="pub-collab"><i class="fas fa-users" aria-hidden="true"></i>{{ paper.collaboration | replace: "VIRGO", "Virgo" }}</span>
+        {%- endif -%}
+      </p>
+      <div class="pub-foot">
+        {%- if paper.journal and paper.journal != "" %}
+        <span class="pub-venue">
+          <span class="pub-journal">{{ paper.journal }}</span>
+          {%- if paper.volume %} <strong>{{ paper.volume }}</strong>{% endif -%}
+          {%- if paper.pages %}, {{ paper.pages | replace: "--", "&ndash;" }}{% endif -%}
+        </span>
+        {%- else %}
+        <span class="pub-venue pub-venue--preprint">Preprint</span>
+        {%- endif %}
+        <span class="pub-links">
+          {%- if arxiv_id %}
+          <a class="pub-link" href="https://arxiv.org/abs/{{ arxiv_id }}"><i class="ai ai-arxiv" aria-hidden="true"></i>arXiv:{{ arxiv_id }}</a>
+          <a class="pub-link" href="https://arxiv.org/pdf/{{ arxiv_id }}" aria-label="PDF of arXiv:{{ arxiv_id }}"><i class="far fa-file-pdf" aria-hidden="true"></i>PDF</a>
+          {%- endif -%}
+          {%- if doi_url %}
+          <a class="pub-link" href="{{ doi_url }}" aria-label="DOI {{ paper.doi }}"><i class="ai ai-doi" aria-hidden="true"></i>DOI</a>
+          {%- endif %}
+        </span>
+      </div>
+    </li>
+    {%- assign number = number | minus: 1 -%}
+  {%- endfor %}
+  </ol>
+</div>
+{%- endfor %}

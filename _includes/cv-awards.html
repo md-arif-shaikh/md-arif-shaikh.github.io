@@ -1,0 +1,55 @@
+{%- comment -%}
+  Awards and memberships on the CV page, grouped by start year (newest first).
+  A year like "2014--2018" is a range; "2025--" is still ongoing (shown with a badge).
+  Params: title
+{%- endcomment -%}
+{%- assign awards = site.data.achievements | where_exp: "a", "a.description" -%}
+{%- assign groups = awards | group_by_exp: "a", "a.year | append: '' | split: '--' | first" | sort: "name" | reverse -%}
+<section class="entry-section" id="{{ include.title | slugify }}">
+  <header class="entry-section-head">
+    <h2>{{ include.title }} <span class="entry-count">{{ awards | size }}</span></h2>
+    <p class="entry-section-desc">Fellowships, grants, memberships and distinctions.</p>
+  </header>
+  {%- for group in groups %}
+  <div class="entry-year-group">
+    <div class="entry-year">{{ group.name }}</div>
+    <ol class="entry-list">
+    {%- for a in group.items -%}
+      {%- assign year = a.year | append: "" -%}
+      {%- assign span = year | split: "--" -%}
+      {%- assign ongoing = false -%}
+      {%- assign period = nil -%}
+      {%- if year contains "--" -%}
+        {%- if span.size == 1 -%}
+          {%- assign ongoing = true -%}
+        {%- else -%}
+          {%- assign period = span[0] | append: "&ndash;" | append: span[1] -%}
+        {%- endif -%}
+      {%- endif -%}
+      {%- assign org = a.organization -%}
+      {%- assign last_char = org | slice: -1 -%}
+      {%- if last_char == "." -%}
+        {%- assign org_len = org | size | minus: 1 -%}
+        {%- assign org = org | slice: 0, org_len -%}
+      {%- endif %}
+      <li class="entry-card entry-card--compact">
+        {%- if ongoing %}
+        <span class="entry-status">Ongoing</span>
+        {%- endif %}
+        <h3 class="entry-title">{{ a.description }}</h3>
+        <p class="entry-org">
+          {%- if a.organization-website and a.organization-website != "" -%}
+          <a href="{{ a.organization-website }}">{{ org }}</a>
+          {%- else -%}
+          {{ org }}
+          {%- endif -%}
+        </p>
+        {%- if period %}
+        <p class="entry-meta"><span><i class="far fa-calendar" aria-hidden="true"></i>{{ period }}</span></p>
+        {%- endif %}
+      </li>
+    {%- endfor %}
+    </ol>
+  </div>
+  {%- endfor %}
+</section>

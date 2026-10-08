@@ -103,6 +103,7 @@ li {
 h1, h2, h4, h5, h6 {
   font-size: $header-font-size;
   font-weight: $base-font-weight;
+  line-height: $heading-line-height;
   text-align: left;
   color: $heading-color;
 }
@@ -110,6 +111,7 @@ h1, h2, h4, h5, h6 {
 h3 {
   font-size: $header-font-size * 0.5;
   font-weight: $base-font-weight;
+  line-height: $heading-line-height;
   text-align: left;
   color: $heading-color;
 }
@@ -171,6 +173,7 @@ code {
   /*border-radius: 3px;*/
   background-color: $code-background;
   font-family: 'JetBrains Mono', monospace;
+  line-height: 1.45;
 }
 
 /*code {
@@ -273,20 +276,3 @@ table {
   }
 }
 
-.PageNavigation {
-  font-size: 14px;
-  display: block;
-  width: auto;
-  overflow: hidden;
-}
-
-.PageNavigation a {
-  display: block;
-  width: 50%;
-  float: left;
-  margin: 1em 0;
-}
-
-.PageNavigation .next {
-  text-align: right;
-}

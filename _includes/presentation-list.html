@@ -1,0 +1,63 @@
+{%- comment -%}
+  One section of the presentations page, grouped by year (newest first).
+  Seminars carry a single `date`; conference talks and posters carry from-/to- fields.
+  Params: id, title, description, items (a hash from _data)
+{%- endcomment -%}
+{%- assign items = include.items | where_exp: "t", "t.title" -%}
+{%- assign first = items | first -%}
+{%- if first.date -%}
+  {%- assign groups = items | group_by_exp: "t", "t.date | date: '%Y'" | sort: "name" | reverse -%}
+{%- else -%}
+  {%- assign groups = items | group_by: "from-year" | sort: "name" | reverse -%}
+{%- endif %}
+<section class="entry-section" id="{{ include.id }}">
+  <header class="entry-section-head">
+    <h2>{{ include.title }} <span class="entry-count">{{ items | size }}</span></h2>
+    {%- if include.description %}
+    <p class="entry-section-desc">{{ include.description }}</p>
+    {%- endif %}
+  </header>
+  {%- for group in groups %}
+  <div class="entry-year-group">
+    <div class="entry-year">{{ group.name }}</div>
+    <ol class="entry-list">
+    {%- for t in group.items -%}
+      {%- assign link = t.talk-url | default: t.url -%}
+      {%- assign is_video = false -%}
+      {%- if link contains "youtube.com" or link contains "youtu.be" -%}
+        {%- assign is_video = true -%}
+      {%- endif %}
+      <li class="entry-card entry-card--compact">
+        <h3 class="entry-title">
+          {%- if link -%}<a href="{{ link }}">{{ t.title }}</a>{%- else -%}{{ t.title }}{%- endif -%}
+        </h3>
+        <p class="entry-org">
+          {%- if t.conference -%}
+            {%- if t.conference-url -%}<a href="{{ t.conference-url }}">{{ t.conference }}</a>{%- else -%}{{ t.conference }}{%- endif -%}
+            {%- if t.institute %}
+          <span class="entry-sep" aria-hidden="true">&middot;</span>
+          {% if t.institute-url -%}<a class="entry-dept" href="{{ t.institute-url }}">{{ t.institute }}</a>{%- else -%}<span class="entry-dept">{{ t.institute }}</span>{%- endif -%}
+            {%- endif -%}
+          {%- elsif t.institute-url -%}
+          <a href="{{ t.institute-url }}">{{ t.institute }}</a>
+          {%- else -%}
+          {{ t.institute }}
+          {%- endif -%}
+        </p>
+        <div class="entry-foot">
+          <p class="entry-meta">
+            <span><i class="far fa-calendar" aria-hidden="true"></i>
+              {%- if t.date -%}{{ t.date | date: "%b %-d" }}{%- else -%}{% include date-range.html item=t %}{%- endif -%}
+            </span>
+            <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i>{{ t.city }}, {{ t.country }}</span>
+          </p>
+          {%- if is_video %}
+          <span class="entry-links"><a class="entry-link" href="{{ link }}"><i class="fab fa-youtube" aria-hidden="true"></i>Video</a></span>
+          {%- endif %}
+        </div>
+      </li>
+    {%- endfor %}
+    </ol>
+  </div>
+  {%- endfor %}
+</section>

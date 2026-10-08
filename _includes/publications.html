@@ -1,18 +1,43 @@
-<ul>
-{% for publication in site.data.publications_page %}
-{% assign pub = publication[1] %}
-<li> {{pub.yaml.data}} <a href={{ "#" | append: pub.title | downcase | replace: " ", "-" }}> {{ pub.title }}</a>
-</li>
-{% endfor %}
-</ul>
+{%- assign total = 0 -%}
+{%- for section in site.data.publications_page -%}
+  {%- assign data_key = section[1].data -%}
+  {%- assign n = site.data[data_key] | size -%}
+  {%- assign total = total | plus: n -%}
+{%- endfor -%}
 
+<div class="pubs" data-pubs>
 
-{% for publication in site.data.publications_page %}
-{% assign pub = publication[1] %}
-<h2 id="{{ pub.title | downcase | replace: ' ', '-' }}"> {{ pub.title  }} </h2>
-<div>
-  {% include {{ pub.file }} %}
+<div class="pub-toolbar" hidden>
+  <div class="pub-tabs" role="group" aria-label="Filter by category">
+    <button type="button" class="pub-tab is-active" data-filter="all" aria-pressed="true">All <span>{{ total }}</span></button>
+    {%- for section in site.data.publications_page -%}
+      {%- assign s = section[1] %}
+    <button type="button" class="pub-tab" data-filter="{{ s.title | slugify }}" aria-pressed="false">{{ s.label }} <span>{{ site.data[s.data] | size }}</span></button>
+    {%- endfor %}
+  </div>
+  <label class="pub-search">
+    <i class="fas fa-search" aria-hidden="true"></i>
+    <input type="search" placeholder="Search title, author, journal, arXiv ID" aria-label="Search publications" autocomplete="off">
+    <kbd aria-hidden="true">/</kbd>
+  </label>
 </div>
+<p class="pub-status" aria-live="polite"></p>
+<p class="pub-empty" hidden>No publications match your search.</p>
+
+{% for section in site.data.publications_page %}
+{%- assign s = section[1] -%}
+{%- assign section_papers = site.data[s.data] %}
+<section class="pub-section" id="{{ s.title | slugify }}">
+  <header class="pub-section-head">
+    <h2>{{ s.title }} <span class="pub-count">{{ section_papers | size }}</span></h2>
+    {%- if s.description %}
+    <p class="pub-section-desc">{{ s.description }}</p>
+    {%- endif %}
+  </header>
+  {% include paper-list.html papers=section_papers %}
+</section>
 {% endfor %}
 
+</div>
 
+<script src="{{ '/assets/js/publications.js' | relative_url }}" defer></script>

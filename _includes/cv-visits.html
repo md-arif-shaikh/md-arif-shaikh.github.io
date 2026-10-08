@@ -1,0 +1,49 @@
+{%- comment -%}
+  Research visits on the CV page, grouped by year (newest first).
+{%- endcomment -%}
+{%- assign visits = site.data.visits | where_exp: "v", "v.institute" -%}
+{%- assign groups = visits | group_by: "from-year" | sort: "name" | reverse -%}
+<section class="entry-section" id="visits">
+  <header class="entry-section-head">
+    <h2>Visits <span class="entry-count">{{ visits | size }}</span></h2>
+    <p class="entry-section-desc">Research visits to collaborators' groups.</p>
+  </header>
+  {%- for group in groups %}
+  <div class="entry-year-group">
+    <div class="entry-year">{{ group.name }}</div>
+    <ol class="entry-list">
+    {%- for v in group.items %}
+      <li class="entry-card entry-card--compact">
+        <h3 class="entry-title">
+          {%- if v.institute-url and v.institute-url != "" -%}
+          <a href="{{ v.institute-url }}">{{ v.institute }}</a>
+          {%- else -%}
+          {{ v.institute }}
+          {%- endif -%}
+        </h3>
+        <p class="entry-org">
+          Hosted by
+          {% if v.host-url and v.host-url != "" -%}
+          <a href="{{ v.host-url }}">{{ v.host }}</a>
+          {%- else -%}
+          {{ v.host }}
+          {%- endif -%}
+          {%- if v.department and v.department != "" %}
+          <span class="entry-sep" aria-hidden="true">&middot;</span>
+          {% if v.department-url and v.department-url != "" -%}
+          <a class="entry-dept" href="{{ v.department-url }}">{{ v.department }}</a>
+          {%- else -%}
+          <span class="entry-dept">{{ v.department }}</span>
+          {%- endif -%}
+          {%- endif %}
+        </p>
+        <p class="entry-meta">
+          <span><i class="far fa-calendar" aria-hidden="true"></i>{% include date-range.html item=v %}</span>
+          <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i>{{ v.city }}, {{ v.country }}</span>
+        </p>
+      </li>
+    {%- endfor %}
+    </ol>
+  </div>
+  {%- endfor %}
+</section>

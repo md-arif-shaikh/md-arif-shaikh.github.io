@@ -4,22 +4,25 @@ permalink: /publications/
 layout: page
 update_date: 16-09-2026
 ---
-{% assign short_paper_count = site.data.short_author | size %}
-{% assign lvk_paper_count = site.data.lvk | size %}
-{% assign sxs_paper_count = site.data.sxs | size %}
 {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 {%- assign last_updated = page.update_date | date: date_format -%}
 
-<p>
-<i> Updated on {{last_updated}} </i>
-</p> 
+<div class="pub-hero">
+<div class="pub-intro">
+  <p class="pub-updated"><i class="far fa-clock" aria-hidden="true"></i>Updated {{ last_updated }}</p>
+  <p class="pub-lead">
+    Short-author papers, along with papers from the SXS and LIGO&ndash;Virgo&ndash;KAGRA (LVK) collaborations.
+    The complete list is on INSPIRE-HEP and the other profiles below.
+  </p>
+  <ul class="pub-profiles">
+    <li><a href="https://inspirehep.net/literature?sort=mostrecent&size=30&page=1&q=author%3AMd.Arif.Shaikh.1&ui-citation-summary=true"><i class="ai ai-inspire" aria-hidden="true"></i>INSPIRE-HEP</a></li>
+    <li><a href="https://scixplorer.org/search?n=10&p=1&q=docs(library%2FiXti8LWoQaSRJZb_M4BQpA)&sort=entry_date+desc&sort=date+desc"><i class="ai ai-ads" aria-hidden="true"></i>SciX</a></li>
+    <li><a href="https://scholar.google.com/citations?user={{ site.googlescholar_username }}"><i class="ai ai-google-scholar" aria-hidden="true"></i>Google Scholar</a></li>
+    <li><a href="https://orcid.org/{{ site.orcid_username }}"><i class="ai ai-orcid" aria-hidden="true"></i>ORCID</a></li>
+  </ul>
+</div>
 
-<p>
-  Below is a list of <u>{{short_paper_count}}
-  short-authored</u> (see on <a href="https://inspirehep.net/literature?sort=mostrecent&size=30&page=1&q=a%20Md.Arif.Shaikh.1%20and%20ac%3C%2030&ui-citation-summary=true">INSPIRE-HEP</a> or <a href="https://scixplorer.org/search?n=10&p=1&q=docs(library%2FiXti8LWoQaSRJZb_M4BQpA)&sort=entry_date+desc&sort=date+desc">SciX</a>), <u>{{lvk_paper_count}} <a href="https://www.ligo.caltech.edu/page/ligo-scientific-collaboration"> LVK
-  collaboration</a></u> and <u> {{sxs_paper_count}} <a href="https://www.black-holes.org/">SXS collaboration</a></u> publications.
-  For the complete list, please visit
-  <a href="https://inspirehep.net/literature?sort=mostrecent&size=30&page=1&q=author%3AMd.Arif.Shaikh.1&ui-citation-summary=true">INSPIRE-HEP</a>.
-</p>
+{% include citations-chart.html %}
+</div>
 
 {% include publications.html %}

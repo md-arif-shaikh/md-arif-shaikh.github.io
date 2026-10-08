@@ -29,7 +29,7 @@ icts-intro-GR-2020:
   to: 2020-12-31
   role: Tutor
   instructor:
-    name: Bala Iyear
+    name: Bala Iyer
     website:
     institute: ICTS-TIFR
     institute-website: https://www.icts.res.in
@@ -101,8 +101,8 @@ icts-summer-school-2019:
   institute-website: https://www.icts.res.in
   city: Bangalore
   country: India
-  from: 2021-07-15
-  to: 2021-07-26
+  from: 2019-07-15
+  to: 2019-07-26
   role: Tutor
   instructor:
     name: Sudipta Sarkar

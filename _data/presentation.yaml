@@ -1,9 +1,15 @@
 seminars:
   title: Seminars
-  file: seminars.html
+  label: Seminars
+  data: seminars
+  description: Seminars at universities and research institutes.
 conference-talks:
   title: Conference talks
-  file: conference-talks.html
+  label: Talks
+  data: conference-talks
+  description: Talks at conferences and workshops.
 conference-posters:
   title: Conference posters
-  file: conference-posters.html
+  label: Posters
+  data: conference-posters
+  description: Posters presented at conferences.

@@ -1,0 +1,289 @@
+/**
+ * Home page
+ * Uses the card look of the other pages (entry-card, pub-venue) for its lists.
+ */
+
+/* ---------- Hero ---------- */
+.home-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+@media screen and (min-width: $on-laptop + 1) {
+  .home-hero {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+}
+
+.home-photo {
+  flex: 0 0 auto;
+  width: 11rem;
+  height: 11rem;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px $tn-bg, 0 0 0 6px rgba($tn-blue, 0.6);
+}
+
+@media screen and (min-width: $on-laptop + 1) {
+  .home-photo {
+    width: 14rem;
+    height: 14rem;
+  }
+}
+
+.home-hero-text {
+  max-width: 36rem;
+
+  p {
+    margin: 0;
+  }
+}
+
+.home-kicker {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $tn-blue;
+}
+
+.post-content .home-name {
+  margin: 0.35rem 0 0.5rem;
+  @include relative-font-size(2.4);
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  line-height: 1.15;
+  color: $tn-fg;
+}
+
+.home-hero-text .home-affiliation {
+  font-size: 1rem;
+  color: $tn-fg-dark;
+}
+
+.home-hero-text .home-intro {
+  margin-top: 1rem;
+  font-size: 1.05rem;
+  color: $tn-fg-dark;
+}
+
+.home-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
+}
+
+.home-btn,
+.home-btn:visited {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.5rem 1.1rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: $tn-blue;
+  border: 1px solid rgba($tn-blue, 0.6);
+  border-radius: 999px;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.home-btn:hover {
+  color: $tn-blue;
+  background-color: rgba($tn-blue, 0.1);
+  border-color: $tn-blue;
+  text-decoration: none;
+}
+
+.home-btn--primary,
+.home-btn--primary:visited {
+  color: $tn-bg;
+  background-color: $tn-blue;
+  border-color: $tn-blue;
+}
+
+.home-btn--primary:hover {
+  color: $tn-bg;
+  background-color: $tn-cyan;
+  border-color: $tn-cyan;
+}
+
+/* ---------- At a glance ---------- */
+.home-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr));
+  gap: 0.75rem;
+  margin: 2.5rem 0 0;
+  padding: 0;
+  list-style: none;
+
+  > li {
+    margin: 0;
+  }
+
+  a,
+  a:visited {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0.9rem 1.1rem;
+    color: $tn-fg-dark;
+    background-color: $tn-bg-float;
+    border: 1px solid rgba($tn-border, 0.6);
+    border-radius: $pub-radius;
+    transition: border-color 0.2s ease;
+  }
+
+  a:hover {
+    border-color: rgba($tn-blue, 0.55);
+    text-decoration: none;
+
+    .home-stat-label {
+      color: $tn-blue;
+    }
+  }
+}
+
+.home-stat-value {
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.2;
+  font-variant-numeric: proportional-nums;
+  color: $tn-fg;
+}
+
+.home-stat-label {
+  font-size: 0.85rem;
+  color: $pub-muted;
+  transition: color 0.15s ease;
+}
+
+/* ---------- Sections ---------- */
+.home-block {
+  margin-top: 2.75rem;
+}
+
+.home-block-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.25rem 1rem;
+  padding-bottom: 0.6rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid $tn-border;
+
+  a {
+    font-size: 0.875rem;
+    white-space: nowrap;
+
+    i {
+      margin-left: 0.3em;
+      font-size: 0.8em;
+    }
+  }
+}
+
+.post-content .home-block-head h2 {
+  margin: 0;
+  @include relative-font-size(1.35);
+  color: $tn-fg;
+}
+
+@media screen and (min-width: $on-laptop + 1) {
+  .home-columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+  }
+}
+
+.home-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  > li {
+    margin: 0;
+  }
+}
+
+.home-list .entry-meta {
+  margin: 0;
+}
+
+/* ---------- Research topics ---------- */
+.home-topics {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr));
+  gap: 0.875rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  > li {
+    margin: 0;
+  }
+}
+
+.home-topic,
+.home-topic:visited {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  color: $tn-fg;
+  background-color: $tn-bg-float;
+  border: 1px solid rgba($tn-border, 0.6);
+  border-radius: $pub-radius;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.home-topic:hover {
+  color: $tn-blue;
+  border-color: rgba($tn-blue, 0.55);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+// Same idea as the research page: one frame for figures with dark or white backgrounds.
+.home-topic-figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 3 / 2;
+  padding: 0.5rem;
+  background-color: $tn-bg;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 4px;
+  }
+}
+
+.home-topic-title {
+  padding: 0.7rem 0.9rem 0.8rem;
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-topic,
+  .home-topic:hover {
+    transition: none;
+    transform: none;
+  }
+}

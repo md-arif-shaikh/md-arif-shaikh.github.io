@@ -1,0 +1,938 @@
+/**
+ * Dated entries: the CV and presentations pages.
+ * Shares the card / year-column / section-head look of the publications page.
+ */
+.entry-intro        { @extend .pub-intro; }
+.entry-lead         { @extend .pub-lead; }
+.entry-section      { @extend .pub-section; }
+.entry-section-head { @extend .pub-section-head; }
+.entry-count        { @extend .pub-count; }
+.entry-section-desc { @extend .pub-section-desc; }
+.entry-year-group   { @extend .pub-year-group; }
+.entry-year         { @extend .pub-year; }
+.entry-list         { @extend .pub-list; }
+.entry-card         { @extend .pub-card; }
+.entry-title        { @extend .pub-title; }
+.entry-foot         { @extend .pub-foot; }
+.entry-stats        { @extend .cite-stats; }
+.entry-links        { @extend .pub-links; }
+.entry-link         { @extend .pub-link; }
+
+/* ---------- Intro actions ---------- */
+.entry-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+}
+
+// CV page only
+.cv-download,
+.cv-download:visited {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.45rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: $tn-bg;
+  background-color: $tn-blue;
+  border-radius: 999px;
+  transition: background-color 0.15s ease;
+}
+
+.cv-download:hover {
+  color: $tn-bg;
+  background-color: $tn-cyan;
+  text-decoration: none;
+}
+
+.entry-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  a,
+  a:visited {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45em;
+    padding: 0.35rem 0.85rem;
+    font-size: 0.875rem;
+    color: $tn-fg-dark;
+    border: 1px solid $tn-border;
+    border-radius: 999px;
+    transition: border-color 0.15s ease, color 0.15s ease, background-color 0.15s ease;
+  }
+
+  a:hover {
+    color: $tn-blue;
+    border-color: $tn-blue;
+    background-color: rgba($tn-blue, 0.08);
+    text-decoration: none;
+  }
+
+  span {
+    padding: 0.05rem 0.45rem;
+    font-size: 0.75rem;
+    font-variant-numeric: tabular-nums;
+    background-color: $tn-bg-highlight;
+    border-radius: 999px;
+  }
+}
+
+/* ---------- Entries ---------- */
+.entry-year-end {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: $pub-muted;
+}
+
+.entry-card--compact {
+  padding-top: 0.85rem;
+  padding-bottom: 0.85rem;
+}
+
+.post-content .entry-status + .entry-title {
+  margin-right: 5.5rem;
+}
+
+.entry-status {
+  position: absolute;
+  top: 1.05rem;
+  right: 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: $tn-green;
+
+  &::before {
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: $tn-green;
+    border-radius: 50%;
+  }
+}
+
+// Neutral label in the same corner, e.g. a teaching role
+.entry-badge {
+  position: absolute;
+  top: 0.9rem;
+  right: 1.25rem;
+  padding: 0.05rem 0.55rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: $tn-fg-dark;
+  border: 1px solid $tn-border;
+  border-radius: 999px;
+}
+
+.post-content .entry-badge + .entry-title {
+  margin-right: 4.5rem;
+}
+
+.entry-card--compact .entry-status {
+  top: 0.9rem;
+}
+
+.entry-org {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: $tn-fg-dark;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.entry-sep {
+  margin: 0 0.35em;
+  color: $pub-muted;
+}
+
+.entry-dept,
+a.entry-dept:visited {
+  color: $pub-muted;
+}
+
+a.entry-dept:hover {
+  color: $tn-blue;
+}
+
+.entry-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+  margin: 0;
+  font-size: 0.85rem;
+  color: $pub-muted;
+
+  i {
+    width: 1em;
+    margin-right: 0.45em;
+    text-align: center;
+  }
+}
+
+/* ---------- People grid (collaborators page) ---------- */
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+  gap: 0.875rem;
+  margin: $spacing-unit 0 0;
+  padding: 0;
+  list-style: none;
+
+  > li {
+    margin: 0;
+  }
+}
+
+.person-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.person-avatar {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: $tn-blue;
+  background-color: rgba($tn-blue, 0.14);
+  border-radius: 50%;
+}
+
+.person-body {
+  min-width: 0;
+}
+
+.post-content .person-card .entry-title {
+  margin-right: 0;
+  margin-bottom: 0.15rem;
+}
+
+.person-card .entry-org {
+  margin-bottom: 0.4rem;
+}
+
+/* ---------- Collaborator map ---------- */
+$map-land: $tn-bg-highlight; // countries without collaborators
+
+.map-card {
+  margin-top: $spacing-unit;
+  padding: 1.25rem 1.25rem 1rem;
+  background-color: $tn-bg-float;
+  border: 1px solid rgba($tn-border, 0.6);
+  border-radius: $pub-radius;
+
+  [hidden] {
+    display: none !important;
+  }
+}
+
+.map-title {
+  @extend .cite-title;
+}
+
+.post-content .map-title {
+  margin-bottom: 1rem;
+}
+
+.map-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+@media screen and (min-width: $on-laptop + 1) {
+  .map-card.has-map .map-body {
+    flex-direction: row;
+    align-items: center;
+
+    .map-plot { flex: 1 1 0; min-width: 0; }
+    .map-list { flex: 0 0 15rem; }
+  }
+}
+
+.map-plot {
+  position: relative;
+}
+
+.map-svg svg {
+  display: block;
+}
+
+.map-land {
+  fill: $map-land;
+  stroke: $tn-bg-float; // surface gap between neighbouring countries
+  stroke-width: 0.5;
+}
+
+.map-land--on {
+  cursor: default;
+  outline: none;
+  transition: filter 0.15s ease;
+}
+
+.map-land--on.is-active,
+.map-land--on:focus-visible {
+  stroke: $tn-cyan;
+  stroke-width: 1.5;
+  filter: brightness(1.15);
+}
+
+.map-tooltip {
+  @extend .cite-tooltip;
+  white-space: normal;
+  max-width: 16rem;
+}
+
+.map-tooltip-people {
+  margin-top: 0.15rem;
+  font-size: 0.75rem;
+}
+
+.map-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.post-content .map-row {
+  display: grid;
+  grid-template-columns: 6.5rem minmax(0, 1fr) 1.5rem;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.875rem;
+  color: $tn-fg-dark;
+  border-radius: 6px;
+  outline: none;
+  transition: background-color 0.15s ease;
+
+  &.is-active,
+  &:focus-visible {
+    color: $tn-fg;
+    background-color: $tn-bg-highlight;
+  }
+}
+
+.map-bar {
+  height: 0.5rem;
+}
+
+.map-swatch {
+  display: block;
+  height: 100%;
+  min-width: 0.5rem;
+  background-color: $cite-bar;
+  border-radius: 0 3px 3px 0;
+}
+
+.map-count {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  color: $tn-fg;
+}
+
+/* ---------- Posts page ---------- */
+.posts [hidden] {
+  display: none !important;
+}
+
+.posts-search { @extend .pub-search; }
+.posts-status { @extend .pub-status; }
+.posts-empty  { @extend .pub-empty; }
+
+.posts-toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.posts-search {
+  flex: none;
+  width: 100%;
+  max-width: 24rem;
+}
+
+.posts-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.posts-chip {
+  -webkit-appearance: none;
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45em;
+  padding: 0.3rem 0.8rem;
+  font: inherit;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: $tn-fg-dark;
+  background: transparent;
+  border: 1px solid $tn-border;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease, background-color 0.15s ease;
+
+  span {
+    padding: 0 0.4rem;
+    font-size: 0.72rem;
+    font-variant-numeric: tabular-nums;
+    background-color: $tn-bg-highlight;
+    border-radius: 999px;
+  }
+
+  &:hover {
+    color: $tn-blue;
+    border-color: $tn-blue;
+  }
+
+  &.is-active {
+    color: $tn-bg;
+    background-color: $tn-blue;
+    border-color: $tn-blue;
+
+    span {
+      color: $tn-bg;
+      background-color: rgba($tn-bg, 0.2);
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid $tn-cyan;
+    outline-offset: 2px;
+  }
+}
+
+.posts-clear {
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 0;
+  font: inherit;
+  color: $tn-blue;
+  background: none;
+  border: 0;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.posts-empty + .posts-list {
+  margin-top: 1.25rem;
+}
+
+.post-card .entry-org {
+  margin-bottom: 0.6rem;
+}
+
+.post-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.post-tag {
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 0.05rem 0.55rem;
+  font: inherit;
+  font-size: 0.75rem;
+  line-height: 1.6;
+  color: $tn-fg-dark;
+  background-color: $tn-bg-highlight;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: color 0.15s ease, background-color 0.15s ease;
+
+  &:hover {
+    color: $tn-blue;
+    background-color: rgba($tn-blue, 0.14);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $tn-cyan;
+    outline-offset: 2px;
+  }
+
+  // Without the filter script the tags are plain labels.
+  .posts:not(.is-interactive) & {
+    pointer-events: none;
+    cursor: default;
+  }
+}
+
+/* ---------- Single post page ---------- */
+.post-back,
+.post-back:visited {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45em;
+  margin-bottom: 0.75rem;
+  font-size: $small-font-size;
+  color: $pub-muted;
+}
+
+.post-back:hover {
+  color: $tn-blue;
+  text-decoration: none;
+}
+
+.post-header .entry-meta {
+  margin-top: 0.75rem;
+}
+
+.post-header .post-tags {
+  margin: 0.6rem 0 0;
+}
+
+a.post-tag,
+a.post-tag:visited {
+  color: $tn-fg-dark;
+  text-decoration: none;
+}
+
+a.post-tag:hover {
+  color: $tn-blue;
+  text-decoration: none;
+}
+
+.post-nav {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.875rem;
+  margin: $spacing-unit 0;
+}
+
+.post-nav-link,
+.post-nav-link:visited {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.85rem 1.1rem;
+  color: $tn-fg;
+  background-color: $tn-bg-float;
+  border: 1px solid rgba($tn-border, 0.6);
+  border-radius: $pub-radius;
+  transition: border-color 0.2s ease;
+}
+
+.post-nav-link:hover {
+  color: $tn-fg;
+  border-color: rgba($tn-blue, 0.55);
+  text-decoration: none;
+
+  .post-nav-title {
+    color: $tn-blue;
+  }
+}
+
+.post-nav-next {
+  grid-column: 2;
+  text-align: right;
+
+  .post-nav-label {
+    justify-content: flex-end;
+  }
+}
+
+.post-nav-label {
+  display: flex;
+  align-items: center;
+  gap: 0.45em;
+  font-size: 0.8rem;
+  color: $pub-muted;
+}
+
+.post-nav-title {
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+/* ---------- Research topics ---------- */
+.research-jump {
+  margin-bottom: $spacing-unit;
+}
+
+.research-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.post-content .research-list > li {
+  margin: 0;
+}
+
+.research-item {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  align-items: start;
+  gap: 1.5rem;
+  padding: 1.25rem;
+  scroll-margin-top: 1rem;
+}
+
+// Every figure sits in the same frame, whatever its own background.
+.research-figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15rem;
+  padding: 0.5rem;
+  background-color: $tn-bg;
+  border-radius: 8px;
+  transition: box-shadow 0.2s ease;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 4px;
+  }
+
+  &:hover {
+    box-shadow: 0 0 0 1px rgba($tn-blue, 0.55);
+  }
+}
+
+.post-content .research-title {
+  margin: 0 0 0.5rem;
+  @include relative-font-size(1.2);
+  font-weight: 500;
+  color: $tn-fg;
+}
+
+.research-summary {
+  font-size: 0.95rem;
+  color: $tn-fg-dark;
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.research-more {
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+
+  summary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    color: $tn-blue;
+    cursor: pointer;
+    list-style: none;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &::before {
+      content: "+";
+      display: inline-block;
+      width: 1em;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &[open] summary::before {
+    content: "\2212"; // minus sign
+  }
+}
+
+.research-more-body {
+  margin-top: 0.6rem;
+  padding-left: 0.9rem;
+  color: $tn-fg-dark;
+  border-left: 2px solid $tn-border;
+
+  h3 {
+    margin: 0.75rem 0 0.35rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: $tn-fg;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  u {
+    text-decoration: none;
+  }
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.post-content .research-label {
+  margin: 1rem 0 0.4rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $pub-muted;
+}
+
+.research-papers {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.9rem;
+  line-height: 1.45;
+
+  li {
+    margin: 0 0 0.45rem;
+  }
+}
+
+.research-venue {
+  display: block;
+  font-size: 0.8rem;
+  color: $pub-muted;
+}
+
+.research-people {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin: 0;
+  }
+}
+
+.research-person,
+a.research-person:visited {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.15rem 0.7rem 0.15rem 0.15rem;
+  font-size: 0.82rem;
+  color: $tn-fg-dark;
+  border: 1px solid $tn-border;
+  border-radius: 999px;
+
+  .person-avatar {
+    width: 1.6rem;
+    height: 1.6rem;
+    font-size: 0.65rem;
+  }
+}
+
+a.research-person:hover {
+  color: $tn-blue;
+  border-color: $tn-blue;
+  text-decoration: none;
+}
+
+@media screen and (max-width: $on-laptop) {
+  .research-item {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  // Full-width figures: size the frame by shape (the figures are all about 3:2).
+  .research-figure {
+    height: auto;
+    aspect-ratio: 3 / 2;
+  }
+}
+
+/* ---------- About page ---------- */
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+@media screen and (min-width: $on-laptop + 1) {
+  .about {
+    display: grid;
+    grid-template-columns: 15rem minmax(0, 1fr);
+    align-items: start;
+    gap: 2.5rem;
+  }
+
+  .about-card {
+    position: sticky;
+    top: 1rem;
+  }
+}
+
+.about-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 1.25rem;
+  text-align: center;
+
+  &:hover {
+    transform: none; // a profile card isn't a link; skip the lift
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.about-photo {
+  width: 8.5rem;
+  height: 8.5rem;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px $tn-bg-float, 0 0 0 5px rgba($tn-blue, 0.55);
+}
+
+.post-content .about-name {
+  margin: 0 0 0.25rem;
+  @include relative-font-size(1.2);
+  font-weight: 500;
+  color: $tn-fg;
+}
+
+.about-role {
+  font-size: 0.9rem;
+  color: $tn-fg-dark;
+}
+
+.about-card .about-org {
+  margin-top: 0.15rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.about-card .about-place {
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+  color: $pub-muted;
+
+  i {
+    margin-right: 0.4em;
+  }
+}
+
+.about-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+  margin: 1rem 0 1.1rem;
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin: 0;
+  }
+
+  a,
+  a:visited {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.1rem;
+    height: 2.1rem;
+    font-size: 1rem;
+    color: $tn-fg-dark;
+    border: 1px solid $tn-border;
+    border-radius: 50%;
+    transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
+  }
+
+  a:hover {
+    color: $tn-blue;
+    border-color: $tn-blue;
+    background-color: rgba($tn-blue, 0.08);
+    text-decoration: none;
+  }
+}
+
+.about-bio p:first-child {
+  font-size: 1.05rem;
+  color: $tn-fg;
+}
+
+.post-content .about-heading {
+  margin: 2rem 0 0.75rem;
+  padding-bottom: 0.5rem;
+  @include relative-font-size(1.2);
+  color: $tn-fg;
+  border-bottom: 1px solid $tn-border;
+}
+
+.about-memberships {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0 1rem;
+    margin: 0;
+    padding: 0.45rem 0;
+    border-bottom: 1px solid rgba($tn-border, 0.5);
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+}
+
+.about-member-meta {
+  font-size: 0.85rem;
+  color: $pub-muted;
+}
+
+@include media-query($on-palm) {
+  .entry-status,
+  .entry-badge {
+    right: 1rem;
+  }
+
+  .post-nav {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .post-nav-next {
+    grid-column: auto;
+  }
+}

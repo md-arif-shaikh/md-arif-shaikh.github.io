@@ -1,0 +1,38 @@
+{%- comment -%}
+  Short date range, e.g. "Oct 20–21", "Mar 20 – Apr 20", "Aug – Dec",
+  "Dec 28, 2024 – Jan 3, 2025".
+  The year is left out when both ends share it (the page shows it in the year column).
+  A range from the 1st to a month's end is shown as whole months (semester courses).
+  Params: item, with either `from`/`to` dates or from-/to- date, month and year fields
+{%- endcomment -%}
+{%- assign dr = include.item -%}
+{%- if dr.from -%}
+  {%- assign dr_fy = dr.from | date: "%Y" -%}
+  {%- assign dr_ty = dr.to | date: "%Y" -%}
+  {%- assign dr_fm = dr.from | date: "%b" -%}
+  {%- assign dr_tm = dr.to | date: "%b" -%}
+  {%- assign dr_fd = dr.from | date: "%-d" | plus: 0 -%}
+  {%- assign dr_td = dr.to | date: "%-d" | plus: 0 -%}
+{%- else -%}
+  {%- assign dr_fy = dr.from-year | append: "" -%}
+  {%- assign dr_ty = dr.to-year | append: "" -%}
+  {%- assign dr_fm = dr.from-month | slice: 0, 3 -%}
+  {%- assign dr_tm = dr.to-month | slice: 0, 3 -%}
+  {%- assign dr_fd = dr.from-date | plus: 0 -%}
+  {%- assign dr_td = dr.to-date | plus: 0 -%}
+{%- endif -%}
+{%- if dr_fd == 1 and dr_td >= 28 and dr_fm != dr_tm -%}
+  {%- if dr_fy != dr_ty -%}
+  {{ dr_fm }} {{ dr_fy }} &ndash; {{ dr_tm }} {{ dr_ty }}
+  {%- else -%}
+  {{ dr_fm }} &ndash; {{ dr_tm }}
+  {%- endif -%}
+{%- elsif dr_fy != dr_ty -%}
+  {{ dr_fm }} {{ dr_fd }}, {{ dr_fy }} &ndash; {{ dr_tm }} {{ dr_td }}, {{ dr_ty }}
+{%- elsif dr_fm != dr_tm -%}
+  {{ dr_fm }} {{ dr_fd }} &ndash; {{ dr_tm }} {{ dr_td }}
+{%- elsif dr_fd != dr_td -%}
+  {{ dr_fm }} {{ dr_fd }}&ndash;{{ dr_td }}
+{%- else -%}
+  {{ dr_fm }} {{ dr_fd }}
+{%- endif -%}

@@ -1,0 +1,29 @@
+---
+title: "CV"
+permalink: /cv/
+layout: page
+---
+{%- assign info = site.data.authinfo -%}
+{%- assign cv_pdf = "https://cdn.jsdelivr.net/gh/md-arif-shaikh/md-arif-shaikh.github.io@cv-pdf/_data/arif/cv_arif.pdf" -%}
+{%- assign awards_title = "Awards, achievements and others" -%}
+
+<div class="entry-intro">
+  <p class="entry-lead">
+    {{ info.position }} at <a href="{{ info.institute-website }}">{{ info.institute }}</a>.
+    Below are my positions, education, research visits and awards. A more detailed CV is available as a PDF.
+  </p>
+  <div class="entry-actions">
+    <a class="cv-download" href="{{ cv_pdf }}"><i class="far fa-file-pdf" aria-hidden="true"></i>Download CV (PDF)</a>
+    <nav class="entry-jump" aria-label="CV sections">
+      <a href="#positions">Positions <span>{{ site.data.positions | size }}</span></a>
+      <a href="#education">Education <span>{{ site.data.education | size }}</span></a>
+      <a href="#visits">Visits <span>{{ site.data.visits | size }}</span></a>
+      <a href="#{{ awards_title | slugify }}">Awards <span>{{ site.data.achievements | size }}</span></a>
+    </nav>
+  </div>
+</div>
+
+{% include cv-timeline.html id="positions" title="Positions" entries=site.data.positions person_label="With" %}
+{% include cv-timeline.html id="education" title="Education" entries=site.data.education person_label="Advisor:" %}
+{% include cv-visits.html %}
+{% include cv-awards.html title=awards_title %}

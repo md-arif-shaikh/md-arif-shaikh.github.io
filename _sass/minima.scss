@@ -15,7 +15,9 @@ $base-font-size:   1rem !default;
 $base-font-weight: 400 !default;
 $header-font-size: $base-font-size * (3/2) !default;
 $small-font-size:  $base-font-size * 0.875 !default;
-$base-line-height: 1.25 !default;
+$base-line-height: 1.6 !default;  // body text
+$heading-line-height: 1.3 !default;
+$nav-line-height:  1.25 !default; // keeps the header bar at its original height
 
 $spacing-unit:     30px !default;
 
@@ -89,5 +91,8 @@ $on-laptop:        850px !default;
 @import
   "minima/base",
   "minima/layout",
+  "minima/publications",
+  "minima/entries",
+  "minima/home",
   "minima/syntax-highlighting"
 ;

@@ -61,11 +61,11 @@ Harald-Pfeiffer:
 Antoni-Ramos-Buades:
   name: Antoni Ramos Buades
   website:
-  position: Veni Fellow
-  institute: Nikhef
-  institute-url: https://www.nikhef.nl/
-  city: Amsterdam
-  country: NL
+  position: Assistant Professor
+  institute: UIB
+  institute-url: https://www.uib.eu/
+  city: Palma
+  country: Spain
   papers: 2
 
 Maarten-van-de-Meent:
@@ -101,11 +101,11 @@ Eliu-Huerta:
 Uddeepta-Deka:
   name: Uddeepta Deka
   website:
-  position: Graduate Student
-  institute: ICTS-TIFR
-  institute-url: "https://www.icts.res.in/"
-  city: Bangalore
-  country: India
+  position: Postdoctoral Fellow
+  institute: SHAO
+  institute-url: "https://english.shao.cas.cn/"
+  city: Shanghai
+  country: China
   papers: 2
 
 Mukesh-Kumar-Singh:
@@ -188,5 +188,20 @@ Hyung_Mok_Lee:
   country: Korea
   papers: 1
 
+Sajad-Bhat:
+  name: Sajad Bhat
+  website:
+  position: Postdoctoral Fellow
+  institute: IUCAA
+  institute-url: "https://www.iucaa.in/"
+  city: Pune
+  country: India
 
-
+Avinash-Tiwari:
+  name: Avinash Tiwari
+  website:
+  position: Graduate Student
+  institute: IUCAA
+  institute-url: "https://www.iucaa.in/"
+  city: Pune
+  country: India

@@ -4,4 +4,95 @@
 
 layout: home
 ---
+{%- comment -%}
+  Everything below the hero is built from the site's data, so it stays current:
+  counts, the newest short-author papers and posts, and the research topics.
+{%- endcomment -%}
+{%- assign n_short = site.data.short_author | size -%}
+{%- assign n_sxs = site.data.sxs | size -%}
+{%- assign n_lvk = site.data.lvk | size -%}
+{%- assign n_collab_papers = n_sxs | plus: n_lvk -%}
+{%- assign n_seminars = site.data.seminars | size -%}
+{%- assign n_talks = site.data.conference-talks | size -%}
+{%- assign n_posters = site.data.conference-posters | size -%}
+{%- assign n_presentations = n_seminars | plus: n_talks | plus: n_posters -%}
+{%- assign n_people = site.data.collaborators | size -%}
+
+<div class="post-content home-page">
+
 {% include hero.html %}
+
+<ul class="home-stats">
+  <li><a href="{{ '/publications/#short-author-papers' | relative_url }}"><span class="home-stat-value">{{ n_short }}</span><span class="home-stat-label">Short-author papers</span></a></li>
+  <li><a href="{{ '/publications/' | relative_url }}"><span class="home-stat-value">{{ n_collab_papers }}</span><span class="home-stat-label">Collaboration papers</span></a></li>
+  <li><a href="{{ '/presentations/' | relative_url }}"><span class="home-stat-value">{{ n_presentations }}</span><span class="home-stat-label">Talks &amp; posters</span></a></li>
+  <li><a href="{{ '/collaborators/' | relative_url }}"><span class="home-stat-value">{{ n_people }}</span><span class="home-stat-label">Collaborators</span></a></li>
+</ul>
+
+<div class="home-columns">
+  <section class="home-block" aria-labelledby="home-papers">
+    <div class="home-block-head">
+      <h2 id="home-papers">Recent papers</h2>
+      <a href="{{ '/publications/' | relative_url }}">All publications <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+    </div>
+    <ol class="home-list">
+      {%- for item in site.data.short_author limit: 3 -%}
+        {%- assign paper = item[1] -%}
+        {%- assign paper_url = nil -%}
+        {%- if paper.doi and paper.doi != "" -%}
+          {%- assign paper_url = "https://doi.org/" | append: paper.doi -%}
+        {%- elsif paper.eprint and paper.eprint != "" -%}
+          {%- assign paper_url = "https://arxiv.org/abs/" | append: paper.eprint -%}
+        {%- endif %}
+      <li class="entry-card entry-card--compact">
+        <h3 class="entry-title">
+          {%- if paper_url -%}<a href="{{ paper_url }}">{{ paper.title | replace: "--", "&ndash;" }}</a>{%- else -%}{{ paper.title }}{%- endif -%}
+        </h3>
+        {%- if paper.journal and paper.journal != "" %}
+        <span class="pub-venue"><span class="pub-journal">{{ paper.journal }}</span> &middot; {{ paper.year }}</span>
+        {%- else %}
+        <span class="pub-venue pub-venue--preprint">Preprint &middot; {{ paper.year }}</span>
+        {%- endif %}
+      </li>
+      {%- endfor %}
+    </ol>
+  </section>
+
+  <section class="home-block" aria-labelledby="home-posts">
+    <div class="home-block-head">
+      <h2 id="home-posts">Latest posts</h2>
+      <a href="{{ '/posts/' | relative_url }}">All posts <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+    </div>
+    <ol class="home-list">
+      {%- for post in site.posts limit: 3 -%}
+        {%- assign lang = post.lang | default: "en" %}
+      <li class="entry-card entry-card--compact">
+        {%- if lang == "bn" %}
+        <span class="entry-badge" lang="bn">বাংলা</span>
+        {%- endif %}
+        <h3 class="entry-title"><a href="{{ post.url | relative_url }}" lang="{{ lang }}">{{ post.title }}</a></h3>
+        <p class="entry-meta"><span><i class="far fa-calendar" aria-hidden="true"></i>{{ post.date | date: "%b %-d, %Y" }}</span></p>
+      </li>
+      {%- endfor %}
+    </ol>
+  </section>
+</div>
+
+<section class="home-block" aria-labelledby="home-research">
+  <div class="home-block-head">
+    <h2 id="home-research">Research</h2>
+    <a href="{{ '/research/' | relative_url }}">All research <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+  </div>
+  <ul class="home-topics">
+    {%- for research in site.data.research %}
+    <li>
+      <a class="home-topic" href="{{ '/research/' | relative_url }}#{{ research[0] }}">
+        <span class="home-topic-figure"><img src="{{ research[1].header-image | relative_url }}" alt="" loading="lazy"></span>
+        <span class="home-topic-title">{{ research[1].title }}</span>
+      </a>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+
+</div>

@@ -1,0 +1,100 @@
+---
+layout: page
+title: About
+permalink: /about/
+---
+{%- comment -%}
+  The bio below is Markdown; edit it as before. The profile card, research interests and
+  memberships are built from _config.yml, _data/authinfo.yaml, _data/research.yaml and
+  _data/achievements.yaml (memberships = entries whose year is open-ended, e.g. "2020--").
+{%- endcomment -%}
+{%- capture bio -%}
+I'm an assistant professor of Physics at [Vivekananda Satavarshiki
+Mahavidyalaya](https://www.vsm.org.in/) (affiliated to Vidyasagar University),
+West Bengal, India.
+
+I was a postdoctoral research scholar at the [Seoul National
+University](https://en.snu.ac.kr) in Seoul, South Korea from July 2022 to
+November 2023. I worked in Prof [Hyung Mok
+Lee](http://astro.snu.ac.kr/~hmlee/)'s group in the department of [physics and
+astronomy](https://physics.snu.ac.kr/en). Before that, I was a postdoctoral
+fellow in the [Astrophysical
+Relativity](https://www.icts.res.in/research/astrorel) group at
+[ICTS-TIFR](https://www.icts.res.in/) from 2019-2022 and worked with Prof
+[Parameswaran Ajith](https://home.icts.res.in/~ajith/Home.html).
+
+I got my MSc (2014) and PhD (2019 with Prof [Tapas Kumar
+Das](http://www.hri.res.in/~tapas/)) in Physics from
+[HRI](https://www.hri.res.in/), India, and did my BSc (2012) at [Jadavpur
+University](https://jadavpuruniversity.in/) in Kolkata.
+
+My primary research interest is gravitational wave physics and astronomy. I am
+a member of the [LIGO Scientific Collaboration](https://www.ligo.org/) and
+[Simulating eXtreme Spacetime](https://www.black-holes.org/) Collaboration.
+
+I develop and maintain the open-source Python library
+[gw_eccentricity](https://pypi.org/project/gw-eccentricity/), which computes
+the orbital eccentricity of compact binaries from the gravitational waveforms
+emitted during their inspiral.
+{%- endcapture -%}
+
+{%- assign info = site.data.authinfo -%}
+{%- assign address = info.institute-address | split: "," -%}
+{%- assign country = address.last | strip -%}
+{%- assign place = address[1] | strip | append: ", " | append: country -%}
+{%- assign cv_pdf = "https://cdn.jsdelivr.net/gh/md-arif-shaikh/md-arif-shaikh.github.io@cv-pdf/_data/arif/cv_arif.pdf" -%}
+
+<div class="about">
+
+<aside class="entry-card about-card">
+  <img class="about-photo" src="{{ '/assets/home.jpg' | relative_url }}" alt="{{ site.title }}">
+  <h2 class="about-name">{{ site.title }}</h2>
+  <p class="about-role">{{ info.position }} of Physics</p>
+  <p class="about-org"><a href="{{ info.institute-website }}">{{ info.institute }}</a></p>
+  <p class="about-place"><i class="fas fa-map-marker-alt" aria-hidden="true"></i>{{ place }}</p>
+  <ul class="about-links">
+    <li><a href="mailto:{{ site.email }}" title="Email" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
+    <li><a href="https://orcid.org/{{ site.orcid_username }}" title="ORCID" aria-label="ORCID"><i class="ai ai-orcid" aria-hidden="true"></i></a></li>
+    <li><a href="https://inspirehep.net/authors/{{ site.inspirehep_username }}" title="INSPIRE-HEP" aria-label="INSPIRE-HEP"><i class="ai ai-inspire" aria-hidden="true"></i></a></li>
+    <li><a href="https://scholar.google.com/citations?user={{ site.googlescholar_username }}" title="Google Scholar" aria-label="Google Scholar"><i class="ai ai-google-scholar" aria-hidden="true"></i></a></li>
+    <li><a href="https://github.com/{{ site.github_username }}" title="GitHub" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+    <li><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+  </ul>
+  <a class="cv-download about-cv" href="{{ cv_pdf }}"><i class="far fa-file-pdf" aria-hidden="true"></i>Download CV</a>
+</aside>
+
+<div class="about-main">
+  <div class="about-bio">{{ bio | markdownify }}</div>
+
+  <h2 class="about-heading">Research interests</h2>
+  <nav class="entry-jump" aria-label="Research topics">
+    {%- for research in site.data.research %}
+    <a href="{{ '/research/' | relative_url }}#{{ research[0] }}">{{ research[1].title }}</a>
+    {%- endfor %}
+  </nav>
+
+  <h2 class="about-heading">Memberships</h2>
+  <ul class="about-memberships">
+    {%- for item in site.data.achievements -%}
+      {%- assign a = item[1] -%}
+      {%- assign year = a.year | append: "" -%}
+      {%- assign span = year | split: "--" -%}
+      {%- if year contains "--" and span.size == 1 -%}
+        {%- assign org = a.organization -%}
+        {%- assign last_char = org | slice: -1 -%}
+        {%- if last_char == "." -%}
+          {%- assign org_len = org | size | minus: 1 -%}
+          {%- assign org = org | slice: 0, org_len -%}
+        {%- endif %}
+    <li>
+      <span class="about-member-org">
+        {%- if a.organization-website -%}<a href="{{ a.organization-website }}">{{ org }}</a>{%- else -%}{{ org }}{%- endif -%}
+      </span>
+      <span class="about-member-meta">{% if a.description != "Membership" %}{{ a.description }} &middot; {% endif %}since {{ span[0] }}</span>
+    </li>
+      {%- endif -%}
+    {%- endfor %}
+  </ul>
+</div>
+
+</div>
