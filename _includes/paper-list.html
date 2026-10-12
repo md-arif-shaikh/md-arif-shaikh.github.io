@@ -28,7 +28,7 @@
     {%- assign authors = paper.author
         | replace: " and others.", " et al."
         | replace: '"a', "&auml;" | replace: '"o', "&ouml;" | replace: '"u', "&uuml;" -%}
-    <li class="pub-card">
+    <li class="pub-card" data-eprint="{{ arxiv_id }}" data-doi="{{ paper.doi | downcase }}">
       <span class="pub-num" aria-hidden="true">#{{ number }}</span>
       <h4 class="pub-title">
         {%- if title_url -%}<a href="{{ title_url }}">{{ paper.title | replace: "--", "&ndash;" }}</a>{%- else -%}{{ paper.title | replace: "--", "&ndash;" }}{%- endif -%}

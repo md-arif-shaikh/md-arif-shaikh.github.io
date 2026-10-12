@@ -5,7 +5,7 @@
   {%- assign total = total | plus: n -%}
 {%- endfor -%}
 
-<div class="pubs" data-pubs>
+<div class="pubs" data-pubs data-inspire-query="a {{ site.inspirehep_bai }}">
 
 <div class="pub-toolbar" hidden>
   <div class="pub-tabs" role="group" aria-label="Filter by category">
@@ -21,7 +21,15 @@
     <kbd aria-hidden="true">/</kbd>
   </label>
 </div>
-<p class="pub-status" aria-live="polite"></p>
+<div class="pub-subbar">
+  <p class="pub-status" aria-live="polite"></p>
+  {%- comment -%} shown by publications.js once per-paper citation counts arrive from INSPIRE-HEP {%- endcomment %}
+  <div class="pub-sort" role="group" aria-label="Sort papers" hidden>
+    <span class="pub-sort-label">Sort</span>
+    <button type="button" class="pub-sort-btn is-active" data-sort="recent" aria-pressed="true">Recent</button>
+    <button type="button" class="pub-sort-btn" data-sort="cited" aria-pressed="false">Most cited</button>
+  </div>
+</div>
 <p class="pub-empty" hidden>No publications match your search.</p>
 
 {% for section in site.data.publications_page %}
@@ -40,4 +48,4 @@
 
 </div>
 
-<script src="{{ '/assets/js/publications.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/publications.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
