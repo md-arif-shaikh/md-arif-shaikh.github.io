@@ -1,3 +1,19 @@
+Ewha-November-2026:
+  from-year: 2026
+  from-month: November
+  from-date: 9
+  to-year: 2026
+  to-month: November
+  to-date: 13
+  institute: Ewha Womans University
+  institute-url: https://www.ewha.ac.kr/ewhaen/index.do
+  department: Department of Physics
+  department-url: 
+  host: Chunglee Kim
+  host-url: "https://www.ewha.ac.kr/ewhaen/professor/info.do?mode=view&pId=nufukFY1RWc4mY1OSKh5OA%3D%3D"
+  city: Seoul
+  country: Korea
+
 Ewha-October-2025:
   from-year: 2025
   from-month: October
