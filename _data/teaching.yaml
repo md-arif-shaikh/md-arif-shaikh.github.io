@@ -1,3 +1,16 @@
+ewha-lectures-2026:
+  course: Introduction to Post-Newtonian Formalism
+  school: Special Lectures at Ewha
+  school-website: 
+  institute: Ewha Womans University
+  institute-website: https://www.ewha.ac.kr/ewhaen/index.do
+  city: Seoul
+  country: Korea
+  from: 2026-11-09
+  to: 2026-11-13
+  role: Intructor
+  instructor:
+
 icts-summer-school-2021:
   course: Stochastic gravitational wave background from early universe
   school: Summer School on Gravitational Wave Astronomy
