@@ -205,3 +205,23 @@ Avinash-Tiwari:
   institute-url: "https://www.iucaa.in/"
   city: Pune
   country: India
+
+Chunglee-Kim:
+  name: Chunglee Kim
+  website: https://pure.ewha.ac.kr/en/persons/chunglee-kim/
+  position: Associate Professor
+  institute: Ewha Womans University
+  institute-url: "https://pure.ewha.ac.kr/en/"
+  city: Seoul
+  country: Korea
+  papers: 1
+
+Gwangeon-Seong:
+  name: Gwangeon Seong
+  website: 
+  position: Postdoctoral Fellow
+  institute: Ewha Womans University
+  institute-url: "https://pure.ewha.ac.kr/en/"
+  city: Seoul
+  country: Korea
+  papers: 1
